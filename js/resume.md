@@ -1,6 +1,22 @@
 # Javascript :
 
+## Variables :
+
+[:question: :question:](variable.md)
+
+* **Pour créer une variable en js => `let`**.
+* **Ancienne version => `var`**.
+* **Variable non changeante => `const`**.
+
+## 7 Types de données :
+
+[:question: :question:](typesDeDonnees.md)
+
+
+
 ## `WeakMap` et `WeakSet` :
+
+[:question: :question:](weakMapAndWeakSet.md)
 
 * **`WeakMap` est une collection semblable à `Map` qui n'accepte que les objets en tant que clés et les supprime avec la valeur associée une fois qu'ils sont inaccessibles par d'autres moyens**.
 * **`WeakSet` est une collection semblable à `Set` qui stocke uniquement les objets et les supprime une fois qu'ils deviennent inaccessible par d'autres moyens**.
