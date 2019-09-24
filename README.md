@@ -6,8 +6,8 @@ Composé en 5 parties :
 
 - html
 - css
-- [js](CheatSheets/js)
-- [dom](CheatSheets/dom)
+- [js](js)
+- [dom](dom)
 - algo
 
 En cours d'évolution... :bowtie:
