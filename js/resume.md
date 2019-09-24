@@ -20,6 +20,16 @@
 * **object => pour des structures de données plus complexes**.
 * **symbol => d'identificateurs uniques**. 
 * **(typeof => permet de connaitre le type de contenu dans une variable)**.
+
+## Conversion de types en JS :
+
+[:question: :question:](conversionDeTypes.md)
+
+Les trois conversions de types les plus utilisées sont chaîne, nombre et booléen.
+
+* **String Conversion => `String(value)`**.
+* **Numeric Conversion => `Number(value)`**.
+* **Boolean Conversion => `Boolean(value)`**.
  
 ## `WeakMap` et `WeakSet` :
 
