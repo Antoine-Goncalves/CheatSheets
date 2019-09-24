@@ -2,7 +2,7 @@
 
 ## Action par défaut du navigateur : 
 
-[:question: :question:](dom/actionParDefautNavigateur.md)
+[:question: :question:](actionParDefautNavigateur.md)
 
 * Le clic gauche (down) => **lance la sélection (déplacez la souris pour sélectionner)**.
 * Le clic droit (`contextmenu`) => **l'action consiste à afficher le menu contextuel du navigateur**.
@@ -22,7 +22,7 @@ Si l'action par défaut a été empêchée, la valeur de `event.defaultPrevented
 
 ## Événement basique de la souris :
 
-[:question: :question:](dom/evenementBasiqueSouris.md)
+[:question: :question:](evenementBasiqueSouris.md)
 
 Les événements de souris ont les propriétés suivantes:
 
@@ -36,7 +36,7 @@ L'action par défaut du navigateur mousedown est la sélection de texte. Si ce n
 
 ## Déplacements de la souris :
 
-[:question: :question:](dom/deplacementSouris.md)
+[:question: :question:](deplacementSouris.md)
 
 Nous avons couvert les événements `mouseover` , `mouseout` , `mousemove` , `mouseenter` et `mouseleave`.
 
