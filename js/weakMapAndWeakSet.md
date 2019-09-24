@@ -1,13 +1,11 @@
-# Javascript :
-
-## Comprendre comment fonctionnent `WeaKmap` et `WeakSet` :
+# Comprendre comment fonctionnent `WeaKmap` et `WeakSet` :
 
 Comprendre la principale différence entre :
 
 1. `WeakMap` et `Map`.
 2. `WeakSet` `Set`.
 
-### `WeakMap` et `Map` :
+## `WeakMap` et `Map` :
 
 La première différence avec `Map` est que les clés `WeakMap` doivent être **des objets et non des valeurs quelconque**.
 
@@ -30,7 +28,7 @@ Un autre cas d'utilisation de `WeakMap` est la **mise en cache**.
 
 Il est judicieux d'utiliser `WeakMap` pour que le résultat "mis en cache" sera automatiquement supprimé de la mémoire une fois que l'obje aura été nettoyé.
 
-### `WeakSet` et `Set` :
+## `WeakSet` et `Set` :
 
 Même principe que `WeakMap` , mais pour `Set` :
 
