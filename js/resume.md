@@ -12,8 +12,15 @@
 
 [:question: :question:](typesDeDonnees.md)
 
-
-
+* **number => pour les nombres de toute sorte: entier ou virgule flottante**.
+* **string => pour les chaînes de caractères**.
+* **boolean => pour `true` / `false` **.
+* **null => pour les valeurs inconnues**.
+* **undefined => pour les valeurs non attribuées**.
+* **object => pour des structures de données plus complexes**.
+* **symbol => d'identificateurs uniques**. 
+* **(typeof => permet de connaitre le type de contenu dans une variable)**.
+ 
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
