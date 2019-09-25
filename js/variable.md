@@ -7,6 +7,6 @@ Pour créer une variable en js => `let`.
 - **`message = "Antoine";` (mise en données avec l'opérateur d'affectation `=`)**.
 - **`alert(message);` (affiche le contenu de la variable)**.
 
-Ancienne version (mode "old school") => `var`.
+**Ancienne version (mode "old school") => `var`**.
 
-Pour déclarer une variable (non changeante = constantes) => `const`.
+**Pour déclarer une variable (non changeante = constantes) => `const`**.
