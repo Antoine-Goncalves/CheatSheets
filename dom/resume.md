@@ -48,3 +48,14 @@ Bon à savoir :
 Les événements `mouseover`/`out` déclenchent même lorsque nous passons de l'élément parent à un élément enfant. Le navigateur suppose que la souris ne peut survoler qu'un seul élément à la fois.
 
 Les événements `mouseenter`/`leave` sont différents comparé à `mouseenter`/`leave` : ils ne se déclenchent que lorsque la souris entre et sort de l'élément dans son ensemble. En outre, ils ne font pas `bubble`.
+
+## Événements basés sur le clavier :
+
+[:question: :question:](evenementClavier.md)
+
+* **`keydown` => en appuyant sur la touche (répétition automatique si la touche est enfoncée longtemps)**.
+* **`keyup` => lors du relâchement de la clé**.
+
+Propriétés de l'événement du clavier principal :
+* **`code` => "code clé", spécifique à l'emplacement physique de la touche sur le clavier**.
+* **`key` => caractère, pour les clés autres que des caractères, telle que `Esc`, a généralement la même valeur que `code`**.
