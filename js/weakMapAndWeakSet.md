@@ -3,7 +3,7 @@
 Comprendre la principale différence entre :
 
 1. `WeakMap` et `Map`.
-2. `WeakSet` `Set`.
+2. `WeakSet` et `Set`.
 
 ## `WeakMap` et `Map` :
 
