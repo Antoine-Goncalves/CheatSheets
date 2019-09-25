@@ -59,3 +59,17 @@ Les événements `mouseenter`/`leave` sont différents comparé à `mouseenter`/
 Propriétés de l'événement du clavier principal :
 * **`code` => "code clé", spécifique à l'emplacement physique de la touche sur le clavier**.
 * **`key` => caractère, pour les clés autres que des caractères, telle que `Esc`, a généralement la même valeur que `code`**.
+
+## Manipulation du formulaire :
+
+[:question: :question:](manipulationFormulaire.md)
+
+Navigation de formulaire:
+
+* **`document.forms` => Un formulaire est disponible sous la forme `document.forms[name/index]` **.
+* **`form.elements` => Les éléments de formulaire sont disponibles sous la forme `form.elements[name/index]` , ou simplement `form[name/index]`. La propriété `elements` fonctionne également pour `<fieldset>`**.
+* **`element.form` => Les éléments font référence à leur forme dans la propriété de `form`**. 
+
+La valeur est disponible en tant que `input.value` , `textarea.value` , `select.value` etc., ou `input.checked` pour les cases à cocher et les boutons radio.
+
+Pour `<select>` on peut également obtenir la valeur par l'index `select.selectedIndex` ou par la collection d'options `select.options`**.
