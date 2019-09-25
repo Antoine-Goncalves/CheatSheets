@@ -72,4 +72,4 @@ Navigation de formulaire:
 
 La valeur est disponible en tant que `input.value` , `textarea.value` , `select.value` etc., ou `input.checked` pour les cases à cocher et les boutons radio.
 
-Pour `<select>` on peut également obtenir la valeur par l'index `select.selectedIndex` ou par la collection d'options `select.options`**.
+Pour `<select>` on peut également obtenir la valeur par l'index `select.selectedIndex` ou par la collection d'options `select.options`.
