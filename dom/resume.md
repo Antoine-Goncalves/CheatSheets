@@ -66,7 +66,7 @@ Propriétés de l'événement du clavier principal :
 
 Navigation de formulaire:
 
-* **`document.forms` => Un formulaire est disponible sous la forme `document.forms[name/index]` **.
+* **`document.forms` => Un formulaire est disponible sous la forme `document.forms[name/index]`**.
 * **`form.elements` => Les éléments de formulaire sont disponibles sous la forme `form.elements[name/index]` , ou simplement `form[name/index]`. La propriété `elements` fonctionne également pour `<fieldset>`**.
 * **`element.form` => Les éléments font référence à leur forme dans la propriété de `form`**. 
 
