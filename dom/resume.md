@@ -73,7 +73,6 @@ Navigation de formulaire:
 La valeur est disponible en tant que `input.value` , `textarea.value` , `select.value` etc., ou `input.checked` pour les cases à cocher et les boutons radio.
 
 Pour `<select>` on peut également obtenir la valeur par l'index `select.selectedIndex` ou par la collection d'options `select.options`.
-<<<<<<< HEAD
 
 ## `focus` et `blur` :
 
@@ -86,5 +85,3 @@ Leurs spécialités sont:
 
 * **La plupart des éléments ne supportent pas le focus par défaut. Utilisez `tabindex` pour tout mettre en possibilité de `focus`**. 
 **L'élément ciblé actuel est disponible sous la forme `document.activeElement`**.
-=======
->>>>>>> 09b6b65f2359c8dd5e3a27abeb886b4a8c95a19e
