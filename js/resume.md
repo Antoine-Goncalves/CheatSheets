@@ -58,3 +58,14 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 * **Il est possible d'extraire des données de tableaux/ objets imbriqués, car le côté gauche doit avoir la même structure que le côté droit**.
 
+## `Recursion` et `stack` :
+
+[:question: :question:](recursionAndStack.md)
+
+* **`Recursion` => Terme de programmation qui signifie appeler une fonction à partir de lui-même. Les fonctions récursives peuvent être utilisées pour résoudre des tâches de manière élégante**.
+
+* **`recursion step` => Lorsqu'une fonction s'appelle elle-même. La base de la récursivité est constituée par les arguments de la fonction qui rendent la tâche si simple que la fonction ne fait plus d'appels**.
+
+* **Une structure de données définie de manière récursive => Structure de données qui peut être définie à l'aide de celle-ci**.
+
+* **Toute fonction récursive peut être réécrite en une fonction itérative. Et c'est parfois nécessaire pour optimiser les choses. Mais pour de nombreuses tâches, une solution récursive est assez rapide et plus facile à écrire et à supporter**. 
