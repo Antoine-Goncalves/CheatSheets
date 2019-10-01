@@ -42,5 +42,5 @@ var vm = new Vue({
 
 * **Résumé en photo :**
 
-![texte alt](https://fr.vuejs.org/images/lifecycle.png?_sw-precache=08977cd78e0c109c8847b27adb434909 "Résumé cycle de vie")
+![alt text](cycleVie.png "cycle de vie")
 
