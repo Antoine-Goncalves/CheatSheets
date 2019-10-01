@@ -78,6 +78,6 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 	- **Quand `...` est à la fin du paramètre de la fonction => c'est appeler `rest parameters` et rassemble le reste de la liste des arguments dans un tableau.**
 	- **Quand `...` se fait au début d'une appel de fonction ou similaire => c'est appeler `spread operator` et étend un tableau dans une liste.**
 * **`Rest parameters` => Utilisés pour créer des fonctions acceptant un nombre quelconque d'arguments.**
-* **`Spread operator => Utilisé pour passer un tableau à des fonctions nécessitant normalement une liste d'arguments.**
+* **`Spread operator` => Utilisé pour passer un tableau à des fonctions nécessitant normalement une liste d'arguments.**
 
 * **À deux, ils permettent de voyager facilement entre une liste et un tableau de paramètres.**
