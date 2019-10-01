@@ -75,8 +75,8 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 [:question: :question:](spreadOperatorAndRestParameters.md)
 
 * **Quand on voit `...` dans le code , 2 choix s'offrent à nous :**
-	1. **Quand `...` est à la fin du paramètre de la fonction => c'est appeler `rest parameters` et rassemble le reste de la liste des arguments dans un tableau.**
-	2. **Quand `...` se fait au début d'une appel de fonction ou similaire => c'est appeler `spread operator` et étend un tableau dans une liste.**
+	- **Quand `...` est à la fin du paramètre de la fonction => c'est appeler `rest parameters` et rassemble le reste de la liste des arguments dans un tableau.**
+	- **Quand `...` se fait au début d'une appel de fonction ou similaire => c'est appeler `spread operator` et étend un tableau dans une liste.**
 * **`Rest parameters` => Utilisés pour créer des fonctions acceptant un nombre quelconque d'arguments.**
 * **`Spread operator => Utilisé pour passer un tableau à des fonctions nécessitant normalement une liste d'arguments.**
 
