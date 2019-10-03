@@ -42,3 +42,7 @@ var vm = new Vue({
 * **Attributs spéciaux avec comme syntaxe : préfixe `v-`. Le travail d'une directive => appliquer réactivement des effets secondaires au DOM quand la valeur de son expression change**.
 
 * **Possibilité d'utiliser des abréviations pour les directives**.
+
+## Intérêt des `computed properties` :
+
+* **On doit utiliser les `propriétés calculées` pour toute logique complexe**.
