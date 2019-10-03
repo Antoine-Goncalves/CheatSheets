@@ -7,6 +7,6 @@
 - [js](js/resume.md)
 - [dom](dom/resume.md)
 - algo
-- [frameworks JS](frameworksJS/vue.md)
+- [frameworks JS](frameworksJS/resume.md)
 
 En cours d'évolution... :bowtie:
