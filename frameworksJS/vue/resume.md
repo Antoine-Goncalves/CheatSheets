@@ -20,4 +20,25 @@ var vm = new Vue({
 
 ## Fonctionnement et syntaxe de template :
 
-[:question: :question:](fonctionnementEtSyntaxeTemplate.md)
+[:question: :question:](syntaxeTemplate.md)
+
+### Interpolations :
+
+* **Syntaxe Interpolations (dit "Moustache") =>**
+
+```
+<span>Message: {{ msg }}</span>
+```
+
+* **La balise moustache sera remplacée par la valeur de la propriété `msg` de l'objet data correspondant. ELle sera mise à jour à chaque modification de la propriété `msg` de l'objet data**.
+
+* **Interpolations interprètent la donnée en texte brut, pas HTML**. *(Il faut utiliser la directive `v-html`)*
+
+* **Interpolations ne peuvent pas être utilisées à l'intérieur des attributs HTML, on utilise donc la directive `v-bind`**.
+
+
+### Directives :
+
+* **Attributs spéciaux avec comme syntaxe : préfixe `v-`. Le travail d'une directive => appliquer réactivement des effets secondaires au DOM quand la valeur de son expression change**.
+
+* **Possibilité d'utiliser des abréviations pour les directives**.
