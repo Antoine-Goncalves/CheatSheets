@@ -45,4 +45,6 @@ var vm = new Vue({
 
 ## Intérêt des `computed properties` :
 
+[:question: :question:](computedProperties.md)
+
 * **On doit utiliser les `propriétés calculées` pour toute logique complexe**.
