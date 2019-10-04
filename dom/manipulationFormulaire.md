@@ -15,7 +15,7 @@ Lorsqu'on as un formulaire, tout élément est disponible dans la collection nom
 
 Il peut y avoir plusieurs éléments qui ont le même nom, ce qui est souvent le cas avec les boutons `radio`.
 
-**Dans ce cas, `form.elements[name] est une collection**.
+**Dans ce cas, `form.elements[name]` est une collection**.
 
 **Notation plus courte => au lieu de `form.elements.login` --> `form.login`**.
 
