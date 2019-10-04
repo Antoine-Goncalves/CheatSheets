@@ -56,13 +56,13 @@ Pareil pour lier un gestionnaire d'évènement à un nom d'évènement dynamique
 
 *La valeur `eventName` est `"focus"`, par exemple, `v-on:[eventName]` sera équivalent à `v-on:focus`*.
 
-*Note: Contrainte des valeurs d'argument dynamique.
+*Note: Contrainte des valeurs d'argument dynamique*.
 
-Les arguments dynamiques sont destinés à être évalués comme des chaines de caractères à l'exception de `null`. Car elle peut être utilisée pour retirer la liaison*.
+*Les arguments dynamiques sont destinés à être évalués comme des chaines de caractères à l'exception de `null`. Car elle peut être utilisée pour retirer la liaison*.
 
-*Note: Contrainte des expressions d'argument dynamique.
+*Note: Contrainte des expressions d'argument dynamique*.
 
-Les expressions d'argument dynamique ont des contraintes de syntaxe car certains caractères sont invalides à l'intérieur d'un nom d'attribut HTML comme les espaces ou les guillemets. Du coup il faut utiliser des expressions sans espaces ni guillemets. Attention aussi avec l'écriture Camel Case dans les clés car les navigateurs convertissent les noms d'attribut en lettre minuscule*.
+*Les expressions d'argument dynamique ont des contraintes de syntaxe car certains caractères sont invalides à l'intérieur d'un nom d'attribut HTML comme les espaces ou les guillemets. Du coup il faut utiliser des expressions sans espaces ni guillemets. Attention aussi avec l'écriture Camel Case dans les clés car les navigateurs convertissent les noms d'attribut en lettre minuscule*.
 
 Les modificateurs sont **des suffixes spéciaux indiqués par un point, qui indique qu'une directive devrait être liée d'une manière spécifique**.
 
