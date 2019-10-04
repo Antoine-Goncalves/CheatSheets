@@ -14,7 +14,7 @@
 
 * **number => pour les nombres de toute sorte: entier ou virgule flottante**.
 * **string => pour les chaînes de caractères**.
-* **boolean => pour `true` / `false` **.
+* **boolean => pour **`true` / `false`.
 * **null => pour les valeurs inconnues**.
 * **undefined => pour les valeurs non attribuées**.
 * **object => pour des structures de données plus complexes**.
