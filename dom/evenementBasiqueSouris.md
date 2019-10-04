@@ -56,4 +56,4 @@ Ils sont `true` si ils correspondent à la touche enfoncée pendant l'événemen
 
 L'action par défaut du navifateur `mousedown` , si on double clic, est la séléction du texte. On peut alors l'empêcher.
 
-Pour l'empêcher, on utilise `onmousedown="return false`.
+Pour l'empêcher, on utilise `onmousedown="return false"`.
