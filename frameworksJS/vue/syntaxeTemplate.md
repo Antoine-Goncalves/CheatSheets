@@ -54,7 +54,7 @@ Pareil pour lier un gestionnaire d'évènement à un nom d'évènement dynamique
 <a v-on:[eventName]="doSomething"> ... </a>
 ```
 
-*La valeur `eventName` est `"focus"`, par exemple, `v-on:[eventName] sera équivalent à `v-on:focus`*.
+*La valeur `eventName` est `"focus"`, par exemple, `v-on:[eventName]` sera équivalent à `v-on:focus`*.
 
 *Note: Contrainte des valeurs d'argument dynamique.
 
