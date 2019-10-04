@@ -41,6 +41,6 @@ Les événements `focus` et `blur` ne font pas `bubble`.
 Deux moyens pour y remédier :
 
 1. **`focus` et `blur` ne font pas `bubble`, mais se propage à la phase de capture.**
-2. **Il y a des événements de `focusin` et de `focusout` => exactement les mêmes que ceux de `focus` et `blur` , mais ils font `bubble`.
+2. **Il y a des événements de `focusin` et de `focusout` => exactement les mêmes que ceux de `focus` et `blur` , mais ils font `bubble`**.
 
 *Note: Ils doit être assignés en utilisant `elem.addEventListener` , pas `on<event>`*.
