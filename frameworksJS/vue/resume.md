@@ -55,7 +55,7 @@ var vm = new Vue({
 
 [:question: :question:](liaisonsClassesEtStyles.md)
 
-* **`v-bind` utiliser avec `class` et `style` **.
+* **`v-bind` utiliser avec `class` et `style`**.
 
 ## Rendu conditionnel :
 
