@@ -61,4 +61,14 @@ var vm = new Vue({
 
 [:question: :question:](renduConditionnel.md)
 
+* **`v-if` => faire le rendu d'un bloc. Rendu du bloc effectué si l'expression de la directive retourne une valeur vrai**.
 
+* **`v-else` => sert comme une "structure sinon"**.
+
+* **`v-else-if` => sert comme une "structure sinon si"**.
+
+* **`v-show` => la différence est qu'un élément sera toujours restitué et restera dans le DOM**.
+
+### `v-if` vs `v-show` :
+
+* **`v-if` si la condition ne change probablement pas à l'exécution, `v-show` si on a besoin de permuter quelque chose très souvent**.
