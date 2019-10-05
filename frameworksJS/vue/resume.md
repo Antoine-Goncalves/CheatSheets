@@ -48,3 +48,17 @@ var vm = new Vue({
 [:question: :question:](computedProperties.md)
 
 * **On doit utiliser les `propriétés calculées` pour toute logique complexe**.
+
+* **On peut lier des données aux `computed properties` dans les templates comme une propriété normal**.
+
+## Liaisons de classes et de styles :
+
+[:question: :question:](liaisonsClassesEtStyles.md)
+
+* **`v-bind` utiliser avec `class` et `style` **.
+
+## Rendu conditionnel :
+
+[:question: :question:](renduConditionnel.md)
+
+
