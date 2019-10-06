@@ -72,3 +72,15 @@ var vm = new Vue({
 ### `v-if` vs `v-show` :
 
 * **`v-if` si la condition ne change probablement pas à l'exécution, `v-show` si on a besoin de permuter quelque chose très souvent**.
+
+## Rendu de liste :
+
+[:question: :question:](renduListe.md)
+
+### `v-for` tableau :
+
+* **`v-for` avec `in` => faire le rendu d'une liste d'éléments en se basant sur un tableau, supporte un second argument représentant l'index de l'élément courant (possibilité de `v-for` avec `of`)**.
+
+### `v-for` objet :
+
+* **`v-for` => même chose avec un argument optionnel supplémentaire représentant la clé de la propriété courante**.
