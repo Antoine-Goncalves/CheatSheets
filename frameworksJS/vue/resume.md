@@ -97,4 +97,16 @@ var vm = new Vue({
 
 * **Utiliser la directive `v-model` pour créer une liaison de données bidrectionnelle sur les champs de formulaire**.
 
+## Composants :
 
+[:question: :question:](composants.md)
+
+* **Les composants sont des instances de Vue réutilisables avec un nom, on peut utiliser ce composant en tant qu'élément personnalisé à l'intérieur d'une instance de Vue racine créée avec `new Vue`.**
+
+* **Ils acceptent les mêmes options que `new Vue`.**
+
+* **Les composants enregistrés globalement peuvent être utilisés dans le template de n'importe quelle instance racine de Vue (`new Vue`) créée après coup.**
+
+* **Un composant peut avoir autant de props que l'on souhaite et par défaut, n'importe quelle valuer peut être passée à une prop.**
+
+* **Tout composant doit avoir un unique élément racine.**
