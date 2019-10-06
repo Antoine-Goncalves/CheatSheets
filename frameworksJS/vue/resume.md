@@ -89,4 +89,4 @@ var vm = new Vue({
 
 [:question: :question:](gestionEvenements.md)
 
-* **Utiliser la directive `v-on` pour écouter les évènements du DOM.
+* **Utiliser la directive `v-on` pour écouter les évènements du DOM**.
