@@ -84,3 +84,9 @@ var vm = new Vue({
 ### `v-for` objet :
 
 * **`v-for` => même chose avec un argument optionnel supplémentaire représentant la clé de la propriété courante**.
+
+## Gestion des évènements :
+
+[:question: :question:](gestionEvenements.md)
+
+* **Utiliser la directive `v-on` pour écouter les évènements du DOM.
