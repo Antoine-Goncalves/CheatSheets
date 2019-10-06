@@ -90,3 +90,11 @@ var vm = new Vue({
 [:question: :question:](gestionEvenements.md)
 
 * **Utiliser la directive `v-on` pour écouter les évènements du DOM**.
+
+## Formulaire :
+
+[:question: :question:](formulaire.md)
+
+* **Utiliser la directive `v-model` pour créer une liaison de données bidrectionnelle sur les champs de formulaire**.
+
+
