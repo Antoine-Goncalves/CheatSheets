@@ -30,6 +30,20 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 * **String Conversion => `String(value)`**.
 * **Numeric Conversion => `Number(value)`**.
 * **Boolean Conversion => `Boolean(value)`**.
+
+## Operateurs :
+
+[:question: :question:](operateurs.md)
+
+* **Un operand est ce à quoi les opérateurs sont appliqués.**
+
+* **Un opérateur est unaire si il a un operand seule**.
+
+* **Un opérateur est binaire si il a 2 operand**.
+
+* **binary+ => concatener 2 chaînes**.
+
+* **unary+ => convertit les chaînes en nombres**.
  
 ## `WeakMap` et `WeakSet` :
 
