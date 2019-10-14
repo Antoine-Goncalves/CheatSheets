@@ -10,4 +10,4 @@
 - [frameworks JS](frameworksJS/resume.md)
 - [api](api/resume.md)
 
-En cours d'évolution... :bowtie:
+En cours d'évolution... :bowtie: :bowtie:
