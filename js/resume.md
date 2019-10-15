@@ -119,3 +119,12 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **Closure => Qui se souvient automatiquement de l'endroit où ils ont été créés à l'aide d'une propriété `[[Environment]]` cachée, et tous peuvent accéder aux variables externes. (Fonctions qui a accès a des variables externes)**
 - **Un environnement lexical est créé lors de l’exécution d’un bloc de code (exactement pareil qu'une fonction) et contient des variables locales au bloc.**
 - **Un environnement lexical est nettoyé et supprimé après l'exécution de la fonction ou du bout de code.**
+
+## Différence entre `let` et `var` :
+
+[:question: :question:](letVsVar.md)
+
+**Deux différences principales entre `var` et `let`(/`const`) :**
+
+- **Les variables `var` n'ont pas de portée de bloc, elles sont visibles au minimum au niveau de la fonction.**
+- **Les déclarations var sont traitées au démarrage de la fonction (démarrage du script pour les globals).**
