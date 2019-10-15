@@ -138,3 +138,18 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **On doit seulement stocker des valeurs dans l'objet global si elles sont réellement globales pour un projet. Et on garde la quantité de ces valeurs à un minimum.**
 - **Dans les navigateurs, à moins qu'on utilise des modules, les fonctions et variables globales déclarées avec `var` deviennent une propriété de l'objet global.**
 - **Pour que nos code soit à l'épreuve du temps et plus facile à comprendre, on doit accéder les propriétés de l'objet global directement, en utilisant `window.x`.**
+
+## L'objet Function, EFN :
+
+[:question: :question:](objetFunction.md)
+
+- **Les fonctions sont des objets.**
+
+- **On as couvert leurs propriétés :**
+
+* **`name` => le nom de la fonction. Habituellement tiré de la définition de la fonction, mais s'il n'en existe pas, JS essaie de le deviner à partir du contexte(par exemple, une affectation).**
+* **`length` => le nombre d'arguments dans la définition de la fonction. Les `rest parameters` ne sont pas comptés.**
+
+- **Si la fonction est déclarée en tant qu'expression de fonction et qu'elle porte `name`, elle est appelée expression de fonction nommée. Le nom peut être utilisé à l'intérieur pour se référencer, pour des appels récursifs ou autres.**
+
+- **Les fonctions peuvent avoir des propriétés supplémentaires. De nombreuses bibliothèques JS bien connues font bon usage de cette fonctionnalité.**
