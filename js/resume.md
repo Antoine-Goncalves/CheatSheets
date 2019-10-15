@@ -128,3 +128,13 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 
 - **Les variables `var` n'ont pas de portée de bloc, elles sont visibles au minimum au niveau de la fonction.**
 - **Les déclarations var sont traitées au démarrage de la fonction (démarrage du script pour les globals).**
+
+## Objet global :
+
+[:question: :question:](globalObject.md)
+
+- **L'objet global contient des variables qui devraient être disponibles partout.** _Ceci inclut les objets natifs de JS, tels que `Array` et des valeurs spécifiques à l'environnement, comme `window.innerHeight` - l'hauteur de la fenêtre dans le navigateur._
+- **L'objet global porte un nom universel `globalThis`.** _…Mais il est plus souvent appelé par des noms spécifiques à l’environnement de la vieille école, comme `window` (navigateur) et `global` (Node.js). Comme `globalThis` est une proposition récente._
+- **On doit seulement stocker des valeurs dans l'objet global si elles sont réellement globales pour un projet. Et on garde la quantité de ces valeurs à un minimum.**
+- **Dans les navigateurs, à moins qu'on utilise des modules, les fonctions et variables globales déclarées avec `var` deviennent une propriété de l'objet global.**
+- **Pour que nos code soit à l'épreuve du temps et plus facile à comprendre, on doit accéder les propriétés de l'objet global directement, en utilisant `window.x`.**
