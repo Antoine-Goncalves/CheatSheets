@@ -1,6 +1,6 @@
 # CheatSheets
 
-## Composé en 7 parties :
+## Composé en 8 parties :
 
 - html
 - css
@@ -9,5 +9,6 @@
 - algo
 - [frameworks JS](frameworksJS/resume.md)
 - [api](api/resume.md)
+- [nodejs](nodejs/resume.md)
 
 En cours d'évolution... :bowtie: :bowtie:
