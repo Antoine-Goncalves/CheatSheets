@@ -151,3 +151,13 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 * **`length` => le nombre d'arguments dans la définition de la fonction. Les `rest parameters` ne sont pas comptés.**
 
 - **Les fonctions peuvent avoir des propriétés supplémentaires. De nombreuses bibliothèques JS bien connues font bon usage de cette fonctionnalité.**
+
+## `setTimeout` et `setInterval` :
+
+[:question: :question:](setTimeoutAndSetInterval.md)
+
+- **Les méthodes `setInterval(func, delay, ...args)` et `setTimeout(func, delay, ...args)` permettent d'exécuter `func` respectivement périodiquement et une seule fois après `delay` millisecondes.**
+- **Pour annuler l'exécution, on doit appeler `clearInterval/clearTimeout` avec la valeur renvoyée par `setInterval/setTimeout`.**
+- **Les appels de `setTimeout` imbriqués sont une alternative plus flexible à `setInterval`, ils permettent de configurer le temps entre les exécution plus précisément.**
+- **L'ordonnancement à délai nul avec `setTimeout(func, 0)` (le même que `setTimeout(func)`) permet de planifier l'exécution "dès que possible, mais seulement une fois que le bloc de code courant a été exécuté".**
+- **Le navigateur limite le délai minimal pour cing appels imbriqués ou plus de `setTimeout` ou pour `setInterval` (après le 5ème appel) à 4ms. C'est pour des raisons historiques.**
