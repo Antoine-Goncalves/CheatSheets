@@ -16,8 +16,8 @@ _Node Package Manager_
 
 **Gestion des versions de façon ordonnée =>**
 
-- **~ mettre à jour les patchs.**
-- **^ mettre à jour les mineurs et les patchs.**
+- **`~` mettre à jour les patchs.**
+- **`^` mettre à jour les mineurs et les patchs.**
 
 - 0.1.0 (version départ) // taper à la main //
 - 1.0.0 (première version stable).
