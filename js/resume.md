@@ -45,6 +45,16 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 - **unary+ => convertit les chaînes en nombres**.
 
+## Comparaisons :
+
+(:question: :question:)(comparaison.md)
+
+- **Les opérateurs de comparaison renvoient une valeur logique.**
+- **Les chaînes de caractères sont comparées lettre par lettre dans l'ordre "dictionnaire"**.
+- **Lorsque des valeurs de différents types sont comparées, elles sont converties en nombres (à l'exclusion d'un contrôle d'égalité strict)**.
+- **Les valeurs `null` et `undefined` sont égales `==` et ne correspondent à aucune autre valeur**.
+- **Soyez prudent lorsqu'on utilse des comparaisons telle que > ou < avec des variables pouvant parfois être `null/undefined`. Faire une vérification séparée pour `null/undefined` est une bonne idée**.
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
