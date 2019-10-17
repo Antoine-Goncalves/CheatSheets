@@ -47,7 +47,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 ## Comparaisons :
 
-(:question: :question:)(comparaison.md)
+[:question: :question:](comparaison.md)
 
 - **Les opérateurs de comparaison renvoient une valeur logique.**
 - **Les chaînes de caractères sont comparées lettre par lettre dans l'ordre "dictionnaire"**.
