@@ -55,7 +55,15 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **Les valeurs `null` et `undefined` sont égales `==` et ne correspondent à aucune autre valeur**.
 - **Soyez prudent lorsqu'on utilse des comparaisons telle que > ou < avec des variables pouvant parfois être `null/undefined`. Faire une vérification séparée pour `null/undefined` est une bonne idée**.
 
-## `WeakMap` et `WeakSet` :
+## Interaction :
+
+[:question: :question:](interaction.md)
+
+- **`alert` => affiche un message**
+- **`prompt` => affiche un message demandant à l'utilisateur de saisir du texte. Il renvoie le texte ou, si on clique sur `Annuler` ou `Esc`, `null`.**
+- **`confirm` => affiche un message et attend que l'utilisateur appuie sur `OK` ou `Annuler`. Il renvoie `true` pour `OK` et `false` pour `Annuler` et `Esc`.**
+
+# `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
 
