@@ -1,6 +1,6 @@
 # CheatSheets
 
-## Composé en 9 parties :
+## **Composé en 9 parties** :
 
 - html
 - css
