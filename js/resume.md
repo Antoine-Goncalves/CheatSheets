@@ -179,3 +179,14 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **Les appels de `setTimeout` imbriqués sont une alternative plus flexible à `setInterval`, ils permettent de configurer le temps entre les exécution plus précisément.**
 - **L'ordonnancement à délai nul avec `setTimeout(func, 0)` (le même que `setTimeout(func)`) permet de planifier l'exécution "dès que possible, mais seulement une fois que le bloc de code courant a été exécuté".**
 - **Le navigateur limite le délai minimal pour cing appels imbriqués ou plus de `setTimeout` ou pour `setInterval` (après le 5ème appel) à 4ms. C'est pour des raisons historiques.**
+
+## Callbacks (rappel de fonction) :
+
+[:question: :question:](callbacks.md)
+
+- **Style de programmation asynchrone "callback-based" (basé sur le rappel). Une fonction qui fait quelque chose de manière asynchrone devrait fournir un argument de callback lequel on met à s'exécuter une fois terminée.**
+- **Pour régler les erreurs, on utilise le style "error-first callback" (erreur-premier rappel).**
+- **La convention est :**
+  1. **Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé**.
+  2. **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
+- **Si on as des imbrications de `callback`, cela se nomme "callback hell" (rappel de l'enfer) ou "pyramid of doom" (pyramide du malheur), il faut éviter cela en utilisant les "promises" (promesses)**.
