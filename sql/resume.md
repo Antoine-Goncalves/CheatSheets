@@ -133,3 +133,13 @@ REVOKE role_groupe FROM role1,...;
   - **Basées sur des paires clés-valeurs.**
   - **Schéma dynamique pour les données non structurées.**
   - **Évolutives horizontalement.**
+
+## Les types numériques :
+
+[:question: :question:](typesNumeriques.md)
+
+- **3 principaux =>**
+
+  - **`INT` => Entier signé sur 4 octets.**
+  - **`NUMERIC` => Nombre exact dont la précision peut être spécifiée.**
+  - **`SERIAL` => Entier sur 4 octets à incrémentation automatique.**
