@@ -53,6 +53,14 @@ CREATE USER nom_utilisateur;
 DROP USER nom_utilisateur;
 ```
 
-## Création de bases de données :
+## Création/Suppression de bases de données :
 
-[:question: :question:](creerbd.md)
+[:question: :question:](creerSuppDd.md)
+
+```
+CREATE DATABASE nom_db;
+```
+
+```
+DROP DATABASE nom_db;
+```
