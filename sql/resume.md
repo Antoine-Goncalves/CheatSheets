@@ -10,7 +10,7 @@
 - **Manipuler de la données**.
 - **Récupèrer de la données**.
 
-## SQL :
+## `SQL` :
 
 [:question: :qestion:](sql.md)
 
@@ -29,13 +29,13 @@ SELECT prénom FROM personne
   - **Colonne**
   - **Ligne**
 
-## PostgreSQL :
+## `PostgreSQL` :
 
 [:question: :question:](postgresql.md)
 
 - **C'est un système de gestion de base de données relationnelle-objet.**
 
-- **Pour ouvrir postgreSQL :**
+- **Pour ouvrir `postgreSQL` :**
 
 ```
 sudo -u postgres psql
@@ -63,4 +63,56 @@ CREATE DATABASE nom_db;
 
 ```
 DROP DATABASE nom_db;
+```
+
+## Rôles dans `PostgreSQL` :
+
+[:question: :question:](roles.md)
+
+```
+CREATE ROLE nom_utilisateur;
+```
+
+```
+DROP ROLE nom_utilisateur;
+```
+
+- **Il y a plusieurs attributs pour les rôles :**
+
+  - **droit de connexion =>**
+
+  ```
+  CREATE ROLE nom LOGIN;
+  CREATE USER nom;
+  ```
+
+  - **status de superutilisateur=>**
+
+  ```
+  CREATE ROLE nom SUPERUSER;
+  ```
+
+  - **création de bases de données =>**
+
+  ```
+  CREATE ROLE nom_utilisateur CREATEDB;
+  ```
+
+  - **création de rôle =>**
+
+  ```
+  CREATE ROLE nom CREATEROLE;
+  ```
+
+  - **mot de passe =>**
+
+  ```
+  CREATE ROLE nom_utilisateur PASSWORD 'mot_de_passe'
+  ```
+
+- **On peut lui ajouter et lui supprimer des membres en utilisant les commandes :**
+
+```
+GRANT role_groupe TO role1,...;
+REVOKE role_groupe FROM role1,...;
 ```
