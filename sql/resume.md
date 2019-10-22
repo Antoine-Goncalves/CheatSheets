@@ -12,7 +12,7 @@
 
 ## `SQL` :
 
-[:question: :qestion:](sql.md)
+[:question: :question:](sql.md)
 
 - **Structured Query Language.**
 - **Syntaxe :**
@@ -116,3 +116,20 @@ DROP ROLE nom_utilisateur;
 GRANT role_groupe TO role1,...;
 REVOKE role_groupe FROM role1,...;
 ```
+
+## Différence entre le `SQL` et le `NoSQL` :
+
+[:question: :question:](sqlVsNosql.md)
+
+- **`SQL` =>**
+
+  - **Bases de données relationnelle.**
+  - **Basées sur les tables.**
+  - **Schéma prédéfini.**
+  - **Évolutives verticalement.**
+
+- **`NoSQL` =>**
+  - **Bases de données non relationnelle.**
+  - **Basées sur des paires clés-valeurs.**
+  - **Schéma dynamique pour les données non structurées.**
+  - **Évolutives horizontalement.**
