@@ -163,3 +163,19 @@ REVOKE role_groupe FROM role1,...;
   - **`TIME` => Stocke les dates uniquement au format AAAA-MM-JJ.**
   - **`DATE` => Stocke les valeurs de l'heure du jour au format HH:MM:SS.**
   - **`TIMESTAMP` => Stocke les valeurs de date et d'heure.**
+
+## Autres :
+
+[:question: :question:](autres.md)
+
+- **3 valeurs =>**
+
+  - `true`. (vrai)
+  - `false`. (faux)
+  - `null`. (inconnu)
+
+- **Créer des types `ENUM` :**
+
+  ```
+  CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
+  ```
