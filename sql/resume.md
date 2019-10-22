@@ -153,3 +153,13 @@ REVOKE role_groupe FROM role1,...;
   - **`CHAR` => Longueur fixe, complété par des espaces.**
   - **`VARCHAR` => Longueur variable avec limite.**
   - **`TEXT` => Longueur variable illimitée.**
+
+## Les types dates :
+
+[:question: :question:](typesDates.md)
+
+- **3 types =>**
+
+  - **`TIME` => Stocke les dates uniquement au format AAAA-MM-JJ.**
+  - **`DATE` => Stocke les valeurs de l'heure du jour au format HH:MM:SS.**
+  - **`TIMESTAMP` => Stocke les valeurs de date et d'heure.**
