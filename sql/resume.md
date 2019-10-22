@@ -44,3 +44,15 @@ sudo -u postgres psql
 ## Création/Suppression de comptes utilisateurs :
 
 [:question: :question:](creerSupp.md)
+
+```
+CREATE USER nom_utilisateur;
+```
+
+```
+DROP USER nom_utilisateur;
+```
+
+## Création de bases de données :
+
+[:question: :question:](creerbd.md)
