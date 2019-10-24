@@ -179,3 +179,25 @@ REVOKE role_groupe FROM role1,...;
   ```
   CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
   ```
+
+## Restaurer une base de données :
+
+- **Restaurer une base de données =>**
+
+```
+\i chemin_du_fichier (aller dans le fichier puis faire pwd pour avoir le chemin)
+```
+
+- **Restaurer le schéma d'une base de donnée uniquement =>**
+
+```
+\d nom_du_fichier
+```
+
+- **Retrouver une ou plusieurs tables d'une base de données =>**
+
+```
+SELECT * FROM nom_du_fichier
+
+SELECT nom_colonne FROM nom_du_fichier
+```
