@@ -63,6 +63,10 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **`prompt` => affiche un message demandant à l'utilisateur de saisir du texte. Il renvoie le texte ou, si on clique sur `Annuler` ou `Esc`, `null`.**
 - **`confirm` => affiche un message et attend que l'utilisateur appuie sur `OK` ou `Annuler`. Il renvoie `true` pour `OK` et `false` pour `Annuler` et `Esc`.**
 
+## Opérateurs conditionnels : `if` et `?` :
+
+[:question: :question:](operateursConditionnels.md)
+
 # `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
