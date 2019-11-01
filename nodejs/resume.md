@@ -18,3 +18,13 @@
 [:question: :question:](repl.md)
 
 - **C'est un environnement qui permet d'exécuter du code (style shell).**
+
+## Routage d'Express :
+
+[:question: :question:](routageExpress.md)
+
+**Le routage consiste à déterminer comment une application répond à une demande client adressée à un point de terminaison particulier et une méthode de requête HTTP spécifique.**
+
+```
+app.METHOD(PATH, HANDLER)
+```
