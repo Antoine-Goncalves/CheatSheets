@@ -182,6 +182,8 @@ REVOKE role_groupe FROM role1,...;
 
 ## Restaurer une base de données :
 
+[:question: :question:](restaurerBaseDeDonnees.md)
+
 - **Restaurer une base de données =>**
 
 ```
@@ -200,4 +202,33 @@ REVOKE role_groupe FROM role1,...;
 SELECT * FROM nom_du_fichier
 
 SELECT nom_colonne FROM nom_du_fichier
+```
+
+## Agir sur une base de données :
+
+[:question: :question:](agirSurBaseDeDonnes.md)
+
+- **Retrouver une information d'une base de données =>**
+
+```
+SELECT nom_colonne FROM nom_table WHERE nom_colonne='valeur que l'on veut'
+```
+
+- **Trier les résultats d'une base de données =>**
+
+```
+SELECT * FROM nom_table ORDER BY nom_colonne (ASC ou DESC pour croissant ou décroissant)
+```
+
+- **Extraire les données distinctes =>**
+
+```
+SELECT DISTINCT nom_colonne
+FROM nom_table
+```
+
+- **Retrouver une information selon des conditions précises =>**
+
+```
+SELECT * FROM nom_table WHERE nom_colonne='valeur que l'on veut' (possibilité de rajouter AND et/ou OR suivi nom_colonne='valeur que l'on veut')
 ```
