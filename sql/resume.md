@@ -217,7 +217,7 @@ SELECT nom_colonne FROM nom_table WHERE nom_colonne='valeur que l'on veut'
 - **Trier les résultats d'une base de données =>**
 
 ```
-SELECT DISTINCT * FROM nom_table ORDER BY nom_colonne (ASC ou DESC pour croissant ou décroissant)
+SELECT DISTINCT nom_colonne FROM nom_table ORDER BY nom_colonne (ASC ou DESC pour croissant ou décroissant)
 ```
 
 - **Extraire les données distinctes =>**
