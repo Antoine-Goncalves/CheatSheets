@@ -263,3 +263,7 @@ let promise = new Promise(function(resolve, reject) {
 - **Si un gestionnaire .then (ou catch/finally, peu importe) renvoie une promesse, le reste de la chaîne attend jusqu’à ce qu’elle se règle. Quand cela se produit, son résultat (ou son erreur) est passé plus loin.**
 
 ![résumé chaînages promesses](resume-promesses.svg)
+
+## Gestion des erreurs avec des promesses :
+
+[:question: :question:](gestionErreursPromesses.md)
