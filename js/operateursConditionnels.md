@@ -1,4 +1,4 @@
-# Opérateurs conditionnels : `→f` et `?` :
+# Opérateurs conditionnels : `if` et `?` :
 
 # L'opérateur `if` :
 
@@ -84,3 +84,5 @@ let message = (age < 3) ? 'Coucou, bébé!' :
 
 alert( message );
 ```
+
+Le but de l'opérateur `?` est de retourner une valeur ou une autre en fonction de la condition. Il faut l'utiliser comme ça ! On utilise `if` quand on exécute différents branches de code.
