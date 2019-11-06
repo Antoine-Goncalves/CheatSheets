@@ -73,6 +73,10 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **La clause `else if` permet d'utiliser plusieurs variante de condition**.
 - **L'opérateur `?` permet d'assigner une variable en fonction d'une condition, il fait ceci simplement et plus rapide. Il est appelé `ternary` (ternaire), car l'opérateur a 3 opérandes. C'est actuellement le premier et le seul qui en possède autant**.
 
+## Fonctionnement opérateurs logiques :
+
+[:question: :question:](operateursLogiques.md)
+
 # `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
