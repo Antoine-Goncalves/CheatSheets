@@ -67,6 +67,12 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 [:question: :question:](operateursConditionnels.md)
 
+- **Le `if{...}` évalue une condition entre parenthèse et, si le résultat est `true`, il exécute un bloc de code**.
+- **L'opérateur `if {..}` évalue l'expression entre parenthèses et convertie le résultat en booléen**.
+- **L'opérateur `if` peut contenir des blocks `else` optionnel. Il s'éxecute si la condition est `false`**.
+- **La clause `else if` permet d'utiliser plusieurs variante de condition**.
+- **L'opérateur `?` permet d'assigner une variable en fonction d'une condition, il fait ceci simplement et plus rapide. Il est appelé `ternary` (ternaire), car l'opérateur a 3 opérandes. C'est actuellement le premier et le seul qui en possède autant**.
+
 # `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
