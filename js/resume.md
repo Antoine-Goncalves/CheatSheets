@@ -77,6 +77,11 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 [:question: :question:](operateursLogiques.md)
 
+- **3 opérateurs logiques => OR `||`, AND `&&` et NOT `!`**.
+- **OR `||` => recherche la première valeur VRAI**.
+- **AND `&&` => recherche la première valeur FAUSSE**.
+- **NOT `!` => retourne la valeur inverse en booléen**.
+
 # `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
