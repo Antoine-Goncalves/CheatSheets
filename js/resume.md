@@ -94,6 +94,27 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **Si on veut rien faire avec l’itération actuelle => directive `continue` nous permet de faire cela.**
 - **Un label => Seul moyen de `break/continue` pour échapper à l’imbrication et accéder en dehors de la boucle.**
 
+## `Switch` :
+
+[:question: :question:](switch.md)
+
+- **`switch` peut remplacer plusieurs `if`.**
+- **Syntaxe =>**
+
+```
+switch(x) {
+    case 'valeur1': // if (x === 'valeur1)
+        ...
+        break;
+    case 'valeur2': // if (x === 'valeur2)
+        ...
+        break;
+    ...
+    default:
+        break;
+}
+```
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
