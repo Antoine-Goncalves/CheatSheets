@@ -82,7 +82,19 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **AND `&&` => recherche la première valeur FAUSSE**.
 - **NOT `!` => retourne la valeur inverse en booléen**.
 
-# `WeakMap` et `WeakSet` :
+## Boucle `while` et `for` :
+
+[:question: :question:](boucle.md)
+
+- **3 types de boucles ?**
+- **`while` => La condition est vérifiée avant chaque itération.**
+- **`do..while` => La condition est vérifiée après chaque itération.**
+- **`for(début;condition;étape)` => La condition est vérifiée avant chaque itération, des paramètres supplémentaires sont disponibles.**
+- **Pour créer une boucle “infinie” => `while(true)`. Pour la stoppée => directive `break`.**
+- **Si on veut rien faire avec l’itération actuelle => directive `continue` nous permet de faire cela.**
+- **Un label => Seul moyen de `break/continue` pour échapper à l’imbrication et accéder en dehors de la boucle.**
+
+## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
 
