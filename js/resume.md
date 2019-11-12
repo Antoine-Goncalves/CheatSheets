@@ -115,6 +115,10 @@ switch(x) {
 }
 ```
 
+## Fonctionnement des fonctions :
+
+[:question: :question:](fonctionnementFonctions.md)
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
