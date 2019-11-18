@@ -77,3 +77,19 @@ Exemple: function sum(a,b) {
 }
 sum(1,2);   //3
 ```
+
+La directive `return` peut se placer n'importe où. Quand l'éxecution est atteint, la fonction stop, et la veleur retourne ce qu'il y a après `return`.
+
+## Nommée une fonction :
+
+Il faut être bref, aussi précis que possible et décrire ce qu'elle fait. Les fonctions qui commence par :
+
+- "show..." => montre quelque chose. `Exemple : showMessage`
+- "calc..." => calcule quelque chose. `Exemple : calcSum`
+- "get..." => retourne une valeur. `Exemple : getAge`
+- "create..." => créer quelque chose. `Exemple : createForm`
+- "check..." => vérifier quelque chose et retourner un booléen, etc.. `Exemple : checkPermission`
+
+## Fonctions == Commentaires :
+
+Fonctions doit être
