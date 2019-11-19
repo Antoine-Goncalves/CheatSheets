@@ -92,4 +92,14 @@ Il faut être bref, aussi précis que possible et décrire ce qu'elle fait. Les 
 
 ## Fonctions == Commentaires :
 
-Fonctions doit être
+Fonctions doit être courte et faire une chose. Si c'est gros, casser la fonction en petite fonction. Parfois, cette règle est dur, mais c'est la meilleure. Une fonction séparée est non seulement facile à tester à tester et à debug, c'est vraiment l'existence d'un bon commmentaire.
+
+## Expressions de fonction et fléche :
+
+En Javascript, une fonction n'est pas "une structure magique langage", mais un type de valeur spéciale.
+
+La syntaxe qu'on utilise avant est `Function Declaration`. Il y a une autre syntaxe pour créer une fonction : `Function Expression` _Note: `;` à la fin IMPORTANT._
+
+Ici, la fonction est créer et assigné à la variable explicité, comme une autre valeur. Peut importe comment est définit la fonction. La compréhension du code est que "on créer une fonction et on lui met une variable que l'on veut. Important de voir qu'on ne met pas les parenthèses.
+
+En Javascript, une fonction est une valeur. On peut copier une fonction dans une autre variable.
