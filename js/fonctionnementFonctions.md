@@ -103,3 +103,19 @@ La syntaxe qu'on utilise avant est `Function Declaration`. Il y a une autre synt
 Ici, la fonction est créer et assigné à la variable explicité, comme une autre valeur. Peut importe comment est définit la fonction. La compréhension du code est que "on créer une fonction et on lui met une variable que l'on veut. Important de voir qu'on ne met pas les parenthèses.
 
 En Javascript, une fonction est une valeur. On peut copier une fonction dans une autre variable.
+
+## Fonctions de rappel : (`callback functions`)
+
+````
+function ask (question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+function showOk () {
+    alert("You agreed.");
+}
+function showCancel() {
+    alert("You canceled the execution.");
+}
+ask ("Do you agree ?", showOk, showCancel);
+````
