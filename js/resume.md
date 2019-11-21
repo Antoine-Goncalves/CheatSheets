@@ -119,6 +119,24 @@ switch(x) {
 
 [:question: :question:](fonctionnementFonctions.md)
 
+- **Une déclaration de fonction ressemble à ceci:**
+
+```
+function nom(paramètres, séparés, par des, virgules) {
+  /* code */
+}
+```
+
+- **Les valeurs transmises à une fonction en tant que paramètres sont copiées dans ses variables locales.**
+- **Une fonction peut accéder à des variables externes. Mais cela ne fonctionne que de l’intérieur. Le code en dehors de la fonction ne voit pas ses variables locales.**
+- **Une fonction peut renvoyer une valeur. Si ce n’est pas le cas, le résultat est undefined.**
+
+_Note: Pour rendre le code propre => utiliser principalement des variables et des paramètres locaux._
+
+- **Un nom de fonction doit clairement décrire le rôle de la fonction. Il faut qu'il soit compréhensible directement, avoir ce qu'elle fait et ce qu'elle retourne.**
+- **Une fonction est une action, les noms de fonctions sont donc généralement verbaux.**
+- **Il existe de nombreux préfixe de fonctions bien connus, tel que `create...`, `show...`, `get...`, `check...` etc..**
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
