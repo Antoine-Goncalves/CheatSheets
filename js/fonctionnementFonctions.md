@@ -106,7 +106,7 @@ En Javascript, une fonction est une valeur. On peut copier une fonction dans une
 
 ## Fonctions de rappel : (`callback functions`)
 
-````
+```
 function ask (question, yes, no) {
     if (confirm(question)) yes()
     else no();
@@ -118,4 +118,6 @@ function showCancel() {
     alert("You canceled the execution.");
 }
 ask ("Do you agree ?", showOk, showCancel);
-````
+```
+
+Les arguments `showOk` et `showCancel` de `ask` sont appelés fonction de rappel.
