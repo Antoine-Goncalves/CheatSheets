@@ -137,6 +137,10 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 - **Une fonction est une action, les noms de fonctions sont donc généralement verbaux.**
 - **Il existe de nombreux préfixe de fonctions bien connus, tel que `create...`, `show...`, `get...`, `check...` etc..**
 
+## `Function Expression` et `Arrow Function` :
+
+[:question: :question:](functionExpressionAndArrowFunction.md)
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
