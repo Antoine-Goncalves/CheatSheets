@@ -141,6 +141,18 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 
 [:question: :question:](functionExpressionAndArrowFunction.md)
 
+- **Les fonctions sont des valeurs. Ils peuvent être attribués, copiés ou déclarés à n'importe quel endroit du code.**
+- **Si la fonction est déclarée comme une instruction distincte dans le flux de code principal, cela s'appelle une "déclaration de fonction".**
+- **Si la fonction est créée dans le cadre d'une expression, elle est appelée "expression de fonction".**
+- **Les déclarations de fonctions sont traitées avant l'exécution du bloc de code. Elles sont visibles partout dans le bloc.**
+- **Les expressions de fonction sont créées lorsque le flux d'exécution les atteint.**
+- **Dans la plupart des cas, lorsque nous devons déclarer une fonction, une fonction déclaration est préférable parce qu’elle est visible avant la déclaration elle-même. Cela nous donne plus de flexibilité dans l’organisation du code et il est généralement plus lisible.**
+- **Nous devrions donc utiliser une expression de fonction uniquement lorsqu’une déclaration de fonction n’est pas adaptée à la tâche.**
+- **Les fonctions fléchées sont pratiques pour les one-liners (action sur une ligne). Ils viennent sous deux formes :**
+
+1. **Sans accolades: (...args) => expression.**
+2. **Avec accolades: (...args) => { body } => les accolades permet d'écrire plusieurs instructions dans la fonction, mais on as besoin d'un `¶eturn` explicite pour retourner quelque chose.**
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
