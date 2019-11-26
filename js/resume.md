@@ -153,6 +153,10 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 1. **Sans accolades: (...args) => expression.**
 2. **Avec accolades: (...args) => { body } => les accolades permet d'écrire plusieurs instructions dans la fonction, mais on as besoin d'un `¶eturn` explicite pour retourner quelque chose.**
 
+## `Polyfills` et `Babel` :
+
+[:question: :question:](polyfillsAndBabel.md)
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
