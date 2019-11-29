@@ -1,6 +1,8 @@
 # Polyfills et leur utilité :
 
-Le langage JavaScript évolue constamment, de nouvelles propositions aux langages apparaissent régulièrement, ils sont analyser et, si elles sont considèrer louable, elles sont ajoutés à la liste ECMA262 et proposé dans la spécification. L'équipe dérierre JavaScript imagine leurs propres idées pour implémenté en premier. Ils décident d'implémenter des propositions d'idée vu avec des équipes et reporté des choses qui sont déjà dans la spécification, car moins intéressant ou juste difficile à faire.
+Le langage JavaScript évolue constamment, de nouvelles propositions aux langages apparaissent régulièrement, ils sont analyser et, si elles sont considèrer louable, elles sont ajoutés à la liste ECMA262 et proposé dans la spécification.
+
+L'équipe dérierre JavaScript imagine leurs propres idées pour implémenté en premier. Ils décident d'implémenter des propositions d'idée vu avec des équipes et reporté des choses qui sont déjà dans la spécification, car moins intéressant ou juste difficile à faire.
 
 Donc c'est assez commun par un moteur d'implémenter seulement la partie du standard. (la norme).
 
