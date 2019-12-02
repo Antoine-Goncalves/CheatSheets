@@ -157,6 +157,9 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 
 [:question: :question:](polyfillsAndBabel.md)
 
+- **Babel est un transpilateur. Il réecrit le code moderne JavaScript dans la norme précédente**.
+- **Le transpilateur réecrit le code, transforme la structure des syntaxes dans les anciennes**.
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
