@@ -19,3 +19,8 @@ Vient ensuite les polyfills :
 Les nouvelles fonctionnalités de langages permettent d'inclure des nouvelles fonctions et des constructions de syntaxe. **Le transpilateur réecrit le code, transforme la structure des syntaxes dans les anciennes**. Mais pour les nouvelles fonctions créer, on as beoin de les implémenter.
 
 Le Javascript est un langage hautement dynamique, les scripts peuvent ajouter/modifier n'importe quelles fonctions, donc il s'accorde au moderne standard. Un script qui met à jour/ajouter des nouvelles fonctions est appellés "polyfill". Il "comble le vide et ajoute des implémentations.
+
+Il y a 2 intéressant polyfills :
+
+- Core.js qui supporte beaucoup, permet d'inclure unique les fonctionnalités utile.
+- Polyfill.io, c'est un service qui fournit un script avec des polyfills, en fonction des fonctionnalités d'un langage moderne, un transpilateur et un polyfill sont nécessaire.
