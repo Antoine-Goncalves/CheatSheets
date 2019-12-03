@@ -160,6 +160,10 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 - **Babel est un transpilateur. Il réecrit le code moderne JavaScript dans la norme précédente**.
 - **Le transpilateur réecrit le code, transforme la structure des syntaxes dans les anciennes**.
 
+## Objet en JS :
+
+[:question: :question:](objet.md)
+
 ## `WeakMap` et `WeakSet` :
 
 [:question: :question:](weakMapAndWeakSet.md)
@@ -169,7 +173,7 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 - **Les deux ne prennent pas en charge les méthodes et propriétés qui font référence à toutes les clés ou à leur nombre. Seules les opérations individuelles sont autorisées**.
 - **`WeakMap` et `WeakSet` sont utilisés comme structures de données «secondaires» en plus du stockage d'objet «principal». Une fois que l'objet est supprimé de la mémoire principale, s'il est uniquement trouvé en tant que clé de `WeakMap` ou dans un `WeakSet` , il sera automatiquement nettoyé**.
 
-## Destructuration en js :
+## Destructuration en JS :
 
 [:question: :question:](destructuration.md)
 
