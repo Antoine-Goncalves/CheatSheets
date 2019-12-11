@@ -67,3 +67,21 @@ user.aime le foot = true;   //syntaxe d'erreur
 ```
 
 Car le `.` veut que la clé soit un identificateur de variable valide. *Pas d'espaces et autres limitations.* Les crochets sont la pour travailler avec les chaines.
+
+Exemple:
+
+```
+let user = {};
+
+// initialisation
+
+user["aime le foot"] = true;
+
+// récupère
+
+alert(user["aime le foot"]);    // true
+
+// supprime
+
+delete user["aime le foot"];
+```
