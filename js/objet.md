@@ -4,7 +4,7 @@ Pour rappel, il y a **7 types de données en JS**. 6 sont appellés _primitives_
 
 Un objet peut être **créer avec les acolades {...}** avec une liste optionnel de propriétés, **une propriété** est une **paire "clé: valeur"**, où _"clé" est une chaine de caractère (appellé aussi nom de propriété)_, et _"valeur" peut être n'importe quoi_. On peut imaginer un objet dans un tiroir avec plusieurs dossiers. Chaque morceau de données est stocké dans son fichier par une définition.
 
-Un objet vide _("tiroir vide")_
+**Un objet vide** : _("tiroir vide")_
 
 2 syntaxes possibles :
 
@@ -24,3 +24,46 @@ Une propriété a une clé (connu comme "name" ou "identifier") après les ":" e
 
 - La 1ère propriété est le nom "name" et la valeur "Antoine".
 - Le second est le nom "age" et la valeur 23.
+
+Le résultat de l'objet user peut-être imager par deux fichiers nommées "name" et "age".
+
+*On peut ajouter, retirer et lire les fichiers quand on veut.*
+
+Les propriétés de valeurs sont accessible en utilisant la notation `.`.
+
+```
+// obtenir les valeurs d'un objet
+
+alert(user.name);   // Antoine
+alert(user.age);    // 23
+```
+
+La valeur peut-être de n'importe quel type. On peut ajouter un booléen.
+
+```
+user.isAdmin = true;
+```
+
+On peut utiliser des propriétés de noms multiples, mais ils ne doivent pas être entre `""`.
+
+Exemple:
+
+```
+let user = {
+    name: "Antoine",
+    age: 23,
+    "aime le foot": true    // MOTS MULTIPLES ENTRE "", ❗️ ❗️
+};
+```
+
+La dernière propriété dans la liste peut finir avec une virgule, c'est appeler une **virgule "trainante" ou "suspendu"**. Cela rend plus facile pour ajouter/retirer/bouger autour des propriétés, car toutes les lignes se ressemblent.
+
+**Les crochets** :
+
+Pour les mots multiples, l'accès avec le `.` ne fonctionne pas.
+
+```
+user.aime le foot = true;   //syntaxe d'erreur
+```
+
+Car le `.` veut que la clé soit un identificateur de variable valide. *Pas d'espaces et autres limitations.* Les crochets sont la pour travailler avec les chaines.
