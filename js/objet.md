@@ -27,7 +27,7 @@ Une propriété a une clé (connu comme "name" ou "identifier") après les ":" e
 
 Le résultat de l'objet user peut-être imager par deux fichiers nommées "name" et "age".
 
-*On peut ajouter, retirer et lire les fichiers quand on veut.*
+_On peut ajouter, retirer et lire les fichiers quand on veut._
 
 Les propriétés de valeurs sont accessible en utilisant la notation `.`.
 
@@ -66,7 +66,7 @@ Pour les mots multiples, l'accès avec le `.` ne fonctionne pas.
 user.aime le foot = true;   //syntaxe d'erreur
 ```
 
-Car le `.` veut que la clé soit un identificateur de variable valide. *Pas d'espaces et autres limitations.* Les crochets sont la pour travailler avec les chaines.
+Car le `.` veut que la clé soit un identificateur de variable valide. _Pas d'espaces et autres limitations._ Les crochets sont la pour travailler avec les chaines.
 
 Exemple:
 
@@ -85,3 +85,16 @@ alert(user["aime le foot"]);    // true
 
 delete user["aime le foot"];
 ```
+
+Les crochets permet d'obtenir le nom de propriété à la suite de toute expression (contraireme,t à la chaîne litérale) comme les variables qui suit :
+
+```
+let key = "aime le foot";
+
+// pareil que user["aime le foot"] = true;
+user [key] = true;
+```
+
+Ici, la variable `key` peut être calculé en exécution ou dépendre de ce que l'utilisateur écrit. Grâce à ça, il permet d'accéder à la propriété. Cela donne beaucoup de flexibilité.
+
+_Note: La notation `.` ne peut pas être utilisé dans ce cas._
