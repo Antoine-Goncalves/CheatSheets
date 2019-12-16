@@ -118,9 +118,19 @@ alert(user[key]);   // Antoine (supposant qu'utilisateur entre comme nom Antoine
 
 let fruit = prompt("Quel fruit veux-tu acheter ?", "pomme");
 
-let bag = {
+let sac = {
     [fruit]: 5, // nom de la propriété est pris avec la variable fruit.
 };
 
-alert(bag.pomme);   // 5 (si fruit = "pomme")
+alert(sac.pomme);   // 5 (si fruit = "pomme")
+```
+
+Le sens de la propriété ajoutée est simple: [fruit] veut dire que le nom de propriété doit prendre la valeur qui vient de fruit. Donc, si un visiteur entre "pomme", sac devient {pomme: 5}.
+
+Possibilité d'utiliser des expressions complexe à l'intérieur de [].
+
+Exemple :
+
+```
+
 ```
