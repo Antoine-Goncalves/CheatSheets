@@ -140,3 +140,5 @@ let sac = {
 ```
 
 **[] plus puissant que `.`**. Il permet de prendre n'importe quelle nom de propriété et variables. Mais plus lourd à écrire.
+
+La plupart du temps, quand les noms de propriété sont connu et simple, le `.` est utilisé. Et si on utilise quelque chose plus complexe, donc on passe au []. **Une variable ne peut pas prendre "for", "let", "return". Par contre les propriétés d'objet, peuvent tout prendre sauf "**proto**".**
