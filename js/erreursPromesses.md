@@ -32,3 +32,5 @@ fetch('/article/promise-chaining/user.json')
   }))
   .catch(error => alert(error.message));
 ```
+
+Normalement, un tel `.catch` ne se déclenche pas du tout. Mais si l'une des promesses ci-dessus est rejeter (un problème de réseau ou un json invalide ou autre), alors il le rattrapera.
