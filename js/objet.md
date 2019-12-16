@@ -132,5 +132,11 @@ Possibilité d'utiliser des expressions complexe à l'intérieur de [].
 Exemple :
 
 ```
+let fruit = "pomme";
 
+let sac = {
+    [fruit + 'Computers']: 5    // sac.pommeComputers = 5.
+};
 ```
+
+**[] plus puissant que `.`**. Il permet de prendre n'importe quelle nom de propriété et variables. Mais plus lourd à écrire.
