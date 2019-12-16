@@ -364,3 +364,7 @@ let promise = new Promise(function(resolve, reject) {
 ## Gestion des erreurs avec des promesses :
 
 [:question: :question:](gestionErreursPromesses.md)
+
+## Erreurs Promesses :
+
+[:question: ❓](erreurPromesses.md)
