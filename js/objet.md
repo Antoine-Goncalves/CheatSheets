@@ -106,9 +106,21 @@ On peut utiliser les [] dans un objet literal. Ils sont appellés **propriété 
 Exemple :
 
 ```
-let key = prompt("About user", "name");
+# 1
+
+let key = prompt("À propos de l'utilisateur ?", "nom");
 
 // accèder à la variable
 
-alert(user[key]);   // Antoine (supposant que user entre comme name Antoine).
+alert(user[key]);   // Antoine (supposant qu'utilisateur entre comme nom Antoine).
+
+# 2
+
+let fruit = prompt("Quel fruit veux-tu acheter ?", "pomme");
+
+let bag = {
+    [fruit]: 5, // nom de la propriété est pris avec la variable fruit.
+};
+
+alert(bag.pomme);   // 5 (si fruit = "pomme")
 ```
