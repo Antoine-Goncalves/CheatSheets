@@ -98,3 +98,17 @@ user [key] = true;
 Ici, la variable `key` peut être calculé en exécution ou dépendre de ce que l'utilisateur écrit. Grâce à ça, il permet d'accéder à la propriété. Cela donne beaucoup de flexibilité.
 
 _Note: La notation `.` ne peut pas être utilisé dans ce cas._
+
+Propriété ajoutée :
+
+On peut utiliser les [] dans un objet literal. Ils sont appellés **propriété ajoutée**.
+
+Exemple :
+
+```
+let key = prompt("About user", "name");
+
+// accèder à la variable
+
+alert(user[key]);   // Antoine (supposant que user entre comme name Antoine).
+```
