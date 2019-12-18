@@ -34,3 +34,9 @@ fetch('/article/promise-chaining/user.json')
 ```
 
 Normalement, un tel `.catch` ne se déclenche pas du tout. Mais si l'une des promesses ci-dessus est rejeter (un problème de réseau ou un json invalide ou autre), alors il le rattrapera.
+
+## Implicite try .. catch :
+
+Le code d'un exécuteur de promesses et de gestionnaires de promesses est un " `try..catch` invisible" autour de lui. Si une exception se produit, elle est prise et traitée comme un rejet.
+
+Par exemple
