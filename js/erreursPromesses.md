@@ -39,4 +39,20 @@ Normalement, un tel `.catch` ne se déclenche pas du tout. Mais si l'une des pro
 
 Le code d'un exécuteur de promesses et de gestionnaires de promesses est un " `try..catch` invisible" autour de lui. Si une exception se produit, elle est prise et traitée comme un rejet.
 
-Par exemple
+Par exemple :
+
+```
+new Promise((resolve, reject) => {
+  throw new Error("Oups!");
+}).catch(alert); // Error: Oups!
+```
+
+… Fonctionne exactement de la même manière:
+
+```
+new Promise((resolve, reject) => {
+  reject(new Error("Oups!"));
+}).catch(alert); // Error: Oups
+```
+
+Le " `try..catch` invisible" autour de l'exécuteur attrape automatiquement l'erreur et la transforme en promesse rejetée.
