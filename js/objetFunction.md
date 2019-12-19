@@ -10,7 +10,7 @@ Les objets fonction contiennent quelques propriétés utilisables.
 
 Par exemple, le nom d'une fonction est accessible en tant que propriété `name` :
 
-```
+```javascript
 function sayHi () {
     alert( "Hi" );
 }
@@ -23,7 +23,7 @@ Il existe une autre propriété native, `length`, qui renvoie le nombre de param
 
 Par exemple :
 
-```
+```javascript
 function test(a,b,c) {
     // code
 }
@@ -46,7 +46,7 @@ On peut ajouter nos propres propriétés.
 
 On ajoute ici la propriété `counter` pour suivre le nombre total d'appels :
 
-```
+```javascript
 function sayHi() {
   alert("Hi");
 
@@ -65,7 +65,7 @@ alert( `Called ${sayHi.counter} times` ); // Appelée 2 fois
 
 Expression de fonction nommée, ou EFN, est un terme pour les expressions de fonction qui ont un nom.
 
-```
+```javascript
 let sayHi = function(who) {
   alert(`Hello, ${who}`);
 };
@@ -73,7 +73,7 @@ let sayHi = function(who) {
 
 Et on ajoute un nom à cela :
 
-```
+```javascript
 let sayHi = function func(who) {
   alert(`Hello, ${who}`);
 };
