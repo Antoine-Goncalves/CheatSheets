@@ -13,7 +13,7 @@ Un objet peut être **créer avec les acolades {...}** avec une liste optionnel 
 
 Litéral et propriétés : On peut **immédiatemment ajouter plusieurs propriétés dans {..} comme "clé:valeur"**.
 
-```
+```javascript
 let user = {                // un objet.
     name: "Antoine",        // clé name avec "Antoine".
     age: 23,                // clé age avec 23.
@@ -31,7 +31,7 @@ _On peut ajouter, retirer et lire les fichiers quand on veut._
 
 Les propriétés de valeurs sont accessible en utilisant la notation `.`.
 
-```
+```javascript
 // obtenir les valeurs d'un objet
 
 alert(user.name);   // Antoine
@@ -40,7 +40,7 @@ alert(user.age);    // 23
 
 La valeur peut-être de n'importe quel type. On peut ajouter un booléen.
 
-```
+```javascript
 user.isAdmin = true;
 ```
 
@@ -48,7 +48,7 @@ On peut utiliser des propriétés de noms multiples, mais ils ne doivent pas êt
 
 Exemple:
 
-```
+```javascript
 let user = {
     name: "Antoine",
     age: 23,
@@ -62,7 +62,7 @@ La dernière propriété dans la liste peut finir avec une virgule, c'est appele
 
 Pour les mots multiples, l'accès avec le `.` ne fonctionne pas.
 
-```
+```javascript
 user.aime le foot = true;   //syntaxe d'erreur
 ```
 
@@ -70,7 +70,7 @@ Car le `.` veut que la clé soit un identificateur de variable valide. _Pas d'es
 
 Exemple:
 
-```
+```javascript
 let user = {};
 
 // initialisation
@@ -88,7 +88,7 @@ delete user["aime le foot"];
 
 Les crochets permet d'obtenir le nom de propriété à la suite de toute expression (contraireme,t à la chaîne litérale) comme les variables qui suit :
 
-```
+```javascript
 let key = "aime le foot";
 
 // pareil que user["aime le foot"] = true;
@@ -105,7 +105,7 @@ On peut utiliser les [] dans un objet literal. Ils sont appellés **propriété 
 
 Exemple :
 
-```
+```javascript
 # 1
 
 let key = prompt("À propos de l'utilisateur ?", "nom");
@@ -131,7 +131,7 @@ Possibilité d'utiliser des expressions complexe à l'intérieur de [].
 
 Exemple :
 
-```
+```javascript
 let fruit = "pomme";
 
 let sac = {
