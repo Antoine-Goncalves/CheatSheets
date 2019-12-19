@@ -8,10 +8,9 @@ On connaît beaucoup d'opérateurs grâce à l'école (addition `+`, multiplicat
 
 - **Un operand est ce à quoi les opérateurs sont appliqués**.
 
-```
 Exemple:
-dans une multiplication (`5*2`) il y a 2 operand.
-```
+
+Dans une multiplication (`5*2`) il y a 2 operand.
 
 - **Un opérateur est unaire si il a un operand seule**.
 
