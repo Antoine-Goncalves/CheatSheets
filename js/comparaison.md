@@ -24,8 +24,8 @@ Pour booléen, True devient et False devient.
 
 l'égalité (`==`) as un problème. Il ne différencie pas 0 de false.
 
-```
-alert(0==false);    // true
+```javascript
+alert(0 == false); // true
 ```
 
 Cela s'applique car les operands de différents type sont convertis en nombre avec l'opérateur `==`. Une chaîne vide, comme false, devient 0.
