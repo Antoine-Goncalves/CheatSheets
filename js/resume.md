@@ -1,6 +1,6 @@
-# Javascript :
+# Javascript
 
-## Variables :
+## Variables
 
 [:question: :question:](variable.md)
 
@@ -8,7 +8,7 @@
 - **Ancienne version => `var`**.
 - **Variable non changeante => `const`**.
 
-## 7 Types de données :
+## 7 Types de données
 
 [:question: :question:](typesDeDonnees.md)
 
@@ -21,7 +21,7 @@
 - **symbol => d'identificateurs uniques**.
 - **(typeof => permet de connaitre le type de contenu dans une variable)**.
 
-## Conversion de types en JS :
+## Conversion de types en JS
 
 [:question: :question:](conversionDeTypes.md)
 
@@ -31,7 +31,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **Numeric Conversion => `Number(value)`**.
 - **Boolean Conversion => `Boolean(value)`**.
 
-## Operateurs :
+## Operateurs
 
 [:question: :question:](operateurs.md)
 
@@ -45,7 +45,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 
 - **unary+ => convertit les chaînes en nombres**.
 
-## Comparaisons :
+## Comparaisons
 
 [:question: :question:](comparaison.md)
 
@@ -55,7 +55,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **Les valeurs `null` et `undefined` sont égales `==` et ne correspondent à aucune autre valeur**.
 - **Soyez prudent lorsqu'on utilse des comparaisons telle que > ou < avec des variables pouvant parfois être `null/undefined`. Faire une vérification séparée pour `null/undefined` est une bonne idée**.
 
-## Interaction :
+## Interaction
 
 [:question: :question:](interaction.md)
 
@@ -63,7 +63,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **`prompt` => affiche un message demandant à l'utilisateur de saisir du texte. Il renvoie le texte ou, si on clique sur `Annuler` ou `Esc`, `null`.**
 - **`confirm` => affiche un message et attend que l'utilisateur appuie sur `OK` ou `Annuler`. Il renvoie `true` pour `OK` et `false` pour `Annuler` et `Esc`.**
 
-## Opérateurs conditionnels : `if` et `?` :
+## Opérateurs conditionnels : `if` et `?`
 
 [:question: :question:](operateursConditionnels.md)
 
@@ -73,7 +73,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **La clause `else if` permet d'utiliser plusieurs variante de condition**.
 - **L'opérateur `?` permet d'assigner une variable en fonction d'une condition, il fait ceci simplement et plus rapide. Il est appelé `ternary` (ternaire), car l'opérateur a 3 opérandes. C'est actuellement le premier et le seul qui en possède autant**.
 
-## Fonctionnement opérateurs logiques :
+## Fonctionnement opérateurs logiques
 
 [:question: :question:](operateursLogiques.md)
 
@@ -82,7 +82,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **AND `&&` => recherche la première valeur FAUSSE**.
 - **NOT `!` => retourne la valeur inverse en booléen**.
 
-## Boucle `while` et `for` :
+## Boucle `while` et `for`
 
 [:question: :question:](boucle.md)
 
@@ -94,7 +94,7 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 - **Si on veut rien faire avec l’itération actuelle => directive `continue` nous permet de faire cela.**
 - **Un label => Seul moyen de `break/continue` pour échapper à l’imbrication et accéder en dehors de la boucle.**
 
-## `Switch` :
+## `Switch`
 
 [:question: :question:](switch.md)
 
@@ -115,7 +115,7 @@ switch(x) {
 }
 ```
 
-## Fonctionnement des fonctions :
+## Fonctionnement des fonctions
 
 [:question: :question:](fonctionnementFonctions.md)
 
@@ -137,7 +137,7 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 - **Une fonction est une action, les noms de fonctions sont donc généralement verbaux.**
 - **Il existe de nombreux préfixe de fonctions bien connus, tel que `create...`, `show...`, `get...`, `check...` etc..**
 
-## `Function Expression` et `Arrow Function` :
+## `Function Expression` et `Arrow Function`
 
 [:question: :question:](functionExpressionAndArrowFunction.md)
 
@@ -153,18 +153,18 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 1. **Sans accolades: (...args) => expression.**
 2. **Avec accolades: (...args) => { body } => les accolades permet d'écrire plusieurs instructions dans la fonction, mais on as besoin d'un `¶eturn` explicite pour retourner quelque chose.**
 
-## `Polyfills` et `Babel` :
+## `Polyfills` et `Babel`
 
 [:question: :question:](polyfillsAndBabel.md)
 
 - **Babel est un transpilateur. Il réecrit le code moderne JavaScript dans la norme précédente**.
 - **Le transpilateur réecrit le code, transforme la structure des syntaxes dans les anciennes**.
 
-## Objet en JS :
+## Objet en JS
 
 [:question: :question:](objet.md)
 
-## `WeakMap` et `WeakSet` :
+## `WeakMap` et `WeakSet`
 
 [:question: :question:](weakMapAndWeakSet.md)
 
@@ -173,7 +173,7 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 - **Les deux ne prennent pas en charge les méthodes et propriétés qui font référence à toutes les clés ou à leur nombre. Seules les opérations individuelles sont autorisées**.
 - **`WeakMap` et `WeakSet` sont utilisés comme structures de données «secondaires» en plus du stockage d'objet «principal». Une fois que l'objet est supprimé de la mémoire principale, s'il est uniquement trouvé en tant que clé de `WeakMap` ou dans un `WeakSet` , il sera automatiquement nettoyé**.
 
-## Destructuration en JS :
+## Destructuration en JS
 
 [:question: :question:](destructuration.md)
 
@@ -191,7 +191,7 @@ _Le premier élément va à `element1` ; le second passe à `element2`, tout le 
 
 - **Il est possible d'extraire des données de tableaux/ objets imbriqués, car le côté gauche doit avoir la même structure que le côté droit**.
 
-## `Recursion` et `stack` :
+## `Recursion` et `stack`
 
 [:question: :question:](recursionAndStack.md)
 
@@ -203,7 +203,7 @@ _Le premier élément va à `element1` ; le second passe à `element2`, tout le 
 
 - **Toute fonction récursive peut être réécrite en une fonction itérative. Et c'est parfois nécessaire pour optimiser les choses. Mais pour de nombreuses tâches, une solution récursive est assez rapide et plus facile à écrire et à supporter**.
 
-## `Rest parameters` et `spread operator` :
+## `Rest parameters` et `spread operator`
 
 [:question: :question:](spreadOperatorAndRestParameters.md)
 
@@ -213,7 +213,7 @@ _Le premier élément va à `element1` ; le second passe à `element2`, tout le 
 
 - **À deux, ils permettent de voyager facilement entre une liste et un tableau de paramètres.**
 
-## Closure :
+## Closure
 
 [:question: :question:](closure.md)
 
@@ -239,7 +239,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **Un environnement lexical est créé lors de l’exécution d’un bloc de code (exactement pareil qu'une fonction) et contient des variables locales au bloc.**
 - **Un environnement lexical est nettoyé et supprimé après l'exécution de la fonction ou du bout de code.**
 
-## Différence entre `let` et `var` :
+## Différence entre `let` et `var`
 
 [:question: :question:](letVsVar.md)
 
@@ -248,7 +248,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **Les variables `var` n'ont pas de portée de bloc, elles sont visibles au minimum au niveau de la fonction.**
 - **Les déclarations var sont traitées au démarrage de la fonction (démarrage du script pour les globals).**
 
-## Objet global :
+## Objet global
 
 [:question: :question:](globalObject.md)
 
@@ -258,7 +258,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **Dans les navigateurs, à moins qu'on utilise des modules, les fonctions et variables globales déclarées avec `var` deviennent une propriété de l'objet global.**
 - **Pour que nos code soit à l'épreuve du temps et plus facile à comprendre, on doit accéder les propriétés de l'objet global directement, en utilisant `window.x`.**
 
-## L'objet Function, EFN :
+## L'objet Function, EFN
 
 [:question: :question:](objetFunction.md)
 
@@ -271,7 +271,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 
 - **Les fonctions peuvent avoir des propriétés supplémentaires. De nombreuses bibliothèques JS bien connues font bon usage de cette fonctionnalité.**
 
-## `setTimeout` et `setInterval` :
+## `setTimeout` et `setInterval`
 
 [:question: :question:](setTimeoutAndSetInterval.md)
 
@@ -281,7 +281,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 - **L'ordonnancement à délai nul avec `setTimeout(func, 0)` (le même que `setTimeout(func)`) permet de planifier l'exécution "dès que possible, mais seulement une fois que le bloc de code courant a été exécuté".**
 - **Le navigateur limite le délai minimal pour cing appels imbriqués ou plus de `setTimeout` ou pour `setInterval` (après le 5ème appel) à 4ms. C'est pour des raisons historiques.**
 
-## Callbacks (rappel de fonction) :
+## Callbacks (rappel de fonction)
 
 [:question: :question:](callbacks.md)
 
@@ -292,7 +292,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
   2. **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
 - **Si on as des imbrications de `callback`, cela se nomme "callback hell" (rappel de l'enfer) ou "pyramid of doom" (pyramide du malheur), il faut éviter cela en utilisant les "promises" (promesses)**.
 
-## Promesse :
+## Promesse
 
 [:question: :question:](promesses.md)
 
@@ -353,7 +353,7 @@ let promise = new Promise(function(resolve, reject) {
   | **Les promesses permettent de faire les choses dans l'ordre naturel. Tout d'abord, on exécute `loadScript(script)` , puis `.then` écrit quoi faire avec le résultat.** | **On doit avoir une fonction `callback` à disposition lorsqu'on appelle `loadScript(script, callback)`. En d'autres termes, on doit savoir quoi faire avec le résultat avant d'appeler `loadScript`.** |
   | **On peut faire appel à une promesse `.then` autant de fois qu'on souhaite. À chaque fois, on ajoute un "code consommateur", une nouvelle fonction, à la "promesse".** | **Il ne peut y avoir qu'un seul `callback`**.                                                                                                                                                          |
 
-## Promesses chaining :
+## Promesses chaining
 
 [:question: :question:](promessesChaining.md)
 
@@ -361,10 +361,10 @@ let promise = new Promise(function(resolve, reject) {
 
 ![résumé chaînages promesses](resume-promesses.svg)
 
-## Gestion des erreurs avec des promesses :
+## Gestion des erreurs avec des promesses
 
 [:question: :question:](gestionErreursPromesses.md)
 
-## Erreurs Promesses :
+## Erreurs Promesses
 
 [:question: ❓](erreurPromesses.md)
