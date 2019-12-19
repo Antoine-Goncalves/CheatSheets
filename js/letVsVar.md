@@ -8,7 +8,7 @@ Les variables , qui sont déclarées avec `var`, sont à l'échelle de la foncti
 
 Exemple :
 
-```
+```javascript
 if (true) {
   var test = true;
 }
@@ -18,7 +18,7 @@ alert(test); // true, car la variable vie après le if (comme on utilise `var`)
 
 Alors que `let` est visible qu'à l'intérieur du if.
 
-```
+```javascript
 if (true) {
   let test = true;
 }
@@ -30,7 +30,7 @@ La même chose pour les boucles , si on utilise `var` il nous renverra que la de
 
 Exemple:
 
-```
+```javascript
 for (var i = 0; i < 10; i++) {
   // ...
 }
@@ -40,7 +40,7 @@ alert(i); // 10, "i" est visible après la boucle, car c'est une variable global
 
 Si un bloc de code est à l'intérieur d'une fonction, `var` devient alors une variable au niveau de la fonction :
 
-```
+```javascript
 function sayHi() {
   if (true) {
     var phrase = "Hello";
@@ -61,7 +61,7 @@ Les déclarations `var` sont traitées quand la fonction démarre ( ou du script
 
 Exemple :
 
-```
+```javascript
 function sayHi() {
   alert(phrase);
 
