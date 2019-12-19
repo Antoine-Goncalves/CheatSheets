@@ -4,32 +4,35 @@ Les chaînes de promesse sont super pour la gestion des erreurs. Lorsqu'une prom
 
 Par exemple, dans le code ci-dessous, l'URL `fetch` est incorrecte (aucun site de ce type) et `.catch` gère l'erreur:
 
-```
-fetch('https://pas-serveur-connu.blabla') // rejetée
+```javascript
+fetch("https://pas-serveur-connu.blabla") // rejetée
   .then(response => response.json())
-  .catch(err => alert(err)) // TypeError: impossible d'aller chercher.
+  .catch(err => alert(err)); // TypeError: impossible d'aller chercher.
 ```
 
 Comme on peut le voir, le `.catch` ne doit pas être immédiat. Il peut apparaître après un ou plusieurs `.then`.
 
 Ou, peut-être, tout est ok, mais la réponse n'est pas valide en JSON. Le moyen le plus simple de détecter toutes les erreurs consiste à ajouter `.catch` à la fin de la chaîne :
 
-```
-fetch('/article/promise-chaining/user.json')
+```javascript
+fetch("/article/promise-chaining/user.json")
   .then(response => response.json())
   .then(user => fetch(`https://api.github.com/users/${user.name}`))
   .then(response => response.json())
-  .then(githubUser => new Promise((resolve, reject) => {
-    let img = document.createElement('img');
-    img.src = githubUser.avatar_url;
-    img.className = "promise-avatar-example";
-    document.body.append(img);
+  .then(
+    githubUser =>
+      new Promise((resolve, reject) => {
+        let img = document.createElement("img");
+        img.src = githubUser.avatar_url;
+        img.className = "promise-avatar-example";
+        document.body.append(img);
 
-    setTimeout(() => {
-      img.remove();
-      resolve(githubUser);
-    }, 3000);
-  }))
+        setTimeout(() => {
+          img.remove();
+          resolve(githubUser);
+        }, 3000);
+      })
+  )
   .catch(error => alert(error.message));
 ```
 
@@ -41,7 +44,7 @@ Le code d'un exécuteur de promesses et de gestionnaires de promesses est un " `
 
 Par exemple :
 
-```
+```javascript
 new Promise((resolve, reject) => {
   throw new Error("Oups!");
 }).catch(alert); // Error: Oups!
@@ -49,7 +52,7 @@ new Promise((resolve, reject) => {
 
 … Fonctionne exactement de la même manière:
 
-```
+```javascript
 new Promise((resolve, reject) => {
   reject(new Error("Oups!"));
 }).catch(alert); // Error: Oups
@@ -61,10 +64,12 @@ Cela se produit non seulement dans la fonction exécuteur, mais aussi dans ses g
 
 En voici un exemple:
 
-```
+```javascript
 new Promise((resolve, reject) => {
   resolve("ok");
-}).then((result) => {
-  throw new Error("Oups!"); // rejette la promesse
-}).catch(alert); // Error: Oups!
+})
+  .then(result => {
+    throw new Error("Oups!"); // rejette la promesse
+  })
+  .catch(alert); // Error: Oups!
 ```
