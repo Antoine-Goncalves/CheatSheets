@@ -4,7 +4,7 @@ Si variable global créer alors le changement dans une fonction se fait sur tout
 
 Exemple :
 
-```
+```javascript
 let name = "John";
 
 function sayHi() {
@@ -20,7 +20,7 @@ Si variable interne alors le changement ne s'affectue pas.
 
 Exemple :
 
-```
+```javascript
 function makeWorker() {
   let name = "Pete";
 
