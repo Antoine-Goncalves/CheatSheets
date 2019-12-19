@@ -6,9 +6,9 @@ Par exemple, on peut programmer plusieurs actions en utilisant `setTimeout`.
 
 On prend comme exemple la fonction `loadScript(src)`, qui charge un script avec la `src` donnée :
 
-```
+```javascript
 function loadScript(src) {
-  let script = document.createElement('script');
+  let script = document.createElement("script");
   script.src = src;
   document.head.append(script);
 }
@@ -18,9 +18,9 @@ On y voit qu'elle ajoute au document une nouvelle balise `<script src="">`, cré
 
 On peut donc utiliser cette fonction comme ceci :
 
-```
+```javascript
 // charge et exécute le script à l'endroit donné
-loadScript('/my/script.js');
+loadScript("/my/script.js");
 ```
 
 Le script est exécuté de manière _asynchrone_ car il commence à charger, mais s’exécute plus tard, lorsque la fonction est déjà terminée.
@@ -29,9 +29,9 @@ S'il existe un code sous `loadScript(...)`, il n'attend pas la fin du chargement
 
 Si on ajoute une fonction `callback` en tant que second argument de `loadScript` qui doit s'exécuter lors du chargement du script.
 
-```
+```javascript
 function loadScript(src, callback) {
-  let script = document.createElement('script');
+  let script = document.createElement("script");
   script.src = src;
 
   script.onload = () => callback(script);
@@ -42,7 +42,7 @@ function loadScript(src, callback) {
 
 Maintenant si on veut appeler de nouvelles fonctions à partir du script, on doit écrire cela dans un `callback` :
 
-```
+```javascript
 loadScript('/my/script.js', function() {
   // le callback se met en marche après que le script est chargé
   newFunction(); // donc maintenant cela fonctionne
@@ -54,18 +54,21 @@ L'idée est que le second argument est une fonction (généralement anonyme) qui
 
 Voici un exemple exécutable avec un script réel:
 
-```
+```javascript
 function loadScript(src, callback) {
-  let script = document.createElement('script');
+  let script = document.createElement("script");
   script.src = src;
   script.onload = () => callback(script);
   document.head.append(script);
 }
 
-loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', script => {
-  alert(`Cool, the ${script.src} is loaded`);
-  alert( _ ); // fonction déclarée dans le script chargé
-});
+loadScript(
+  "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js",
+  script => {
+    alert(`Cool, the ${script.src} is loaded`);
+    alert(_); // fonction déclarée dans le script chargé
+  }
+);
 ```
 
 C'est ce qu'on appelle un **style de programmation asynchrone "callback-based" (basé sur le rappel)**. Une fonction qui fait quelque chose de manière asynchrone devrait fournir un argument de `callback` lequel on met à s'exécuter une fois terminée.
@@ -78,15 +81,13 @@ On peut charger deux scripts de manière séquentielle : Le premier, puis le sec
 
 La solution logique serait de placer le second appel `loadScript` dans le `callback` :
 
-```
-loadScript('/my/script.js', function(script) {
-
+```javascript
+loadScript("/my/script.js", function(script) {
   alert(`Cool, the ${script.src} is loaded, let's load one more`);
 
-  loadScript('/my/script2.js', function(script) {
+  loadScript("/my/script2.js", function(script) {
     alert(`Cool, the second script is loaded`);
   });
-
 });
 ```
 
@@ -98,9 +99,9 @@ Ainsi, chaque nouvelle action est dans un rappel. C'est bien pour quelques actio
 
 On as pour l'instant pas pris en compte les erreurs. Mais si notre chargement du script échoue ? Nos `callback` doivent réagir à ça.
 
-```
+```javascript
 function loadScript(src, callback) {
-  let script = document.createElement('script');
+  let script = document.createElement("script");
   script.src = src;
 
   script.onload = () => callback(null, script);
@@ -112,8 +113,8 @@ function loadScript(src, callback) {
 
 C'est une version améliorée de `loadScript` qui permet de suivre les erreurs de chargement, il appelle `callback(null, script)` pour un chargement réussi et sinon le `callback(error)`.
 
-```
-loadScript('/my/script.js', function(error, script) {
+```javascript
+loadScript("/my/script.js", function(error, script) {
   if (error) {
     // gestion d'erreur
   } else {
@@ -135,28 +136,26 @@ La fonction de `callback` unique est donc utilisée à la fois pour signaler les
 
 On peut voir que cette méthode est bien pour 2 ou 3 appels imbriqués. Mais si il y a des plusieurs actions asynchrones qui se suit, cela devient problématique :
 
-```
-loadScript('1.js', function(error, script) {
-
+```javascript
+loadScript("1.js", function(error, script) {
   if (error) {
     handleError(error);
   } else {
     // ...
-    loadScript('2.js', function(error, script) {
+    loadScript("2.js", function(error, script) {
       if (error) {
         handleError(error);
       } else {
         // ...
-        loadScript('3.js', function(error, script) {
+        loadScript("3.js", function(error, script) {
           if (error) {
             handleError(error);
           } else {
             // ...continue après le chargement de tous les scripts
           }
         });
-
       }
-    })
+    });
   }
 });
 ```
@@ -167,15 +166,15 @@ La "pyramide" des appels imbriqués se développe vers la droite à chaque actio
 
 On peut donc atténuer le problème en faisant de chaque action une fonction autonome :
 
-```
-loadScript('1.js', step1);
+```javascript
+loadScript("1.js", step1);
 
 function step1(error, script) {
   if (error) {
     handleError(error);
   } else {
     // ...
-    loadScript('2.js', step2);
+    loadScript("2.js", step2);
   }
 }
 
@@ -184,7 +183,7 @@ function step2(error, script) {
     handleError(error);
   } else {
     // ...
-    loadScript('3.js', step3);
+    loadScript("3.js", step3);
   }
 }
 
@@ -194,7 +193,7 @@ function step3(error, script) {
   } else {
     // ...continue après le chargement de tous les scripts
   }
-};
+}
 ```
 
 Il n'y a plus d'imbrication maintenant. Cela fonctionne, mais le code ressemble pas à grand chose non plus. Il est difficile à lire également.
