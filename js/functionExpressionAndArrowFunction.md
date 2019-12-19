@@ -9,7 +9,7 @@ Principales différences entre déclaration et expression :
 
 Syntaxe :
 
-```
+```javascript
 function sum(a, b) {
     return a+b;
 }
@@ -19,7 +19,7 @@ function sum(a, b) {
 
 Syntaxe :
 
-```
+```javascript
 let sum = function(a, b) {
     return a+b;
 };
@@ -35,13 +35,13 @@ Il existe une autre syntaxe très simple et concise pour la création de fonctio
 
 Syntaxe:
 
-```
+```javascript
 let func = (arg1, arg2, ..., argN) => expression
 ```
 
 Même chose que la fonction expression mais plus concis.
 
-```
+```javascript
 let sum = (a,b) => a + b;
 ```
 
