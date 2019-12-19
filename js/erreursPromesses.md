@@ -60,3 +60,11 @@ Le " `try..catch` invisible" autour de l'exécuteur attrape automatiquement l'er
 Cela se produit non seulement dans la fonction exécuteur, mais aussi dans ses gestionnaires. Si nous utilisons `throw` à l’intérieur d’un gestionnaire `.then`, cela signifie une promesse rejetée, donc le contrôle saute au gestionnaire d’erreur le plus proche.
 
 En voici un exemple:
+
+```
+new Promise((resolve, reject) => {
+  resolve("ok");
+}).then((result) => {
+  throw new Error("Oups!"); // rejette la promesse
+}).catch(alert); // Error: Oups!
+```
