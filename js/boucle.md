@@ -4,10 +4,10 @@ On doit souvent répéter des actions, les boucles sont un moyen de répeter plu
 
 La boucle `while` => syntaxe :
 
-```
+```javascript
 while (condition) {
-    // code
-    // corps de boucle
+  // code
+  // corps de boucle
 }
 ```
 
@@ -19,9 +19,9 @@ Une simple exécution de la boucle body est appelée une itération.
 
 Syntaxe =>
 
-```
+```javascript
 do {
-    // loop body
+  // loop body
 } while (condition);
 ```
 
@@ -35,9 +35,9 @@ La boucle `for` est plus complexe, mais c'est aussi le plus courramment utilisé
 
 Syntaxe =>
 
-```
+```javascript
 for (begin; condition; step) {
-    // loop body
+  // loop body
 }
 ```
 
@@ -57,7 +57,7 @@ Un `label` est un identifiant avec `:` avant une boucle :
 
 Syntaxe =>
 
-```
+```javascript
 nomLabel: for(...){
 
 }
@@ -67,7 +67,7 @@ La déclaration `break <nomLabel>` dans la boucle en dessous se décompose:
 
 Exemple:
 
-```
+```javascript
 outer: for (let i=0; i<3; i++>) {
     for(let j=0; j<3; j++>) {
         let input = prompt(`Value (${i},${j}),'');
