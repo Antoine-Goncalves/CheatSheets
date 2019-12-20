@@ -44,10 +44,11 @@ Les informations sur le processus d'exécution d'une fonction en cours d'exécut
 Le contexte d'exécution est une structure de données interne qui contient les détails à propos de l'exécution d'une fonction. Un appel de fonction est associé à exactement un contexte d'exécution.
 
 Quand une fonction effectue un appel imbriqué, cela produit :
-* La fonction en cours est stopée.
-* Le contexte d'exécution est associé et mémorisé dans une structure de données spéciale appelée contexte d'exécution `stack` .
-* L'appel imbriqué est exécuté.
-* Après tout ça, l'ancien contexte d'exécution est extrait du `stack`, et la fonction externe est reprend la où on l'as arrêtée.
+
+*   La fonction en cours est stopée.
+*   Le contexte d'exécution est associé et mémorisé dans une structure de données spéciale appelée contexte d'exécution `stack` .
+*   L'appel imbriqué est exécuté.
+*   Après tout ça, l'ancien contexte d'exécution est extrait du `stack`, et la fonction externe est reprend la où on l'as arrêtée.
 
 **Toute récursion peut être réécrite sous forme de boucle. La variante de boucle peut généralement être rendue plus efficace**.
 
@@ -60,10 +61,12 @@ On peut facilement voir le principe: pour `object {..}` des sous-appels sont eff
 Une structure de données récursive (récursivité définie) est une structure qui se réplique en parties.
 
 **L'élément de liste chainée** est récursivement définie comme un objet avec :
-* `value`.
-* propriété `next` référençant le prochain *élément de la liste chainée* ou `null` si c'est la fin.
+
+*   `value`.
+*   propriété `next` référençant le prochain *élément de la liste chainée* ou `null` si c'est la fin.
 
 Les listes peuvent être améliorées:
-* On peut ajouter la propriété `prev` en plus de `next` pour référencer l'élément précédent, pour revenir facilement en arrière.
-* On peut également ajouter une variable nommée `tail` qui référence le dernier élément de la liste (et la mettre à jour lors de l'ajout/la suppression d'éléments de la fin).
-* La structure des données peut varier en fonction de nos besoins.
+
+*   On peut ajouter la propriété `prev` en plus de `next` pour référencer l'élément précédent, pour revenir facilement en arrière.
+*   On peut également ajouter une variable nommée `tail` qui référence le dernier élément de la liste (et la mettre à jour lors de l'ajout/la suppression d'éléments de la fin).
+*   La structure des données peut varier en fonction de nos besoins.
