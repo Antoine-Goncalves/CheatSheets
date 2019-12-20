@@ -92,8 +92,6 @@ et un autre pour l'index :
 
 Quand Vue met à jour une liste d'éléments rendus avec `v-for`, il utilise par défaut une stratégie de "modification localisée" (**in-place patch**). Si l'ordre des éléments d'un tableau dans `data` a changé, plutôt que de déplacer les éléments du DOM pour concorder avec le nouvel ordre des éléments. Vue va simplement modifier chaque élément déjà en place et s'assurer que cela reflète ce qui aurait dû être rendu à cet index en particulier. C'est un comportement similaire au `track-by="$index"` de la première version de Vue.
 
-
-
 Ce mode par défaut est performant, mais adapté seulement lorsque **le résultat du rendu de votre liste ne dépend pas de l’état d’un composant enfant ou de l’état temporaire du DOM (par ex. : les valeurs de champs d’un formulaire)**.
 
 Pour expliquer à Vue comment suivre l'identité de chaque noeud, afin que les éléments existants puissent être réutilisés et réordonnés, vous devez fournir un attribut unique `key` pour chaque élément:
