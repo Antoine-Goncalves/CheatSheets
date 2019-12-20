@@ -1,4 +1,4 @@
-# Liaisons sur les champs de formulaire :
+# Liaisons sur les champs de formulaire
 
 On peut utiliser la directive `v-model` pour créer une liaison de données bidirectionnelle sur les champs de formulaire (input, selec ou textarea). Elle choisira automatiquement la bonne manière de mettre à jour l'élément en fonction du type de champ. Bien qu'un peu magique, `v-model` est essentiellement du sucre syntaxique pour mettre à jour les données lors des évènements de saisie utilisateur sur les champs, ainsi que quelques traitements spéciaux pour certains cas particuliers.
 
@@ -10,14 +10,14 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 * **Les éléments `checkboxes` et `radiobuttons` utilisent la propriété `checked` et l'évènement `change`**;
 * **Les évènements `select` utilisent `value` comme une propriété et `change` comme un évènement**.
 
-## Texte :
+## Texte
 
 ```
 <input v-model="message" placeholder="modifiez-moi">
 <p>Le message est : {{ message }}</p>
 ```
 
-## Texte multiligne :
+## Texte multiligne
 
 ```
 <span>Le message multiligne est :</span>
@@ -26,14 +26,14 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 <textarea v-model="message" placeholder="ajoutez plusieurs lignes"></textarea>
 ```
 
-## Checkbox :
+## Checkbox
 
 ```
 <input type="checkbox" id="checkbox" v-model="checked">
 <label for="checkbox">{{ checked }}</label>
 ```
 
-## Radio :
+## Radio
 
 ```
 <input type="radio" id="one" value="Un" v-model="picked">
@@ -45,7 +45,7 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 <span>Choisi : {{ picked }}</span>
 ```
 
-## Select :
+## Select
 
 ```
 <select v-model="selected">
@@ -87,7 +87,7 @@ new Vue({
 })
 ```
 
-## Liaisons des attributs value :
+## Liaisons des attributs value
 
 Pour les boutons radio, les cases à cocher et les listes d'options, les valeurs de liaison de `v-model` sont habituellement des chaînes de caractères statiques (ou des booléens pour une case à cocher) :
 
@@ -106,7 +106,7 @@ Pour les boutons radio, les cases à cocher et les listes d'options, les valeurs
 
 Mais parfois on peut souhaiter lier la valeur à une propriété dynamique de l’instance de Vue. On peut réaliser cela en utilisant `v-bind`. De plus, utiliser `v-bind` nous permet de lier la valeur de l’input à des valeurs qui ne sont pas des chaines de caractères.
 
-## Modificateurs :
+## Modificateurs
 
 * `.lazy` :
 
