@@ -1,8 +1,8 @@
-# `let` vs `var` :
+# `let` vs `var`
 
 `let` et `const` se comporte de la même manière en terme d'environnements lexicaux.
 
-## `var` n'as pas de portée de bloc :
+## `var` n'as pas de portée de bloc
 
 Les variables , qui sont déclarées avec `var`, sont à l'échelle de la fonction ou globales. Elles sont visibles partout où l'on se trouve.
 
@@ -53,7 +53,7 @@ sayHi();
 alert(phrase); // Erreur: phrase n'est pas définie
 ```
 
-## Les déclarations `var` sont traitées au début de la fonction :
+## Les déclarations `var` sont traitées au début de la fonction
 
 Les déclarations `var` sont traitées quand la fonction démarre ( ou du script pour le global)
 
