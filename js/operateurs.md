@@ -6,15 +6,15 @@ On connaît beaucoup d'opérateurs grâce à l'école (addition `+`, multiplicat
 
 **Différence entre `unary`,`binary` et `operand`**.
 
-- **Un operand est ce à quoi les opérateurs sont appliqués**.
+-   **Un operand est ce à quoi les opérateurs sont appliqués**.
 
 Exemple:
 
 Dans une multiplication (`5*2`) il y a 2 operand.
 
-- **Un opérateur est unaire si il a un operand seule**.
+-   **Un opérateur est unaire si il a un operand seule**.
 
-- **Un opérateur est binaire si il a 2 operand**.
+-   **Un opérateur est binaire si il a 2 operand**.
 
 ## Concatenation :
 
@@ -45,13 +45,13 @@ Les parenthèses dominent tout.
 
 Il y a des opérateurs spéciaux :
 
-- incrémentation `++` incrémente une variable de 1.
-- décrémentation `--` décrémente une variable de 1.
+-   incrémentation `++` incrémente une variable de 1.
+-   décrémentation `--` décrémente une variable de 1.
 
 Les opérateurs `++` et `--` peuvent être placés avant ou après une variable :
 
-- si avant, on parle de la forme préfix.
-- si après, on parle de la forme postfix.
+-   si avant, on parle de la forme préfix.
+-   si après, on parle de la forme postfix.
 
 *Note: La forme préfix retourne la nouvelle valeur tandis que la forme postfix retourne l'ancienne valeur.*
 
@@ -59,13 +59,13 @@ Les opérateurs `++` et `--` peuvent être placés avant ou après une variable 
 
 la liste des opérateurs :
 
-- AND (`&`)
-- OR (`|`)
-- XOR (`^`)
-- NOT (`~`)
-- LEFT SHIFT (`<<`)
-- RIGHT SHIFT (`>>`)
-- ZERO-FILL RIGHT SHIFT (`>>>`)
+-   AND (`&`)
+-   OR (`|`)
+-   XOR (`^`)
+-   NOT (`~`)
+-   LEFT SHIFT (`<<`)
+-   RIGHT SHIFT (`>>`)
+-   ZERO-FILL RIGHT SHIFT (`>>>`)
 
 ## Modify-in-place :
 
