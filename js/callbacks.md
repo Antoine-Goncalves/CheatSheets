@@ -1,4 +1,4 @@
-# Callbacks :
+# Callbacks
 
 Plusieurs actions en JavaScript sont _asynchrones_. C'est-à-dire, on l'initie à un temps T, mais ils se finissent plus tard.
 
@@ -75,7 +75,7 @@ C'est ce qu'on appelle un **style de programmation asynchrone "callback-based" (
 
 On as pris un exemple avec `loadScript`, mais bien sur, c'est une approche général.
 
-## Callback dans callback :
+## Callback dans callback
 
 On peut charger deux scripts de manière séquentielle : Le premier, puis le second après.
 
@@ -95,7 +95,7 @@ Une fois le `loadScript` externe terminé, le `callback` initie celui interne. D
 
 Ainsi, chaque nouvelle action est dans un rappel. C'est bien pour quelques actions, mais pas bien pour beaucoup.
 
-## Gestion des erreurs :
+## Gestion des erreurs
 
 On as pour l'instant pas pris en compte les erreurs. Mais si notre chargement du script échoue ? Nos `callback` doivent réagir à ça.
 
@@ -132,7 +132,7 @@ La convention est :
 
 La fonction de `callback` unique est donc utilisée à la fois pour signaler les erreurs et renvoyer les résultats.
 
-## Pyramide du malheur :
+## Pyramide du malheur
 
 On peut voir que cette méthode est bien pour 2 ou 3 appels imbriqués. Mais si il y a des plusieurs actions asynchrones qui se suit, cela devient problématique :
 
