@@ -1,6 +1,6 @@
-# Vue JS :
+# Vue JS
 
-## Instance vue :
+## Instance vue
 
 [:question: :question:](instanceVue.md)
 
@@ -18,11 +18,11 @@ var vm = new Vue({
 
 * **Les propriétés et méthodes sont préfixées par `$`.**
 
-## Fonctionnement et syntaxe de template :
+## Fonctionnement et syntaxe de template
 
 [:question: :question:](syntaxeTemplate.md)
 
-### Interpolations :
+### Interpolations
 
 * **Syntaxe Interpolations (dit "Moustache") =>**
 
@@ -37,13 +37,13 @@ var vm = new Vue({
 * **Interpolations ne peuvent pas être utilisées à l'intérieur des attributs HTML, on utilise donc la directive `v-bind`**.
 
 
-### Directives :
+### Directives
 
 * **Attributs spéciaux avec comme syntaxe : préfixe `v-`. Le travail d'une directive => appliquer réactivement des effets secondaires au DOM quand la valeur de son expression change**.
 
 * **Possibilité d'utiliser des abréviations pour les directives**.
 
-## Intérêt des `computed properties` :
+## Intérêt des `computed properties`
 
 [:question: :question:](computedProperties.md)
 
@@ -51,13 +51,13 @@ var vm = new Vue({
 
 * **On peut lier des données aux `computed properties` dans les templates comme une propriété normal**.
 
-## Liaisons de classes et de styles :
+## Liaisons de classes et de styles
 
 [:question: :question:](liaisonsClassesEtStyles.md)
 
 * **`v-bind` utiliser avec `class` et `style`**.
 
-## Rendu conditionnel :
+## Rendu conditionnel
 
 [:question: :question:](renduConditionnel.md)
 
@@ -69,35 +69,35 @@ var vm = new Vue({
 
 * **`v-show` => la différence est qu'un élément sera toujours restitué et restera dans le DOM**.
 
-### `v-if` vs `v-show` :
+### `v-if` vs `v-show`
 
 * **`v-if` si la condition ne change probablement pas à l'exécution, `v-show` si on a besoin de permuter quelque chose très souvent**.
 
-## Rendu de liste :
+## Rendu de liste
 
 [:question: :question:](renduListe.md)
 
-### `v-for` tableau :
+### `v-for` tableau
 
 * **`v-for` avec `in` => faire le rendu d'une liste d'éléments en se basant sur un tableau, supporte un second argument représentant l'index de l'élément courant (possibilité de `v-for` avec `of`)**.
 
-### `v-for` objet :
+### `v-for` objet
 
 * **`v-for` => même chose avec un argument optionnel supplémentaire représentant la clé de la propriété courante**.
 
-## Gestion des évènements :
+## Gestion des évènements
 
 [:question: :question:](gestionEvenements.md)
 
 * **Utiliser la directive `v-on` pour écouter les évènements du DOM**.
 
-## Formulaire :
+## Formulaire
 
 [:question: :question:](formulaire.md)
 
 * **Utiliser la directive `v-model` pour créer une liaison de données bidrectionnelle sur les champs de formulaire**.
 
-## Composants :
+## Composants
 
 [:question: :question:](composants.md)
 
