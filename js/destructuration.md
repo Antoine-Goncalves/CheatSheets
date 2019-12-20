@@ -1,4 +1,4 @@
-# La destructuration en Javascript :
+# La destructuration en Javascript
 
 Les 2 structures de données les plus utilisées en js sont `Object` et `Array`.
 
@@ -8,7 +8,7 @@ Les 2 structures de données les plus utilisées en js sont `Object` et `Array`.
 
 _La destructuration fonctionne bien avec les fonctions complexes qui ont beaucoup de paramètres, des valeurs par défaut, et plein d'autres._
 
-## Destructuration d'un `array` :
+## Destructuration d'un `array`
 
 Exemple:
 
@@ -35,7 +35,7 @@ alert(prenom); // Antoine car pris dans le tableau qu'on traite.
 alert(nom); // Anonyme (valeur par défaut).
 ```
 
-## Destructuration d'un `Object` :
+## Destructuration d'un `Object`
 
 Elle fonctionne aussi avec les objets. La syntaxe de base est : `let {var1, var2} = {var1:..., var2...}`
 
@@ -71,11 +71,11 @@ alert(h); // 200.
 
 Pour mettre en défaut , même chose que `array`, utiliser `=`.
 
-## Destructuration imbriquée :
+## Destructuration imbriquée
 
 Si un `object` ou `array` contient d'autres objets ou tableaux imbriqués, on peut également faire le même principe qu'avant.
 
-## Paramètres de la fonction intelligente :
+## Paramètres de la fonction intelligente
 
 Il arrive parfois qu'une fonction comporte de nombreux paramètres, dont la plupart sont facultatifs.
 
