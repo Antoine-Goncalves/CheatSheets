@@ -1,4 +1,4 @@
-# `recursion` et `stack` :
+# `recursion` et `stack`
 
 **Recursion** est un programme de modélisation utile dans des situations où une tâche peut être naturellement divisée en plusieurs tâches du même type, mais plus simple.
 
@@ -6,7 +6,7 @@ Où quand une tâche peut-être simplifiée en une action facile plus une varian
 
 Quand une fonction résoud une tâche, dans un processus il peut appeler plusieurs fonctions. Un cas concret est quand une fonction s'appelle elle-même. Cela s'appelle `recursion`.
 
-## 2 manières de penser :
+## 2 manières de penser
 
 1. Pensée itérative : la boucle `for`.
 
@@ -37,7 +37,7 @@ function pow(x, n) {
 }
 ```
 
-## Le contexte d'exécution et `stack` :
+## Le contexte d'exécution et `stack`
 
 Les informations sur le processus d'exécution d'une fonction en cours d'exécution sont stockées dans son contexte d'exécution.
 
@@ -51,11 +51,11 @@ Quand une fonction effectue un appel imbriqué, cela produit :
 
 **Toute récursion peut être réécrite sous forme de boucle. La variante de boucle peut généralement être rendue plus efficace**.
 
-## Traversées récursive :
+## Traversées récursive
 
 On peut facilement voir le principe: pour `object {..}` des sous-appels sont effectués, alors que `array [..]` sont les "feuilles" de l'arbre de récurrence, ils donnent un résultat immédiat.
 
-## Structures récursive :
+## Structures récursive
 
 Une structure de données récursive (récursivité définie) est une structure qui se réplique en parties.
 
