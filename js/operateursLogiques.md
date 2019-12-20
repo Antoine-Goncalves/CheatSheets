@@ -29,9 +29,9 @@ La plupart du temps, OR est utilisé dans une déclaration `if` pour tester si l
 
 L'opérateur OR fait les choses suivantes :
 
-- Évalue les operands de gauche à droite.
-- Pour chaque operands, il le converti en booléen. Si le résultat est `true`, on stop et on retourne la valeur originale de l'operand.
-- Si tout les operands ont été évaluée (c'est-à-dire tous `false`), il retourne le dernier operand.
+-   Évalue les operands de gauche à droite.
+-   Pour chaque operands, il le converti en booléen. Si le résultat est `true`, on stop et on retourne la valeur originale de l'operand.
+-   Si tout les operands ont été évaluée (c'est-à-dire tous `false`), il retourne le dernier operand.
 
 En d'autre terme, une chaîne de OR retourne la première valeur vrai ou la dernière si aucune valeur vrai est trouvée.
 
@@ -56,8 +56,8 @@ _Note: :heavy_exclamation_mark: Précédence AND est plus haute que OR. :heavy_e
 
 L'opérateur accepte un argument simple et fait ce qui suit :
 
-- Convertit l'operand en booléen : `true`/`false`.
-- Retourne la valeur inverse.
+-   Convertit l'operand en booléen : `true`/`false`.
+-   Retourne la valeur inverse.
 
 Le double NOT `!!` est parfois utilisé pour convertir une valeur en booléen. (ce qui vient à faire `Boolean(valeur)`).
 
