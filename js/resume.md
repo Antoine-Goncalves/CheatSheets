@@ -311,7 +311,7 @@ let promise = new Promise(function(resolve, reject) {
   1. **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
   2. **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
 
-- **2 propriétés internes :**
+-   **2 propriétés internes :**
 
   1. **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
   2. **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
@@ -320,7 +320,7 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **3 méthodes sont utilisées :**
 
-  - **`.then` =>**
+  -   **`.then` =>**
 
   ```
   promise.then(
@@ -329,18 +329,17 @@ let promise = new Promise(function(resolve, reject) {
   );
   ```
 
-  - **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
+  -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
-  ````
+  ```
   let promise = new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error("Whoops!")), 1000);
   });
   // .catch(f) est pareil que promise.then(null, f)
   promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
-    ```
-  ````
+  ```
 
-  - **`.finally` => 3 grandes différences avec `then(f, f)` :**
+  -   **`.finally` => 3 grandes différences avec `then(f, f)` :**
 
     1. **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
     2. **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
