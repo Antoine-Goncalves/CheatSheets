@@ -1,6 +1,6 @@
-# Bienvenue sur mon CheatSheets Personnel, ici nous verrons toutes les technologies, informations utiles, pour un apprenant Développeur Web junior : 
+# Bienvenue sur mon CheatSheets Personnel, ici nous verrons toutes les technologies, informations utiles, pour un apprenant Développeur Web junior
 
-## **Composé en 10 parties** :
+## **Composé en 10 parties**
 
 - html
 - css
