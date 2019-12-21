@@ -1,10 +1,10 @@
-# Les évènements basés sur le clavier :
+# Les évènements basés sur le clavier
 
-## `keydown` et `keyup` :
+## `keydown` et `keyup`
 
 **Les événements `keydown` se produisent quand une touche est enfoncée, puis `keyup` quand elle est relâchée**.
 
-### `event.code` et `event.key` :
+### `event.code` et `event.key`
 
 La propriété `key` de l'objet `event` permet d'obtenir le caractère, tandis que la propriété `code` de l'objet `event` permet d'obtenir le «code de clé physique».
 
@@ -25,11 +25,11 @@ Quand choisir l'un ou l'autre ?
 
 **Si on veut un raccourci clavier même après un changement de langue => `event.code`**.
 
-## Répétition automatique :
+## Répétition automatique
 
 Si une touche est enfoncée longtemps, elle se répéter automatiquement: `keydown` se déclenche encore et encore, et lorsqu'elle se relâche, on obtient enfin `keyup` . Pour les événements déclenchés par répétition automatique, la propriété `event.repeat` objet événement est définie sur `true` .
 
-## Actions par défaut :
+## Actions par défaut
 
 Les actions par défaut varient, car de nombreuses actions peuvent être initiées par le clavier.
 
