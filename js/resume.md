@@ -320,7 +320,7 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **3 méthodes sont utilisées :**
 
-  -   **`.then` =>**
+-   **`.then` =>**
 
   ```
   promise.then(
@@ -329,7 +329,7 @@ let promise = new Promise(function(resolve, reject) {
   );
   ```
 
-  -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
+-   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
   ```
   let promise = new Promise((resolve, reject) => {
@@ -339,7 +339,7 @@ let promise = new Promise(function(resolve, reject) {
   promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
   ```
 
-  -   **`.finally` => 3 grandes différences avec `then(f, f)` :**
+-   **`.finally` => 3 grandes différences avec `then(f, f)` :**
 
     1. **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
     2. **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
