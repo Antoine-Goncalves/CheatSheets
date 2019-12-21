@@ -1,4 +1,4 @@
-# La destructuration en Javascript :
+# La destructuration en Javascript
 
 Les 2 structures de données les plus utilisées en js sont `Object` et `Array`.
 
@@ -6,21 +6,21 @@ Les 2 structures de données les plus utilisées en js sont `Object` et `Array`.
 
 **L'assignement de destructuration est une syntaxe spéciale qui permet de "débaler" un `array` ou un `object` dans un bouquet de variables.**
 
-*La destructuration fonctionne bien avec les fonctions complexes qui ont beaucoup de paramètres, des valeurs par défaut, et plein d'autres.*
+_La destructuration fonctionne bien avec les fonctions complexes qui ont beaucoup de paramètres, des valeurs par défaut, et plein d'autres._
 
-## Destructuration d'un `array` :
+## Destructuration d'un `array`
 
 Exemple:
 
-```
-let arr = ["Antoine","Gonçalves"];
-let [prenom,nom] = arr;
+```javascript
+let arr = ["Antoine", "Gonçalves"];
+let [prenom, nom] = arr;
 
-alert(prenom);	// Affiche Antoine.
-alert(nom);	// Affiche Gonçalves.
+alert(prenom); // Affiche Antoine.
+alert(nom); // Affiche Gonçalves.
 ```
 
-*Note: "Destructuration ne veut pas dire "destructive", car il copie les élements dans des variables. Mais `array` lui-même n'est pas modifié.*
+_Note: "Destructuration ne veut pas dire "destructive", car il copie les élements dans des variables. Mais `array` lui-même n'est pas modifié._
 
 Si on veut obtenir les premières valeurs, mais également toute la suite, on peut ajouter un paramètre supplémentaire en utilisant `...rest`.
 
@@ -28,31 +28,31 @@ La valeur de `rest` est un `array` des éléments restants. Peut importe le nom 
 
 Une valeur par défaut peut-être ajoutée , si aucune valeur n'est définie. en utilisant `=`.
 
-```
-let [prenom = "Invité",nom = "Anonyme"] = ["Antoine"];
+```javascript
+let [prenom = "Invité", nom = "Anonyme"] = ["Antoine"];
 
-alert(prenom);	// Antoine car pris dans le tableau qu'on traite.
-alert(nom);	// Anonyme (valeur par défaut).
+alert(prenom); // Antoine car pris dans le tableau qu'on traite.
+alert(nom); // Anonyme (valeur par défaut).
 ```
 
-## Destructuration d'un `Object` :
+## Destructuration d'un `Object`
 
 Elle fonctionne aussi avec les objets. La syntaxe de base est : `let {var1, var2} = {var1:..., var2...}`
 
 Exemple:
 
-```
+```javascript
 let options = {
-	titre: "Menu",
-	largeur: 100,
-	hauteur: 200,
+  titre: "Menu",
+  largeur: 100,
+  hauteur: 200
 };
 
-let {titre, largeur, hauteur} = options;
+let { titre, largeur, hauteur } = options;
 
-alert(titre);	// Menu.
-alert(largeur);	// 100.
-alert(hauteur);	// 200.
+alert(titre); // Menu.
+alert(largeur); // 100.
+alert(hauteur); // 200.
 ```
 
 Sachant que les propriétés `options.titre`, `options.largeur` et `options.hauteur` sont assignées à leurs variables correspondantes. L'ordre où on les appellent importe peu.
@@ -61,21 +61,21 @@ On peut modifier si on veut les variables mais pour ça il faut utiliser une syn
 
 Exemple:
 
-```
-let {largeur: l, hauteur: h, titre} = options;
+```javascript
+let { largeur: l, hauteur: h, titre } = options;
 
-alert(title);	// Menu.
-alert(l);	// 100.
-alert(h);	// 200.
+alert(title); // Menu.
+alert(l); // 100.
+alert(h); // 200.
 ```
 
 Pour mettre en défaut , même chose que `array`, utiliser `=`.
 
-## Destructuration imbriquée :
+## Destructuration imbriquée
 
 Si un `object` ou `array` contient d'autres objets ou tableaux imbriqués, on peut également faire le même principe qu'avant.
 
-## Paramètres de la fonction intelligente :
+## Paramètres de la fonction intelligente
 
 Il arrive parfois qu'une fonction comporte de nombreux paramètres, dont la plupart sont facultatifs.
 

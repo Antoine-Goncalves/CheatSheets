@@ -1,16 +1,16 @@
-# Bienvenue sur mon CheatSheets Personnel, ici nous verrons toutes les technologies, informations utiles, pour un apprenant Développeur Web junior : 
+# Bienvenue sur mon CheatSheets Personnel, ici nous verrons toutes les technologies, informations utiles, pour un apprenant Développeur Web junior
 
-## **Composé en 10 parties** :
+## **Composé en 10 parties**
 
-- html
-- css
-- [js](js/resume.md)
-- [dom](dom/resume.md)
-- algo
-- [frameworks JS](frameworksJS/resume.md)
-- [api](api/resume.md)
-- [nodejs](nodejs/resume.md)
-- [npm](npm/resume.md)
-- [sql](sql/resume.md)
+-   html
+-   css
+-   [js](js/resume.md)
+-   [dom](dom/resume.md)
+-   algo
+-   [frameworks JS](frameworksJS/resume.md)
+-   [api](api/resume.md)
+-   [nodejs](nodejs/resume.md)
+-   [npm](npm/resume.md)
+-   [sql](sql/resume.md)
 
 En cours d'évolution... :bowtie: :bowtie: :bowtie:

@@ -12,7 +12,7 @@ Toutes les propriétés de l'objet global sont directement accessibles :
 
 Exemple :
 
-```
+```javascript
 alert("Hello");
 // la même chose que
 globalThis(ou window).alert("Hello");
@@ -22,7 +22,7 @@ Dans un navigateur, les fonctions globales et les variables déclarées avec `va
 
 Exemple :
 
-```
+```javascript
 var gVar = 5;
 
 alert(globalThis(ou window).gVar); // 5 (`var` est devenue une propriété de l'objet global)

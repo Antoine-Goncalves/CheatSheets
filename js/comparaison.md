@@ -6,11 +6,11 @@ Pour voir comment une chaîne de caractère est plus grande qu'une autre, JS uti
 
 L'algoritme pour comparé 2 string est simple :
 
-1. **On compare le 1er caractère des deux string.**
-2. **Si le 1er caractère du 1er string est plus grand (ou petit) que l'autre string, alors le 1er string est plus grand (ou petit) que le second.** C'est fini
-3. **Sinon, si le 1er caractère des strings est le même, on compare le second caractère de la même façon.**
-4. **On repète jusqu'à la fin du string.**
-5. **Si les chaînes sont de même longueur, alors ils sont égaux. Sinon, le string le plus long est plus grand.**
+1.  **On compare le 1er caractère des deux string.**
+2.  **Si le 1er caractère du 1er string est plus grand (ou petit) que l'autre string, alors le 1er string est plus grand (ou petit) que le second.** C'est fini
+3.  **Sinon, si le 1er caractère des strings est le même, on compare le second caractère de la même façon.**
+4.  **On repète jusqu'à la fin du string.**
+5.  **Si les chaînes sont de même longueur, alors ils sont égaux. Sinon, le string le plus long est plus grand.**
 
 _Note: L'ordre Unicode fait que les minuscules sont supérieur au majuscule._
 
@@ -24,8 +24,8 @@ Pour booléen, True devient et False devient.
 
 l'égalité (`==`) as un problème. Il ne différencie pas 0 de false.
 
-```
-alert(0==false);    // true
+```javascript
+alert(0 == false); // true
 ```
 
 Cela s'applique car les operands de différents type sont convertis en nombre avec l'opérateur `==`. Une chaîne vide, comme false, devient 0.

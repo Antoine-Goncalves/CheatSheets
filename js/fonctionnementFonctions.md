@@ -10,9 +10,9 @@ Pour créer une fonction, on utilise la déclaration de fonction.
 
 La syntaxe est :
 
-```
+```javascript
 function showMessage() {
-    alert('Hello everyone!');
+  alert("Hello everyone!");
 }
 ```
 
@@ -22,7 +22,7 @@ Pour exécuter une fonction, il faut juste l'appeller.
 
 Exemple:
 
-```
+```javascript
 showMessage();
 ```
 
@@ -34,11 +34,11 @@ Une variable déclarée dans une fonction est visible que dans celle-ci.
 
 Une fonction peut avoir accès au variables externes.
 
-```
-let userName = 'Antoine';
+```javascript
+let userName = "Antoine";
 function showMessage() {
-    let msg = 'Salut, ' + userName;
-    alert(msg);
+  let msg = "Salut, " + userName;
+  alert(msg);
 }
 ```
 
@@ -52,11 +52,11 @@ Elle est utilisé que si il n'y a pas de variables locales !
 
 On peut transmettre des données arbitraire à des fonctions en utilisant des paramètres (également appellé fonction arguments).
 
-```
-Exemple: function message (from, text) {
-    alert(from + ':' + text);
+```javascript
+Exemple: function message(from, text) {
+  alert(from + ":" + text);
 }
-message('Antoine','Salut'); // Antoine:Salut!
+message("Antoine", "Salut"); // Antoine:Salut!
 ```
 
 Les fonctions change les variables mais pas visible à l'extérieur, car copie.
@@ -71,11 +71,11 @@ Ce n'est pas une erreur. Il n'y a pas de text, donc `undefined`. Si on veut un t
 
 Une fonction peut retourner une valeur dans le code en renvoyant le résultat.
 
-```
-Exemple: function sum(a,b) {
-    return a+b;
+```javascript
+Exemple: function sum(a, b) {
+  return a + b;
 }
-sum(1,2);   //3
+sum(1, 2); //3
 ```
 
 La directive `return` peut se placer n'importe où. Quand l'éxecution est atteint, la fonction stop, et la veleur retourne ce qu'il y a après `return`.
@@ -106,18 +106,18 @@ En Javascript, une fonction est une valeur. On peut copier une fonction dans une
 
 ## Fonctions de rappel : (`callback functions`)
 
-```
-function ask (question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
+```javascript
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
 }
-function showOk () {
-    alert("You agreed.");
+function showOk() {
+  alert("You agreed.");
 }
 function showCancel() {
-    alert("You canceled the execution.");
+  alert("You canceled the execution.");
 }
-ask ("Do you agree ?", showOk, showCancel);
+ask("Do you agree ?", showOk, showCancel);
 ```
 
 Les arguments `showOk` et `showCancel` de `ask` sont appelés fonction de rappel.
