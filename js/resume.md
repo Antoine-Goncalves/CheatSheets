@@ -308,13 +308,13 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **2 arguments :**
 
-1. **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
-2. **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
+1.  **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
+2.  **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
 
 -   **2 propriétés internes :**
 
-1. **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
-2. **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
+1.  **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
+2.  **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
 
 -   **Une promesse qui est soit résolue soit rejetée est appelée `"réglée"`, par opposition à une promesse initialement `"en attente"`.**
 
