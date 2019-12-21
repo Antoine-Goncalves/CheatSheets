@@ -1,4 +1,4 @@
-# L'ordonnancement avec `setTimeout` et `setInterval` :
+# L'ordonnancement avec `setTimeout` et `setInterval`
 
 Imaginons que l'on veut exécuter une fonction mais pas à l'instant T, mais à un certain moment dans le futur. Cela s'appelle "ordonnancer (ou planifier) un appel de fonction" ("scheduling a call").
 
@@ -9,7 +9,7 @@ Deux méthodes existe pour cela :
 
 Ces méthodes ne font pas partie de la spécification JS. Mais la plupart des environnements ont un planificateur interne et fournissent ces méthodes. En particulier, elles sont supportées par tous les navigateurs et Node.js.
 
-## `setTimeout` :
+## `setTimeout`
 
 La syntaxe =>
 
@@ -43,7 +43,7 @@ setTimeout("alert('Bonjour')", 1000);
 
 _Note: Ceci n'est pas recommandé._
 
-## Annuler une tâche avec `clearTimeout` :
+## Annuler une tâche avec `clearTimeout`
 
 Un appel à `setTimeout` renvoie un "identifiant de timer" `timerId` que l'on peut utiliser pour annuler l'exécution de la fonction.
 
@@ -54,7 +54,7 @@ let timerId = setTimeout(...);
 clearTimeout(timerId);
 ```
 
-## `setInterval` :
+## `setInterval`
 
 La méthode `setInterval` a la même syntaxe que `setTimeout` :
 
@@ -66,7 +66,7 @@ la seule différence est que `setInterval` appelle la fonction périodiquement a
 
 Afin d'annuler les appels futurs à la fonction, il est nécessaire d'appeler `clearInterval(timerId)`.
 
-## `setTimeout` imbriqué :
+## `setTimeout` imbriqué
 
 Il y a deux façon d'ordonnancer l'exécution périodique d'une tâche.
 
@@ -89,7 +89,7 @@ Le `setTimeout` imbriqué est une méthode plus flexible que `setInterval`. Ains
 
 **Un `setTimeout` imbriqué permet de définir le délai entre les exécutions plus précisément que `setInterval`.**
 
-## `setTimeout` sans délai :
+## `setTimeout` sans délai
 
 Il y a un cas d'usage particulier : `setTimeout(func, 0)` ou simplement `setTimeout(func)`.
 
