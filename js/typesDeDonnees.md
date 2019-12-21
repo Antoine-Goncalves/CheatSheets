@@ -42,5 +42,5 @@ Le type `symbol` est utilisé pour créer des identifiants unique pour `object`.
 ## L'opérateur `typeof`
 
 Il retourne un type d'argument. Utile si l'on veut savoir le type de quelque chose. Il supporte 2 formes de syntaxe:
-- **comme opérateur => typeof x**
-- **comme fonction => typeof (x)**
+* **comme opérateur => typeof x**
+* **comme fonction => typeof (x)**
