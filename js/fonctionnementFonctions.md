@@ -84,11 +84,11 @@ La directive `return` peut se placer n'importe où. Quand l'éxecution est attei
 
 Il faut être bref, aussi précis que possible et décrire ce qu'elle fait. Les fonctions qui commence par :
 
-- "show..." => montre quelque chose. `Exemple : showMessage`
-- "calc..." => calcule quelque chose. `Exemple : calcSum`
-- "get..." => retourne une valeur. `Exemple : getAge`
-- "create..." => créer quelque chose. `Exemple : createForm`
-- "check..." => vérifier quelque chose et retourner un booléen, etc.. `Exemple : checkPermission`
+-   "show..." => montre quelque chose. `Exemple : showMessage`
+-   "calc..." => calcule quelque chose. `Exemple : calcSum`
+-   "get..." => retourne une valeur. `Exemple : getAge`
+-   "create..." => créer quelque chose. `Exemple : createForm`
+-   "check..." => vérifier quelque chose et retourner un booléen, etc.. `Exemple : checkPermission`
 
 ## Fonctions == Commentaires :
 
