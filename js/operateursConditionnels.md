@@ -1,6 +1,6 @@
-# Opérateurs conditionnels : `if` et `?` :
+# Opérateurs conditionnels : `if` et `?`
 
-# L'opérateur `if` :
+# L'opérateur `if`
 
 Le if(..) évalue une condition entre parenthèse et, si le résultat est `true`, il exécute un bloc de code.
 
@@ -15,14 +15,14 @@ Si on veut exécuter plus d'une déclarations, on doit englober notre code dans 
 
 Il est recommandé, pour la visibilité, d'écrire entre {..} si on utilise l'opérateur `if`.
 
-## Conversion Booléenne :
+## Conversion Booléenne
 
 L'opérateur `if {..}` évalue l'expression entre parenthèses et convertie le résultat en booléen.
 
 - _Le nombre 0, chaîne vide "", `null`, `undefined` and `NaN` deviennent `false`. Car ils sont appellées les valeurs fausses._
 - _Toutes les autres valeurs deviennent `true`, et sont appelées les vrais_
 
-## La clause `else` :
+## La clause `else`
 
 L'opérateur `if` peut contenir des blocks `else` optionnel. Il s'éxecute si la condition est `false`.
 
@@ -56,7 +56,7 @@ if (age < 18) {
 }
 ```
 
-## L'opérateur conditionnel `?` :
+## L'opérateur conditionnel `?`
 
 Parfois, on doit assigner une variable en fonction d'une condition. Avec l'opérateur `?`, il permet de faire ceci plus simplement et plus rapide. Il est appelé, parfois, `ternary` (ternaire), car l'opérateur a 3 opérandes. **C'est actuellement le premier et le seul qui en possède autant**.
 
@@ -68,7 +68,7 @@ let result = condition ? resp1 : resp2;
 
 La condition est évaluée, si c'est truthy, alors on retourne resp1, resp2 sinon.
 
-## `?` multiple :
+## `?` multiple
 
 Une séquence de `?` peut retourner une valeur qui dépend de plusieurs conditions.
 
