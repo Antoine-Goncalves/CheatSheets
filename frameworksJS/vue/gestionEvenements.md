@@ -42,39 +42,39 @@ C'est un besoin courant que de faire appel à `event.preventDefault()` ou `event
 
 Pour résoudre ce problème, Vue propose des modificateurs d'évènements pour `v-on`.
 
-* `.stop`
-* `.prevent`
-* `.capture`
-* `.self`
-* `.once`
-* `.passive`
+*   `.stop`
+*   `.prevent`
+*   `.capture`
+*   `.self`
+*   `.once`
+*   `.passive`
 
 Lorsqu'on écoute les évènements du clavier, on as régulièrement besoin de nous assurer du code des touches. Vue permet également d'ajouter un modificateur de touches pour `v-on`. On peut utiliser n'importe quel nom de touche clavier valide fourni par `KeyboardEvent.key` en tant que modificateur en les écrivant au format kebab-case.
 
 On peut utiliser des attributs `keyCode` est également possible. Vue fournit des alias pour la plupart des clés communes utilisés quand necessaire pour le support des anciens navigateurs :
 
-* `.enter`
-* `.tab`
-* `.delete` (fonctionne pour les touches "suppression" et "retour arrière")
-* `.esc`
-* `.space`
-* `.up`
-* `.down`
-* `.left`
-* `.right`
+*   `.enter`
+*   `.tab`
+*   `.delete` (fonctionne pour les touches "suppression" et "retour arrière")
+*   `.esc`
+*   `.space`
+*   `.up`
+*   `.down`
+*   `.left`
+*   `.right`
 
 On peut utiliser les modificateurs suivants pour déclencher un évènement du clavier ou de la souris seulement lorsque la touche du modificateur correspondante est pressée :
 
-* `.ctrl`
-* `.alt`
-* `.shift`
-* `.meta`
+*   `.ctrl`
+*   `.alt`
+*   `.shift`
+*   `.meta`
 
 Le modificateur `.exact` permet le contrôle de la combinaison de touches système exacte requise pour déclencher le gestionnaire d'évènements.
 
-* `.left`
-* `.right`
-* `.middle`
+*   `.left`
+*   `.right`
+*   `.middle`
 
 Ces modificateurs n'autorisent la gestion de l'évènement que s'il a été déclenché par un bouton spécifique de la souris.
 
