@@ -12,7 +12,7 @@ Quand on utilise les caractéristiques moderne d'un langage, certain moteur ne s
 
 **Babel est un transpilateur**. Il réecrit le code moderne JavaScript dans la norme précédente. Actuellement, il y a 2 parties dans Babel :
 
-- Le programme de transpilation, qui réecris le code. Le développeur met en route son ancien pc, il réecrit du code dans l'ancienne norme. Puis le code est délivré au site pour les utilisateurs. Des projets modernes construit des systèmes (ex: webpack) qui permet de transpiler automatiquement à chaque changement de code.
+-   Le programme de transpilation, qui réecris le code. Le développeur met en route son ancien pc, il réecrit du code dans l'ancienne norme. Puis le code est délivré au site pour les utilisateurs. Des projets modernes construit des systèmes (ex: webpack) qui permet de transpiler automatiquement à chaque changement de code.
 
 Vient ensuite les polyfills :
 
@@ -22,5 +22,5 @@ Le Javascript est un langage hautement dynamique, les scripts peuvent ajouter/mo
 
 Il y a 2 intéressant polyfills :
 
-- Core.js qui supporte beaucoup, permet d'inclure unique les fonctionnalités utile.
-- Polyfill.io, c'est un service qui fournit un script avec des polyfills, en fonction des fonctionnalités d'un langage moderne, un transpilateur et un polyfill sont nécessaire.
+-   Core.js qui supporte beaucoup, permet d'inclure unique les fonctionnalités utile.
+-   Polyfill.io, c'est un service qui fournit un script avec des polyfills, en fonction des fonctionnalités d'un langage moderne, un transpilateur et un polyfill sont nécessaire.
