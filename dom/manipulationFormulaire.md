@@ -1,8 +1,8 @@
-# Manipulation des formulaires dans le `DOM` :
+# Manipulation des formulaires dans le `DOM`
 
 Les formulaires et les éléments de contrôle, tels que `<input>` possèdent de nombreuses propriétés et événements spéciaux.
 
-## Navigation : `form` et `elements` :
+## Navigation : `form` et `elements`
 
 Les formulaires de document sont membres de la collection spéciale `document.forms`.
 
@@ -19,11 +19,11 @@ Il peut y avoir plusieurs éléments qui ont le même nom, ce qui est souvent le
 
 **Notation plus courte => au lieu de `form.elements.login` --> `form.login`**.
 
-## Référence arrière : `element.form` :
+## Référence arrière : `element.form`
 
 Pour tout élément, le formulaire est disponible sous la forme `element.form`. Ainsi, un formulaire fait référence à tous les éléments, et les éléments font référence au formulaire.
 
-## `Form elements` :
+## `Form elements`
 
 `input` et `textarea` :
 
@@ -44,7 +44,7 @@ L'élément `<select>` a 3 propriétés importantes:
 2. Définit `select.value` sur la valeur.
 3. Définit `select.selectedIndex` sur le numéro de l'option.
 
-## `new Option` :
+## `new Option`
 
 Il existe une syntaxe pour créer des éléments `<option>` :
 
