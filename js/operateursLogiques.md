@@ -1,10 +1,10 @@
-# Opérateurs Logiques :
+# Opérateurs Logiques
 
 3 opérateurs logiques en JavaScript : `||` (OR), `&&` (AND) et `!` (NOT).
 
 Bien qu'ils sont appellés "logiques", ils peuvent être appliqués à n'importe quel type de valeurs, pas que booléen. Le résultat peut être de n'importe quel type.
 
-## `||` (OR) :
+## `||` (OR)
 
 Dans le programming classique, le logique `OR` est censé manipuler les valeurs booléennes uniquement. Si un des arguments est `true`, il retourne `true`, sinon il retourne `false`.
 
@@ -35,7 +35,7 @@ L'opérateur OR fait les choses suivantes :
 
 En d'autre terme, une chaîne de OR retourne la première valeur vrai ou la dernière si aucune valeur vrai est trouvée.
 
-## `&&` AND :
+## `&&` AND
 
 Dans le programming classique, AND retourne `true` si tout les opérands sont vrai, et `false` sinon.
 
@@ -52,7 +52,7 @@ Comme avec OR, toute valeur est autorisé. AND trouve la première valeur fausse
 
 _Note: :heavy_exclamation_mark: Précédence AND est plus haute que OR. :heavy_exclamation_mark:_
 
-## `!` NOT :
+## `!` NOT
 
 L'opérateur accepte un argument simple et fait ce qui suit :
 
