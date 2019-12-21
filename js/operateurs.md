@@ -1,6 +1,6 @@
-# Opérateurs :
+# Opérateurs
 
-## Fonctionnement des opérateurs :
+## Fonctionnement des opérateurs
 
 On connaît beaucoup d'opérateurs grâce à l'école (addition `+`, multiplication `*`, soustraction `-`, et plein d'autres).
 
@@ -16,7 +16,7 @@ Dans une multiplication (`5*2`) il y a 2 operand.
 
 -   **Un opérateur est binaire si il a 2 operand**.
 
-## Concatenation :
+## Concatenation
 
 Concatenation des chaînes, binary+.
 
@@ -35,13 +35,13 @@ Le unary+ applique simplement une valeur à quelque chose (inutile pour les nomb
 
 **Les unary+ s'applique entre premier, il convertisse les chaînes en nombres, et les binary+ font le reste.**
 
-## Opérateurs de précédence :
+## Opérateurs de précédence
 
 Si une expression a plus d'un operateur, la précédence est obligatoire.
 
 Les parenthèses dominent tout.
 
-## Incrémentation/Décrémentation :
+## Incrémentation/Décrémentation
 
 Il y a des opérateurs spéciaux :
 
@@ -55,7 +55,7 @@ Les opérateurs `++` et `--` peuvent être placés avant ou après une variable 
 
 *Note: La forme préfix retourne la nouvelle valeur tandis que la forme postfix retourne l'ancienne valeur.*
 
-## Bitwise operateurs :
+## Bitwise operateurs
 
 la liste des opérateurs :
 
@@ -67,12 +67,12 @@ la liste des opérateurs :
 -   RIGHT SHIFT (`>>`)
 -   ZERO-FILL RIGHT SHIFT (`>>>`)
 
-## Modify-in-place :
+## Modify-in-place
 
 On peut modifier sur place une variable en lui appliquant un opérateur. On peut raccourcir avec les opérateurs `+=` et `*=`.
 
 Ils ont la même précédence qu'un assignement normal.
 
-## Comma (`,`) :
+## Comma (`,`)
 
 Opérateur le plus faible, sert à séparer des expressions.
