@@ -15,9 +15,10 @@ La touche `Z` peut être enfoncée avec ou sans `Maj`. Cela nous donne deux cara
 **`event.key` => `z` / `Z`** tandis que **`event.code` => KeyZ pour les deux**.
 
 Chaque touche a un code qui dépend de son emplacement sur le clavier :
-* **Les lettres => "Key<lettre>"**.
-* **Les nombres => "Digit<nombre>"**.
-* **Touches spéciales => par leurs noms**.
+
+*   **Les lettres => "Key<lettre>"**.
+*   **Les nombres => "Digit<nombre>"**.
+*   **Touches spéciales => par leurs noms**.
 
 Quand choisir l'un ou l'autre ?
 
@@ -33,8 +34,8 @@ Si une touche est enfoncée longtemps, elle se répéter automatiquement: `keydo
 
 Les actions par défaut varient, car de nombreuses actions peuvent être initiées par le clavier.
 
-* **Un caractère apparaît à l'écran (résultat le plus logique)**.
-* **Un caractère est supprimé => `Suppr`.**
-* **La page défile => `PageDown`**.
-* **Le navigateur ouvre le dialogue "Enregister la page" => `Ctrl + S`**.
-* **Etc...**
+*   **Un caractère apparaît à l'écran (résultat le plus logique)**.
+*   **Un caractère est supprimé => `Suppr`.**
+*   **La page défile => `PageDown`**.
+*   **Le navigateur ouvre le dialogue "Enregister la page" => `Ctrl + S`**.
+*   **Etc...**
