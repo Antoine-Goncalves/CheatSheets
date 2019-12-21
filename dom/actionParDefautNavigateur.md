@@ -15,8 +15,8 @@ Toutes les actions par défaut peuvent être empêchées si on vas gérer l'év�
 
 Pour empêcher une action par défaut, 2 choix possibles :
 
-1. **Le moyen principal consiste à utiliser l'objet `event`. Il utilise la méthode : `event.preventDefault()`**.
-2. **Sinon si le gestionnaire est affecté à l'aide de `on<event>` (pas par `addEventListener`), on peut également renvoyer `false` à partir de celui-ci**.
+1.  **Le moyen principal consiste à utiliser l'objet `event`. Il utilise la méthode : `event.preventDefault()`**.
+2.  **Sinon si le gestionnaire est affecté à l'aide de `on<event>` (pas par `addEventListener`), on peut également renvoyer `false` à partir de celui-ci**.
 
 L'option `passive: true` de `addEventListener` indique au navigateur que l'action ne va pas être empêchée. Cela est utile pour certains événements mobiles, tel que `touchstart` et `touchmove`, pour indiquer au navigateur qu'il ne doit pas attendre que tous les gestionnaires aient fini avant de faire défiler.
 
