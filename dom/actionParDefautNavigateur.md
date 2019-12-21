@@ -1,6 +1,6 @@
-# Comprendre le fonctionnement des actions par défaut du navigateur :
+# Comprendre le fonctionnement des actions par défaut du navigateur
 
-## De nombreux événements entraînent automatiquement des actions par défaut du navigateur :
+## De nombreux événements entraînent automatiquement des actions par défaut du navigateur
 
 *   Le clic gauche de la souris (`down`) => **lance la sélection (déplacez la souris pour sélectionner)**.
 *   Le clic droit (`contextmenu`) => **l'action consiste à afficher le menu contextuel du navigateur**.
@@ -9,7 +9,7 @@
 * Une pression d'une touche du clavier => **conduit à ajouter un caractère dans un champ ou à d'autres actions spécifique en fonction d'où l'on se trouve**.
 * Et beaucoup d'autres ...
 
-## Savoir comment empêcher le comportement par défaut :
+## Savoir comment empêcher le comportement par défaut
 
 Toutes les actions par défaut peuvent être empêchées si on vas gérer l'événement exclusif avec JavaScript.
 
