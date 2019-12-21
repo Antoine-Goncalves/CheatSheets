@@ -2,10 +2,10 @@
 
 ## De nombreux événements entraînent automatiquement des actions par défaut du navigateur :
 
-* Le clic gauche de la souris (`down`) => **lance la sélection (déplacez la souris pour sélectionner)**.
-* Le clic droit (`contextmenu`) => **l'action consiste à afficher le menu contextuel du navigateur**.
-* Le clic dans un `checkbox` => **coche / décoche l'`input`**.
-* Un `submit` ou touche `Entrée` => **dans un champ de formulaire pour que cet événement se fasse et que le navigateur envoie le formulaire après le clic**.
+*   Le clic gauche de la souris (`down`) => **lance la sélection (déplacez la souris pour sélectionner)**.
+*   Le clic droit (`contextmenu`) => **l'action consiste à afficher le menu contextuel du navigateur**.
+*   Le clic dans un `checkbox` => **coche / décoche l'`input`**.
+*   Un `submit` ou touche `Entrée` => **dans un champ de formulaire pour que cet événement se fasse et que le navigateur envoie le formulaire après le clic**.
 * Une pression d'une touche du clavier => **conduit à ajouter un caractère dans un champ ou à d'autres actions spécifique en fonction d'où l'on se trouve**.
 * Et beaucoup d'autres ...
 
