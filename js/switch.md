@@ -20,9 +20,9 @@ switch(x) {
 }
 ```
 
-- La valeur de `x` est vérifiée avec une égalité stricte pour la valeur du premier `case`, puis le second et ainsi de suite..
-- Si l'égalité est trouvée, `switch` commence à exécuter le code en commençant par le `case` correspondant, jusqu'au `break` le plus proche (ou jusqu'à la fin du `switch`).
-- Si aucune `case` est bonne, alors `default` est exécuté (si il existe).
+-   La valeur de `x` est vérifiée avec une égalité stricte pour la valeur du premier `case`, puis le second et ainsi de suite..
+-   Si l'égalité est trouvée, `switch` commence à exécuter le code en commençant par le `case` correspondant, jusqu'au `break` le plus proche (ou jusqu'à la fin du `switch`).
+-   Si aucune `case` est bonne, alors `default` est exécuté (si il existe).
 
 _Note: :heavy_exclamation_mark: Si il n'y a pas de break, alors l'exécution continuera. :heavy_exclamation_mark:_
 
