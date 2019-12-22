@@ -1,4 +1,4 @@
-# Routage de base :
+# Routage de base
 
 **Le routage** consiste à déterminer comment une application répond à une demande client adressée à un point de terminaison particulier, à savoir un URI (ou chemin) et une méthode de requête HTTP spécifique (GET, POST, etc.).
 
