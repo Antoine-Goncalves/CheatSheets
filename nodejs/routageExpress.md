@@ -12,10 +12,10 @@ app.METHOD(PATH, HANDLER)
 
 Où:
 
-- `app` est une instance de `express`.
-- `METHOD` est une méthode de requête HTTP, en minuscule.
-- `PATH` est un chemin sur le seveur.
-- `HANDLER` est la fonction exécutée lorsque la route est mise en correspondance.
+-   `app` est une instance de `express`.
+-   `METHOD` est une méthode de requête HTTP, en minuscule.
+-   `PATH` est un chemin sur le seveur.
+-   `HANDLER` est la fonction exécutée lorsque la route est mise en correspondance.
 
 Les exemples suivants montrent des itinéraires simples :
 
