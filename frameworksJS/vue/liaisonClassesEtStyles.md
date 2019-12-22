@@ -1,8 +1,8 @@
-# Liaisons de classes et de styles :
+# Liaisons de classes et de styles
 
 Ce sont tous deux des attributs, il est possible d'utiliser `v-bind` pour les gérer. Vue fournit des améliorations spécifiques quand `v-bind` est utilisé avec `class` et `style`. En plus des chaines de caractères, l'expression peut évaluer des objets ou alors des tableaux.
 
-## Classes HTML :
+## Classes HTML
 
 Il est possible de passer un objet à `v-bind:class` pour permuter les classes automatiquement :
 
@@ -42,7 +42,7 @@ data: {
 
 Quand on utilise l’attribut `class` sur un composant personnalisé, ces classes seront ajoutées à l’élément à la racine du composant. Les classes présentes sur cet élément ne seront pas réécrites.
 
-## Styles HTML :
+## Styles HTML
 
 La syntaxe objet pour `v-bind:style` est assez simple (presque comme du CSS), sauf que c’est un objet JavaScript. On peut utiliser camelCase ou kebab-case (camelCase meilleur) pour les noms des propriétés CSS :
 
