@@ -6,7 +6,7 @@ Chaque route peut avoir une ou plusieurs fonctions de gestionnaire, qui sont exc
 
 La définition d'itinéraire prend la structure suivante :
 
-```
+```javascript
 app.METHOD(PATH, HANDLER)
 ```
 
@@ -21,24 +21,24 @@ Les exemples suivants montrent des itinéraires simples :
 
 Répondre `Hello World!` sur la page d'accueil:
 
-```
+```javascript
 app.get('/', function (req, res) { res.send('Hello World!') })
 ```
 
 Répondre à la demande `POST` sur la route racine ( / ), la page d'accueil de l'application:
 
-```
+```javascript
 app.post('/', function (req, res) { res.send('Got a POST request') })
 ```
 
 Répondre à une demande `PUT` à la route /user :
 
-```
+```javascript
 app.put('/user', function (req, res) { res.send('Got a PUT request at /user') })
 ```
 
 Répondre à une demande `DELETE` à la route /user :
 
-```
+```javascript
 app.delete('/user', function (req, res) { res.send('Got a DELETE request at /user') })
 ```
