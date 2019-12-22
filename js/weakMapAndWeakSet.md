@@ -13,10 +13,10 @@ La première différence avec `Map` est que les clés `WeakMap` doivent être **
 
 Les méthodes de `WeakMap` sont :
 
-* `weakMap.get(clé)` => *(retourne la valeur lié à la clé, `undefined` si `clé` n'existe pas dans `weakMap`).*
-* `weakMap.set(clé, valeur)` => *(stocke la valeur lié à la clé).*
-* `weakMap.delete(clé)` => *(supprime la valeur lié à la clé).*
-* `weakMap.has(clé)` => *(retourne `true` si `clé` existe, `false` sinon).*
+*   `weakMap.get(clé)` => *(retourne la valeur lié à la clé, `undefined` si `clé` n'existe pas dans `weakMap`).*
+*   `weakMap.set(clé, valeur)` => *(stocke la valeur lié à la clé).*
+*   `weakMap.delete(clé)` => *(supprime la valeur lié à la clé).*
+*   `weakMap.has(clé)` => *(retourne `true` si `clé` existe, `false` sinon).*
 
 Le cas d'utilisation le plus fréquent de `WeakMap` est un **stockage de données supplémentaires**.
 
@@ -32,8 +32,8 @@ Il est judicieux d'utiliser `WeakMap` pour que le résultat "mis en cache" sera 
 
 Même principe que `WeakMap` , mais pour `Set` :
 
-* C'est similaire à `Set`, **mais on peut ajouter que des objets à `WeakSet`** (pas de primitives).
-* **Un objet existe dans un `Set` tant qu'il est accesible quelque part**.
-* Comme `Set`, **il supporte `add`,`has` et `delete`, mais pas `size`, `keys()` et aucune itérations**.
+*   C'est similaire à `Set`, **mais on peut ajouter que des objets à `WeakSet`** (pas de primitives).
+*   **Un objet existe dans un `Set` tant qu'il est accesible quelque part**.
+*   Comme `Set`, **il supporte `add`,`has` et `delete`, mais pas `size`, `keys()` et aucune itérations**.
 
 Il sert également de **stockage supplémentaire**, mais pour des faits "`true` / `false`".
