@@ -80,6 +80,6 @@ Ces modificateurs n'autorisent la gestion de l'évènement que s'il a été déc
 
 Avantage à utiliser `v-on` :
 
-1. Il est plus facile de localiser l’implémentation des fonctions gestionnaires dans le code JS en survolant le code HTML.
-2. Comme on as pas à attacher manuellement les écouteurs dans notre JS, le code du "ViewModel" peut être purement logique et sans DOM. Ceci le rend plus facile à tester.
-3. Quand un "ViewModel" est détruit, tous les écouteurs d’évènements sont automatiquement retirés. On as pas à se soucier de le faire soit-même.
+1.  Il est plus facile de localiser l’implémentation des fonctions gestionnaires dans le code JS en survolant le code HTML.
+2.  Comme on as pas à attacher manuellement les écouteurs dans notre JS, le code du "ViewModel" peut être purement logique et sans DOM. Ceci le rend plus facile à tester.
+3.  Quand un "ViewModel" est détruit, tous les écouteurs d’évènements sont automatiquement retirés. On as pas à se soucier de le faire soit-même.
