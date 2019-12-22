@@ -125,7 +125,7 @@ let sac = {
 alert(sac.pomme);   // 5 (si fruit = "pomme")
 ```
 
-Le sens de la propriété ajoutée est simple: [fruit] veut dire que le nom de propriété doit prendre la valeur qui vient de fruit. Donc, si un visiteur entre "pomme", sac devient {pomme: 5}.
+Le sens de la propriété ajoutée est simple: `[fruit]` veut dire que le nom de propriété doit prendre la valeur qui vient de fruit. Donc, si un visiteur entre "pomme", sac devient {pomme: 5}.
 
 Possibilité d'utiliser des expressions complexe à l'intérieur de [].
 
