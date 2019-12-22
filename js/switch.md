@@ -1,4 +1,4 @@
-# Fonctionnement de `switch` :
+# Fonctionnement de `switch`
 
 La déclaration `switch` peut remplacer plusieurs `if`. Cela donne une manière plus descriptive pour comparer plusieurs variantes avec une valeur.
 
