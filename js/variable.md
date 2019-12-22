@@ -1,4 +1,4 @@
-# Variables :
+# Variables
 
 Une variable est un "stockage nommé" pour les données.
 
