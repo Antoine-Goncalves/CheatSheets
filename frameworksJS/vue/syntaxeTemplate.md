@@ -1,6 +1,6 @@
-# Syntaxe de template :
+# Syntaxe de template
 
-## Interpolations :
+## Interpolations
 
 La forme la plus élémentaire de la liaison de données est l'**interpolation** de texte en utilisant la syntaxe *Moustache* (les doubles accolades).
 
@@ -32,7 +32,7 @@ Vue.js supporte en réalité toute la puissance des expressions JS à l'intérie
 
 *Note: Il y a une restriction, chacune de ces liaisons ne peut contenir qu'une seule expression, donc pas de déclaration , utilisez le ternaires pas de boucle à l'intérieur*.
 
-## Directives :
+## Directives
 
 Les directives sont des attributs spéciaux avec le préfixe `v-`. Les valeurs attendues pour les attributs de directives sont **une unique expression JS** (à l'exception de `v-for`). Le travail d'une directive est **d'appliquer réactivement des effets secondaires au DOM quand la valeur de son expression change**.
 
