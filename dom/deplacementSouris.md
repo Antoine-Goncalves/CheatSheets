@@ -2,20 +2,20 @@
 
 ## Événements `mouseover` / `mouseout`, `relatedTarget`
 
-* `mouseover` => **L'événement se produit lorsqu'un pointeur de la souris survole un élément**.
-* `mouseout` => **L'événement se produit lorsqu'un pointeur de la souris quitte un élément**.
+*   `mouseover` => **L'événement se produit lorsqu'un pointeur de la souris survole un élément**.
+*   `mouseout` => **L'événement se produit lorsqu'un pointeur de la souris quitte un élément**.
 
 Ces événements sont spéciaux, car ils ont une propriété `relatedTarget`. Cette propriété complète la `target`. Quand une souris laisse un élément pour un autre, l'un d'eux devient la `target` et l'autre `relatedTarget`.
 
 Pour `mouseover` :
 
-* `event.target` => **L'élément où la souris est passée**.
-* `event.relatedTarget` => **L'élément d'origine de la souris (`relatedTarget` -> `target`)**.
+*   `event.target` => **L'élément où la souris est passée**.
+*   `event.relatedTarget` => **L'élément d'origine de la souris (`relatedTarget` -> `target`)**.
 
 Pour `mouseout` c'est l'inverse :
 
-* `event.target` => **L'élément que la souris a laissé**.
-* `event.relatedTarget` => **Le nouvel élément situé sous le pointeur, que la souris a laissé pour (`target` -> `relatedTarget`)**.
+*   `event.target` => **L'élément que la souris a laissé**.
+*   `event.relatedTarget` => **Le nouvel élément situé sous le pointeur, que la souris a laissé pour (`target` -> `relatedTarget`)**.
 
 ## Sauter des éléments
 
