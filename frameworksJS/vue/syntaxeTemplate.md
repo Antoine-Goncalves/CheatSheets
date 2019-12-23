@@ -68,7 +68,7 @@ Les modificateurs sont **des suffixes spéciaux indiqués par un point, qui indi
 
 Le préfixe `v-` sert d'indicateur visuel pour identifier les attriuts spécifiques à Vue dans nos templates. C'est ultra pratique quand on veut appliquer des comportements dynamiques sur un balisage existant. C'est pourquoi Vue.js fournit des abréviations pour deux des directives les plus utilisées, `v-bind` et `v-on`.
 
-* **Abréviation pour `v-bind`** :
+*   **Abréviation pour `v-bind`** :
 
 ```
 <!-- syntaxe complète -->
@@ -81,7 +81,7 @@ Le préfixe `v-` sert d'indicateur visuel pour identifier les attriuts spécifiq
 <a :[key]="url"> ... </a>
 ```
 
-* **Abréviation pour `v-on`**
+*   **Abréviation pour `v-on`**
 
 ```
 <!-- syntaxe complète -->
