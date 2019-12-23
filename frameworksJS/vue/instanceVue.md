@@ -1,6 +1,6 @@
-# Vue JS :
+# Vue JS
 
-## Instance de Vue :
+## Instance de Vue
 
 * **Créer une instance de Vue :**
 
@@ -12,7 +12,7 @@ var vm = new Vue({
 
 * **Par convention on utilise la variable `vm` (abréviation pour ViewModel) pour faire référence à nos instances de Vue.**
 
-## Données et méthodes :
+## Données et méthodes
 
 * **Quand une instance de Vue est créée, cela ajoute toutes les propriétés dans son objet `data` au système réactif de Vue. Quand une valeur de ces propriétés change, la vue va alors changer, elle se met à jour pour concorder avec les nouvelles valeurs.**
 
