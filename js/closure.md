@@ -40,16 +40,16 @@ work(); // Cela affiche "Pete".
 
 2 parties :
 
-- Environnement Record (Enregistrement d'Environnement) - un objet qui stocke toutes les variable locales en tant que propriétés.
-- Une référence à l'environnement lexical externe, celui associé au code externe.
+*   Environnement Record (Enregistrement d'Environnement) - un objet qui stocke toutes les variable locales en tant que propriétés.
+*   Une référence à l'environnement lexical externe, celui associé au code externe.
 
-* **Une variable est une propriété d'un objet interne spécial, associée au bloc/fonction/script en cours d'exécution.**
-* **Travailler avec des variables, c'est travailler avec les propriétés de cet objet.**
+*   **Une variable est une propriété d'un objet interne spécial, associée au bloc/fonction/script en cours d'exécution.**
+*   **Travailler avec des variables, c'est travailler avec les propriétés de cet objet.**
 
 Quand on créer une fonction , deux environnement lexicaux se crée :
 
-- L'environnement interne.
-- L'environnement externe.
+*   L'environnement interne.
+*   L'environnement externe.
 
 **Lorsque le code veut accéder à une variable, l'environnement lexical interne est recherché en premier, puis l'environnement externe, puis l'environnement externe et ainsi de suite jusqu'à l'environnement global.**
 
