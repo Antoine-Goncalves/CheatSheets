@@ -1,4 +1,4 @@
-# Concentration : `focus` et `blur` :
+# Concentration : `focus` et `blur`
 
 Un élément reçoit une concentration (`focus`) soit quand l'utilisateur clique dessus ou alors en utilisant la touche `Tab` du clavier. Il existe également un attribut HTML `autofocus` qui place la concentration dans un élément par défaut lors du chargement d’une page, ainsi que d’autres moyens d’obtenir une mise au point.
 
@@ -8,15 +8,15 @@ Le moment où l'on perds la concentration (`blur`) peut être encore plus import
 
 **Perdre la concentration signifie généralement: "la donnée a été entré"**.
 
-## Événements `focus` et `blur` :
+## Événements `focus` et `blur`
 
 L'événement `focus` est appellé quand l'élément est concentré, et `blur` quand l'élément perd la concentration.
 
-## Méthodes `focus` et `blur` :
+## Méthodes `focus` et `blur`
 
 Les méthodes `elem.focus()` et `elem.blur()` active/désactive la mise au point sur l'élément.
 
-## Permet de se concentrer sur n'importe quel objet => `tabindex` :
+## Permet de se concentrer sur n'importe quel objet => `tabindex`
 
 Par défaut plusieurs éléments ne supporte pas la concentration.
 
@@ -34,7 +34,7 @@ Il y a 2 valeurs spéciales :
 
 * **`tabindex = "-1"` permet uniquement de se concentré programmatique sur un élément. La touche `Tab` ignore ces éléments, mais la méthode `elem.focus()` fonctionne**.
 
-## Délégation: `focusin` et `focusout` :
+## Délégation: `focusin` et `focusout`
 
 Les événements `focus` et `blur` ne font pas `bubble`.
 
