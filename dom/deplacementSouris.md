@@ -37,8 +37,8 @@ Les événements `mouseenter/mouseleave` sont comme `mouseover/mouseout`. Ils se
 
 2 grosses différences :
 
-1. **Les transitions à l'intérieur de l'élément, vers/depuis les descendants, ne sont pas comptées**.
-2. **Les événements `mouseenter/mouseleave` ne font pas de `bubble`**.
+1.  **Les transitions à l'intérieur de l'élément, vers/depuis les descendants, ne sont pas comptées**.
+2.  **Les événements `mouseenter/mouseleave` ne font pas de `bubble`**.
 
 ## Délégation d'événement
 
