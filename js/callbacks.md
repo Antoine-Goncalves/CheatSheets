@@ -127,8 +127,8 @@ Encore une fois, on montre l'exemple avec `loadScript` mais c'est une façon gé
 
 La convention est :
 
-1. Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé.
-2. Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé.
+1.  Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé.
+2.  Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé.
 
 La fonction de `callback` unique est donc utilisée à la fois pour signaler les erreurs et renvoyer les résultats.
 
