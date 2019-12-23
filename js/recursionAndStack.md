@@ -8,7 +8,7 @@ Quand une fonction résoud une tâche, dans un processus il peut appeler plusieu
 
 ## 2 manières de penser
 
-1. Pensée itérative : la boucle `for`.
+1.  Pensée itérative : la boucle `for`.
 
 Exemple:
 ```
@@ -24,7 +24,7 @@ function pow(x, n) {
 }
 ```
 
-2. Pensée récursive : simplifie la tâche et rappelle la fonction dans le code.
+2.  Pensée récursive : simplifie la tâche et rappelle la fonction dans le code.
 
 Exemple:
 ```
