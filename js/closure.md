@@ -1,4 +1,4 @@
-# Closure :
+# Closure
 
 Si variable global créer alors le changement dans une fonction se fait sur tout le code.
 
@@ -36,7 +36,7 @@ let work = makeWorker();
 work(); // Cela affiche "Pete".
 ```
 
-## Environnement Lexical :
+## Environnement Lexical
 
 2 parties :
 
