@@ -1,4 +1,4 @@
-# Utiliser Axios pour consommer des API :
+# Utiliser Axios pour consommer des API
 
 Lors de la création d'une application Web, il est fréquent qu'on souhaite utiliser et afficher les données provenant d'une API. On vas utiliser le plus populaire ici , [axios](https://github.com/axios/axios), un client HTTP basé sur les Promesses.
 
@@ -35,7 +35,7 @@ new Vue({
 
 On obtient la donnée qui nous intéresse.
 
-## Utilisation des données :
+## Utilisation des données
 
 Il est courant que les informations dont on as besoin se trouvent dans la réponse, juste il faut trier et prendre l'essentiel de ce qui nous intéresse. Du coup il faut le préciser dans notre demande :
 
@@ -45,7 +45,7 @@ axios
   .then(response => (this.info = response.data.clé qui nous intéresse))
 ```
 
-## Travailler avec des erreurs :
+## Travailler avec des erreurs
 
 Parfois, on ne peut recevoir de données de l'API. Il peut y avoir plusieurs raisons :
 
