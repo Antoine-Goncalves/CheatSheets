@@ -4,7 +4,7 @@ Lors de la création d'une application Web, il est fréquent qu'on souhaite util
 
 On doit dans un premier temps installer axios :
 
-```
+```bash
 npm install axios
 
 ```
@@ -13,7 +13,7 @@ Il existe plusieurs manières de demander quelque chose à une API, mais il est 
 
 On commence donc par créer une donnée qui gardera les informations que l'on veut, puis on récupere les données et on les attribue à l'aide de l'étape `mounted` du cylce de vie :
 
-```
+```javascript
 new Vue({
   el: '#app',
   data () {
@@ -39,7 +39,7 @@ On obtient la donnée qui nous intéresse.
 
 Il est courant que les informations dont on as besoin se trouvent dans la réponse, juste il faut trier et prendre l'essentiel de ce qui nous intéresse. Du coup il faut le préciser dans notre demande :
 
-```
+```javascript
 axios
   .get('lien de l'api avec les info total')
   .then(response => (this.info = response.data.clé qui nous intéresse))
@@ -55,7 +55,7 @@ Parfois, on ne peut recevoir de données de l'API. Il peut y avoir plusieurs rai
 
 Quand on créer une requête, on peut vérifier si il y a un bug et pouvoir être informer pour traiter le bug. Avec axios, on peut le faire en utilisant `catch`.
 
-```
+```javascript
 axios
   .get('https://api.coindesk.com/v1/bpi/currentprice.json')
   .then(response => (this.info = response.data.bpi))
@@ -64,7 +64,7 @@ axios
 
 Cela permet de voir si quelque chose a planté lors de la requête à l'API.
 
-```
+```javascript
 new Vue({
   el: '#app',
   data () {
