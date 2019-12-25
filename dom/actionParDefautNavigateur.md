@@ -6,8 +6,8 @@
 *   Le clic droit (`contextmenu`) => **l'action consiste à afficher le menu contextuel du navigateur**.
 *   Le clic dans un `checkbox` => **coche / décoche l'`input`**.
 *   Un `submit` ou touche `Entrée` => **dans un champ de formulaire pour que cet événement se fasse et que le navigateur envoie le formulaire après le clic**.
-* Une pression d'une touche du clavier => **conduit à ajouter un caractère dans un champ ou à d'autres actions spécifique en fonction d'où l'on se trouve**.
-* Et beaucoup d'autres ...
+*   Une pression d'une touche du clavier => **conduit à ajouter un caractère dans un champ ou à d'autres actions spécifique en fonction d'où l'on se trouve**.
+*   Et beaucoup d'autres ...
 
 ## Savoir comment empêcher le comportement par défaut
 
