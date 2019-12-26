@@ -188,8 +188,8 @@ Plusieurs éléments HTML, comme `<ul>`, `<ol>`, `<table>` et `<select>` ont des
 
 Il doit être noté que **cette limitation n'affecte pas les templates sous forme de chaîne de caractères provenant d'une des sources suivantes** :
 
-* **Un template de chaîne de caractères**.
+*   **Un template de chaîne de caractères**.
 
-* **Les composants monofichier (`.vue`)**.
+*   **Les composants monofichier (`.vue`)**.
 
-* **`<script type="text/x-template">`.**
+*   **`<script type="text/x-template">`.**
