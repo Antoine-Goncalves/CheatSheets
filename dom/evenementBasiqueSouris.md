@@ -4,20 +4,20 @@
 
 2 Catégories :
 
-1. Simple
-2. Complexe
+1.  Simple
+2.  Complexe
 
 ### Simple
 
-*   `mousedown` ou `mouseup` => **Le bouton de la souris est cliqué/relâché sur un élément**.
-*   `mouseover` ou `mouseout` => **Le pointeur de la souris sur/hors d'un élément**.
-*   `mousemove` => **Chaque souris survolant un élément déclenche cet événement**.
+- `mousedown` ou `mouseup` => **Le bouton de la souris est cliqué/relâché sur un élément**.
+- `mouseover` ou `mouseout` => **Le pointeur de la souris sur/hors d'un élément**.
+- `mousemove` => **Chaque souris survolant un élément déclenche cet événement**.
 
 ### Complexe
 
-*   `click` => **Déclenche après `mousedown`, puis `mouseup` sur le même élément si le bouton gauche de la souris a été utilisé**.
-*   `contextmenu` => **Déclenche après `mousedown` si le bouton droite de la souris a été utilisé**.
-*   `dblclick` => **Déclenche après un double clic sur un élément**.
+- `click` => **Déclenche après `mousedown`, puis `mouseup` sur le même élément si le bouton gauche de la souris a été utilisé**.
+- `contextmenu` => **Déclenche après `mousedown` si le bouton droite de la souris a été utilisé**.
+- `dblclick` => **Déclenche après un double clic sur un élément**.
 
 ## Ordre d'événements
 
@@ -28,22 +28,22 @@ Exemple: `mousedown` => `mouseup` => `click`.
 
 Les événements liés aux clics ont toujours une propriété `which`, qui permet de déterminer le bouton exact de la souris.
 
-*Note: Pas utilisé pour les événements `click` et `contextmenu`, car le premier spécifique au clic gauche et le second au clic droit.*
+_Note: Pas utilisé pour les événements `click` et `contextmenu`, car le premier spécifique au clic gauche et le second au clic droit._
 
 3 valeurs possibles :
 
-*   `event.which == 1` => **Le bouton de gauche**.
-*   `event.which == 2` => **Le bouton du milieu**.
-*   `event.which == 3` => **Le bouton de droite**.
+- `event.which == 1` => **Le bouton de gauche**.
+- `event.which == 2` => **Le bouton du milieu**.
+- `event.which == 3` => **Le bouton de droite**.
 
 ## Modificateurs => `shift`, `alt`, `ctrl` et `meta`
 
 Propriétés de l'événement :
 
-*   `shiftKey` => **`Shift`**.
-*   `altKey` => **`Alt` (`Opt` pour Mac)**.
-*   `ctrlKey` => **`Ctrl`**.
-*   `metaKey` => **`Cmd` pour Mac**.
+- `shiftKey` => **`Shift`**.
+- `altKey` => **`Alt` (`Opt` pour Mac)**.
+- `ctrlKey` => **`Ctrl`**.
+- `metaKey` => **`Cmd` pour Mac**.
 
 Ils sont `true` si ils correspondent à la touche enfoncée pendant l'événement.
 
@@ -51,8 +51,8 @@ Ils sont `true` si ils correspondent à la touche enfoncée pendant l'événemen
 
 2 types de coordonnées :
 
-1. **Relatives à la fenêtre => `clientX` et `clientY`**.
-2. **Relatives au document => `pageX` et `pageY`**.
+1.  **Relatives à la fenêtre => `clientX` et `clientY`**.
+2.  **Relatives au document => `pageX` et `pageY`**.
 
 ## Désactiver la sélection
 
