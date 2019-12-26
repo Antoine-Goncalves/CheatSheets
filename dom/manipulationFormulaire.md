@@ -8,8 +8,8 @@ Les formulaires de document sont membres de la collection spéciale `document.fo
 
 C'est ce qu'on appelle une "collection nommée": c'est à la fois nommé et ordonné. On peut utiliser le nom ou le numéro du document pour obtenir le formulaire.
 
-- **`document.forms.nom` => `form` avec le name="nom"**.
-- **`document.forms[0]` => le premier `form` dans le document**.
+-   **`document.forms.nom` => `form` avec le name="nom"**.
+-   **`document.forms[0]` => le premier `form` dans le document**.
 
 Lorsqu'on as un formulaire, tout élément est disponible dans la collection nommée `form.elements`.
 
@@ -55,13 +55,13 @@ option = new Option(text, value, defaultSelected, Selected);
 
 Paramètres:
 
-- **`text` => le texte à l'intérieur de l'option**.
-- **`value` => l'option `value`**.
-- **`defaultSelected` => si `true`, l'attribut HTML `selected` est crée**.
-- **`selected` => si `true`, l'option est sélectionnée**.
+-   **`text` => le texte à l'intérieur de l'option**.
+-   **`value` => l'option `value`**.
+-   **`defaultSelected` => si `true`, l'attribut HTML `selected` est crée**.
+-   **`selected` => si `true`, l'option est sélectionnée**.
 
 Les éléments d'option ont des propriétés:
 
-- **`option.selected` => l'option est-ele sélectionnée?**.
-- **`option.index` => le numéro de l'option parmi les autres dans ses `<select>`**.
-- **`option.text` => contenu textuel de l'option (vu par le visiteur)**.
+-   **`option.selected` => l'option est-ele sélectionnée?**.
+-   **`option.index` => le numéro de l'option parmi les autres dans ses `<select>`**.
+-   **`option.text` => contenu textuel de l'option (vu par le visiteur)**.
