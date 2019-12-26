@@ -1,4 +1,4 @@
-# Composants :
+# Composants
 
 Exemple de base :
 
