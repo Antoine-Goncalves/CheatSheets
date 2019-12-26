@@ -2,7 +2,7 @@
 
 Exemple de base :
 
-```
+```javascript
 // Définition d'un nouveau composant appelé `button-counter`
 Vue.component('button-counter', {
   data: function () {
@@ -16,7 +16,7 @@ Vue.component('button-counter', {
 
 Les composants sont des instances de Vue réutilisables avec un nom: dans notre cas `<button-counter>`. On peut utiliser ce composant en tant qu'élément personnalisé à l'intérieur d'une instance de Vue racine créée avec `new Vue` :
 
-```
+```javascript
 <div id="components-demo">
   <button-counter></button-counter>
 </div>
@@ -28,7 +28,7 @@ Puisque les composants sont des instances de Vue réutilisables, ils acceptent l
 
 Les composants peuvent être réutilisés autant de fois que souhaité :
 
-```
+```javascript
 <div id="components-demo">
   <button-counter></button-counter>
   <button-counter></button-counter>
@@ -38,7 +38,7 @@ Les composants peuvent être réutilisés autant de fois que souhaité :
 
 Quand on définit le composant `<button-counter>`, on doit faire attention que `data` ne soit pas directement fourni en tant qu'objet. **La propriété du composant `data` doit être une fonction**, afin que chaque instance puisse conserver une copie indépendante de l'objet retourné :
 
-```
+```javascript
 data: function () {
   return {
     count: 0
@@ -50,7 +50,7 @@ data: function () {
 
 Pour utiliser ces composants dans des templates, ils doivent être enregistrés pour que Vue les connaisse. Il y a deux types d'enregistrement de composant: **global** et **local**. On as vu uniquement en global avec `Vue.component` :
 
-```
+```javascript
 Vue.component('my-component-name', {
   // ... options ...
 })
@@ -60,7 +60,7 @@ Les composants enregistrés globalement peuvent être utilisés dans le template
 
 Les props sont des attributs personnalisables qu'on peut enregister dans un composant. Quand une valeur est passée à un attribut prop, elle devient une propriété de l'instance du composant. Pour passer un titre à quelque chose, on doit l'inclure dans une liste de props que ce composant accepte, en utilisant l'option `props` :
 
-```
+```javascript
 Vue.component('blog-post', {
   props: ['title'],
   template: '<h3>{{ title }}</h3>'
@@ -71,7 +71,7 @@ Un composant peut avoir autant de props que l'on souhaite et par défaut, n'impo
 
 Une fois une prop enregistrée, on peut lui passer des données en tant qu'attribut personnalisé comme ceci :
 
-```
+```javascript
 <blog-post title="Mon initiation avec Vue"></blog-post>
 <blog-post title="Blogger avec Vue"></blog-post>
 <blog-post title="Pourquoi Vue est tellement cool"></blog-post>
@@ -79,7 +79,7 @@ Une fois une prop enregistrée, on peut lui passer des données en tant qu'attri
 
 Dans une application typique, on préfère avoir un tableau de billets dans `data` :
 
-```
+```javascript
 new Vue({
   el: '#blog-post-demo',
   data: {
@@ -94,7 +94,7 @@ new Vue({
 
 Maintenant, faisons le rendu d'un composant pour chacun :
 
-```
+```javascript
 <blog-post
   v-for="post in posts"
   v-bind:key="post.id"
@@ -106,7 +106,7 @@ On peut utiliser `v-bind` pour dynamiquement passer des props. Cela est particul
 
 Quand on réalise un composant `<blog-post>`, notre template va éventuellement contenir plus que juste le titre :
 
-```
+```javascript
 <h3>{{ title }}</h3>
 ```
 
@@ -114,7 +114,7 @@ Quand on réalise un composant `<blog-post>`, notre template va éventuellement 
 
 Le temps sera alors venu de refactoriser le composant `<blog-post>` pour accepter une propriété `post` unique à la place :
 
-```
+```javascript
 <blog-post
   v-for="post in posts"
   v-bind:key="post.id"
@@ -142,7 +142,7 @@ Les évènements personnalisés peuvent aussi être utilisés pour créer des ch
 
 Par exemple :
 
-```
+```javascript
 Vue.component('custom-input', {
   props: ['value'],
   template: `
@@ -156,7 +156,7 @@ Vue.component('custom-input', {
 
 Exactement comme les éléments HTML, il est souvent utile de passer du contenu à un composant comme ceci :
 
-```
+```javascript
 <alert-box>
   Quelque chose s'est mal passé.
 </alert-box>
@@ -164,7 +164,7 @@ Exactement comme les éléments HTML, il est souvent utile de passer du contenu 
 
 Heureusement, cette tâche est vraiment simple avec l’élément personnalisé `<slot>` de Vue :
 
-```
+```javascript
 Vue.component('alert-box', {
   template: `
     <div class="demo-alert-box">
@@ -179,7 +179,7 @@ Parfois, il est utile de dynamiquement interchanger des composants.
 
 Ceci est rendu possible grâce à l'élément `<component>` de Vue avec l'attribut spécial `is` :
 
-```
+```javascript
 <!-- Component changes when currentTabComponent changes -->
 <component v-bind:is="currentTabComponent"></component>
 ```
