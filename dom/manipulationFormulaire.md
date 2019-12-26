@@ -49,7 +49,7 @@ L'élément `<select>` a 3 propriétés importantes:
 
 Il existe une syntaxe pour créer des éléments `<option>` :
 
-```
+```javascript
 option = new Option(text, value, defaultSelected, Selected);
 ```
 
