@@ -12,14 +12,14 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 
 ## Texte
 
-```
+```javascript
 <input v-model="message" placeholder="modifiez-moi">
 <p>Le message est : {{ message }}</p>
 ```
 
 ## Texte multiligne
 
-```
+```javascript
 <span>Le message multiligne est :</span>
 <p style="white-space: pre-line;">{{ message }}</p>
 <br>
@@ -28,14 +28,14 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 
 ## Checkbox
 
-```
+```javascript
 <input type="checkbox" id="checkbox" v-model="checked">
 <label for="checkbox">{{ checked }}</label>
 ```
 
 ## Radio
 
-```
+```javascript
 <input type="radio" id="one" value="Un" v-model="picked">
 <label for="one">Un</label>
 <br>
@@ -47,7 +47,7 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 
 ## Select
 
-```
+```javascript
 <select v-model="selected">
   <option disabled value="">Choisissez</option>
   <option>A</option>
@@ -66,7 +66,7 @@ new Vue({
 
 Options dynamiques générées avec `v-for` :
 
-```
+```javascript
 <select v-model="selected">
   <option v-for="option in options" v-bind:value="option.value">
     {{ option.text }}
@@ -91,7 +91,7 @@ new Vue({
 
 Pour les boutons radio, les cases à cocher et les listes d'options, les valeurs de liaison de `v-model` sont habituellement des chaînes de caractères statiques (ou des booléens pour une case à cocher) :
 
-```
+```javascript
 <!-- `picked` sera une chaine de caractères "a" quand le bouton radio sera sélectionné -->
 <input type="radio" v-model="picked" value="a">
 
@@ -112,7 +112,7 @@ Mais parfois on peut souhaiter lier la valeur à une propriété dynamique de l�
 
 Par défaut, `v-model` synchronise le champ avec les données après chaque évènement `input`. On peut ajouter le modificateur `lazy` pour synchroniser après les évènements `change` à la place :
 
-```
+```javascript
 <!-- synchronisé après le "change" au lieu du "input" -->
 <input v-model.lazy="msg" >
 ```
@@ -121,7 +121,7 @@ Par défaut, `v-model` synchronise le champ avec les données après chaque év�
 
 Si on veut que la saisie utilisateur soit automatiquement convertie en nombre, on peut ajouter le modificateur `number` à vos champs gérés par `v-model` :
 
-```
+```javascript
 <input v-model.number="age" type="number">
 ```
 
@@ -129,7 +129,7 @@ Si on veut que la saisie utilisateur soit automatiquement convertie en nombre, o
 
 Si on veut que les espaces superflus de saisies utilisateur soient automatiquement retirés, on peut ajouter le modificateur `trim` à vos champs gérés par `v-model` :
 
-```
+```javascript
 <input v-model.trim="msg">
 ```
 
