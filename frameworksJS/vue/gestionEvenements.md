@@ -1,4 +1,4 @@
-# Gestion des évènements :
+# Gestion des évènements
 
 On peut utiliser l'instruction `v-on` pour écouter les évènements du DOM afin d'exécuter du JS lorsque ces évènements surviennent.
 Par exemple :
