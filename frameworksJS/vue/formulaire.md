@@ -6,9 +6,9 @@ On peut utiliser la directive `v-model` pour créer une liaison de données bidi
 
 `v-model` utilise en interne différentes propriétés et émetteurs d'évènement pour différents éléments de saisie :
 
-* **Les éléments `text` et `textarea` utilisent la propriété `value` et évènement `input`**;
-* **Les éléments `checkboxes` et `radiobuttons` utilisent la propriété `checked` et l'évènement `change`**;
-* **Les évènements `select` utilisent `value` comme une propriété et `change` comme un évènement**.
+*   **Les éléments `text` et `textarea` utilisent la propriété `value` et évènement `input`**;
+*   **Les éléments `checkboxes` et `radiobuttons` utilisent la propriété `checked` et l'évènement `change`**;
+*   **Les évènements `select` utilisent `value` comme une propriété et `change` comme un évènement**.
 
 ## Texte
 
@@ -108,7 +108,7 @@ Mais parfois on peut souhaiter lier la valeur à une propriété dynamique de l�
 
 ## Modificateurs
 
-* `.lazy` :
+*   `.lazy` :
 
 Par défaut, `v-model` synchronise le champ avec les données après chaque évènement `input`. On peut ajouter le modificateur `lazy` pour synchroniser après les évènements `change` à la place :
 
@@ -117,7 +117,7 @@ Par défaut, `v-model` synchronise le champ avec les données après chaque év�
 <input v-model.lazy="msg" >
 ```
 
-* `.number` :
+*   `.number` :
 
 Si on veut que la saisie utilisateur soit automatiquement convertie en nombre, on peut ajouter le modificateur `number` à vos champs gérés par `v-model` :
 
@@ -125,7 +125,7 @@ Si on veut que la saisie utilisateur soit automatiquement convertie en nombre, o
 <input v-model.number="age" type="number">
 ```
 
-* `.trim` :
+*   `.trim` :
 
 Si on veut que les espaces superflus de saisies utilisateur soient automatiquement retirés, on peut ajouter le modificateur `trim` à vos champs gérés par `v-model` :
 
