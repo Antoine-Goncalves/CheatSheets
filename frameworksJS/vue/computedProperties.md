@@ -4,7 +4,7 @@ Les expressions sont uniquement destinées à des opérations simples.
 
 Exemple:
 
-```
+```javascript
 <div id="example">
   <p>Message original : "{{ message }}"</p>
   <p>Message inversé calculé : "{{ reversedMessage }}"</p>
