@@ -3,7 +3,7 @@
 On peut utiliser l'instruction `v-on` pour écouter les évènements du DOM afin d'exécuter du JS lorsque ces évènements surviennent.
 Par exemple :
 
-```
+```javascript
 <div id="example-1">
   <button v-on:click="counter += 1">Add 1</button>
   <p>Le bouton ci-dessus a été cliqué {{ counter }} fois.</p>
@@ -23,7 +23,7 @@ Au lieu de lier directement la méthode par son nom dans l'attribut, on peut ég
 
 Parfois on as besoin d'accéder à l'évènement original du DOM depuis l'instruction dans l'attribut. On peut passer à une méthode en utilisant la variable spéciale `$event` :
 
-```
+```javascript
 <button v-on:click="warn('Le formulaire ne peut être soumis pour le moment.', $event)">
   Soumettre
 </button>
