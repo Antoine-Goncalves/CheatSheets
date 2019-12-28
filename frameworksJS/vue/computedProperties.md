@@ -1,4 +1,4 @@
-# Intérêt des `computed properties` :
+# Intérêt des `computed properties`
 
 Les expressions sont uniquement destinées à des opérations simples.
 
