@@ -4,7 +4,7 @@
 
 *   **Créer une instance de Vue :**
 
-```
+```javascript
 var vm = new Vue({
   // options
 })
@@ -16,7 +16,7 @@ var vm = new Vue({
 
 *   **Quand une instance de Vue est créée, cela ajoute toutes les propriétés dans son objet `data` au système réactif de Vue. Quand une valeur de ces propriétés change, la vue va alors changer, elle se met à jour pour concorder avec les nouvelles valeurs.**
 
-```
+```javascript
 // Notre objet de données :
 
 var data = { a: 1}
