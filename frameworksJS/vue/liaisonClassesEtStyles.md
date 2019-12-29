@@ -12,7 +12,7 @@ Il est possible de passer un objet à `v-bind:class` pour permuter les classes a
 
 On peut permuter plusieurs classes en ayant plus de champs dans l'objet. La directive `v-bind:class` peut aussi coexister avec l'attribut `class`. L'objet lié n'a pas besoin d'être déclaré dans l'attribut, on obtient le même résultat. Il est également possible de lier une **propriété calculée** qui retourne un objet. C'est une méthode courante et puissante :
 
-```
+```javascript
 <div v-bind:class="classObject"></div>
 
 data: {
@@ -31,7 +31,7 @@ computed: {
 
 Il est possible de passer un tableau à `v-bind:class` pour appliquer une liste de classes.
 
-```
+```javascript
 <div v-bind:class="[activeClass, errorClass]"></div>
 
 data: {
@@ -46,7 +46,7 @@ Quand on utilise l’attribut `class` sur un composant personnalisé, ces classe
 
 La syntaxe objet pour `v-bind:style` est assez simple (presque comme du CSS), sauf que c’est un objet JavaScript. On peut utiliser camelCase ou kebab-case (camelCase meilleur) pour les noms des propriétés CSS :
 
-```
+```javascript
 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
 
 data: {
@@ -63,7 +63,7 @@ Quand on utilise une propriété CSS qui nécessite un **préfixe vendeur** dans
 
 On peut maintenant fournir de multiples valeurs de préfixes à une propriété style, par exemple :
 
-```
+```javascript
 <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 ```
 
