@@ -1,6 +1,6 @@
-# Rendu de liste :
+# Rendu de liste
 
-## Associer un tableau à des éléments avec `v-for` :
+## Associer un tableau à des éléments avec `v-for`
 
 On peut utiliser la directive `v-for` pour faire le rendu d'une liste d'éléments en se basant sur un tableau. La directive `v-for` utilise une syntaxe spécifique de la forme `item in items`, où `items` représente le tableau source des données et où `item` est un `alias` représentant l'élément du tableau en cours d'itération :
 
@@ -49,7 +49,7 @@ On peut aussi utiliser `of` en mot-clé à la place de `in` :
 <div v-for="item of items"></div>
 ```
 
-## `v-for` avec l'objet :
+## `v-for` avec l'objet
 
 On peut aussi utiliser `v-for` pour utérer sur les propriétés d'un objet.
 
@@ -106,7 +106,7 @@ Il est recommandé de fournir une `key` avec `v-for` chaque fois que possible, �
 
 *Note: Ne pas utiliser des valeurs non primitive comme des objets ou des tableauw comme clés pour `v-for`. Utiliser des chaînes de caractères ou des nombres à la place.*
 
-## Changement dans un tableau :
+## Changement dans un tableau
 
 Vue surcharge les méthodes de mutation d'un tableau observé afin qu'elles déclenchent également des mises à jour de la vue. Les méthodes sont :
 
