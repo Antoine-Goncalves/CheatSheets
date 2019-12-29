@@ -4,13 +4,13 @@
 
 La directive `v-if` est utilisée pour conditionnellement faire le rendu d'un bloc. Le rendu du bloc sera effectué uniquement si l'expression de la directive retourne une valeur évaluée en vrai.
 
-```
+```javascript
 <h1 v-if="awesome">Vue est extraordinaire !</h1>
 ```
 
 Possible d'ajouter une structure "sinon" avec `v-else` :
 
-```
+```javascript
 <h1 v-if="awesome">Vue est extraordinaire !</h1>
 
 <h1 v-else>Oh non 😢</h1>
@@ -22,7 +22,7 @@ Comme `v-if` est une directive, elle doit être attachée à un seul élément. 
 
 On peut utiliser la directive `v-else` pour indiquer une "structure sinon" pour `v-if` :
 
-```
+```javascript
 <div v-if="Math.random() > 0.5">
   Maintenant vous me voyez
 </div>
@@ -41,7 +41,7 @@ Semblable à `v-else`, un élément `v-else-if` doit immédiatement suivre un é
 
 Vue tente de restituer les éléments aussi efficacement que possible, en les réutilisant souvent au lieu de faire de la restitution à partir de zéro. En plus de permettre à Vue d’être très rapide, cela peut avoir quelques avantages utiles. Par exemple, si vous autorisez les utilisateurs à choisir entre plusieurs types de connexion :
 
-```
+```javascript
 <template v-if="loginType === 'username'">
   <label>Nom d'utilisateur</label>
   <input placeholder="Entrez votre nom d'utilisateur">
@@ -56,7 +56,7 @@ Le `<input>` n'est pas remplacé (juste son `placeholder`).
 
 C'est pourquoi Vue offre un moyen de les rendre complètement distincts. Il faut ajouter un attribut `key` avec des valeurs uniques :
 
-```
+```javascript
 <template v-if="loginType === 'username'">
   <label>Nom d'utilisateur</label>
   <input placeholder="Entrez votre nom d'utilisateur" key="username-input">
@@ -71,7 +71,7 @@ C'est pourquoi Vue offre un moyen de les rendre complètement distincts. Il faut
 
 Une autre option pour afficher conditionnellement un élément est la directive `v-show`.
 
-```
+```javascript
 <h1 v-show="ok">Bonjour !</h1>
 ```
 
