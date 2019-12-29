@@ -110,13 +110,13 @@ Il est recommandé de fournir une `key` avec `v-for` chaque fois que possible, �
 
 Vue surcharge les méthodes de mutation d'un tableau observé afin qu'elles déclenchent également des mises à jour de la vue. Les méthodes sont :
 
-* `push()`
-* `pop()`
-* `shift()`
-* `unshift()`
-* `splice()`
-* `sort()`
-* `reverse()`
+*   `push()`
+*   `pop()`
+*   `shift()`
+*   `unshift()`
+*   `splice()`
+*   `sort()`
+*   `reverse()`
 
 Les méthodes de mutation, modifient le tableau d'origine sur lequel elles sont appelées. En comparaison, il y a aussi des méthodes non-mutatives comme par exemple `filter()`, `concat()` et `slice()`, qui ne changent pas le tableau original mais **retourne toujours un nouveau tableau**. Quand on travaille avec des méthodes non-mutatives, on peut juste remplacer l'ancien tableau par le nouveau :
 
