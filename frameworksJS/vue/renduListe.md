@@ -4,7 +4,7 @@
 
 On peut utiliser la directive `v-for` pour faire le rendu d'une liste d'éléments en se basant sur un tableau. La directive `v-for` utilise une syntaxe spécifique de la forme `item in items`, où `items` représente le tableau source des données et où `item` est un `alias` représentant l'élément du tableau en cours d'itération :
 
-```
+```javascript
 <ul id="example-1">
   <li v-for="item in items">
     {{ item.message }}
@@ -24,7 +24,7 @@ var example1 = new Vue({
 
 À l'intérieur des structures `v-for`, on as un accès complet aux propriétés de la portée parente. `v-for` supporte également un second argument optionnel représentant l'index de l'élément courant.
 
-```
+```javascript
 <ul id="example-2">
   <li v-for="(item, index) in items">
     {{ parentMessage }} - {{ index }} - {{ item.message }}
@@ -45,7 +45,7 @@ var example2 = new Vue({
 
 On peut aussi utiliser `of` en mot-clé à la place de `in` :
 
-```
+```javascript
 <div v-for="item of items"></div>
 ```
 
@@ -53,7 +53,7 @@ On peut aussi utiliser `of` en mot-clé à la place de `in` :
 
 On peut aussi utiliser `v-for` pour utérer sur les propriétés d'un objet.
 
-```
+```javascript
 <ul id="v-for-object" class="demo">
   <li v-for="value in object">
     {{ value }}
@@ -74,7 +74,7 @@ new Vue({
 
 On peut également fournir un deuxième argument représentant la clé de la propriété courante.
 
-```
+```javascript
 <div v-for="(value, name) in object">
   {{ name }}: {{ value }}
 </div>
@@ -82,7 +82,7 @@ On peut également fournir un deuxième argument représentant la clé de la pro
 
 et un autre pour l'index :
 
-```
+```javascript
 <div v-for="(value, name, index) in object">
   {{ index }}. {{ name }}: {{ value }}
 </div>
@@ -96,7 +96,7 @@ Ce mode par défaut est performant, mais adapté seulement lorsque **le résulta
 
 Pour expliquer à Vue comment suivre l'identité de chaque noeud, afin que les éléments existants puissent être réutilisés et réordonnés, vous devez fournir un attribut unique `key` pour chaque élément:
 
-```
+```javascript
 <div v-for="item in items" :key="item.id">
   <!-- contenu -->
 </div>
@@ -120,7 +120,7 @@ Vue surcharge les méthodes de mutation d'un tableau observé afin qu'elles déc
 
 Les méthodes de mutation, modifient le tableau d'origine sur lequel elles sont appelées. En comparaison, il y a aussi des méthodes non-mutatives comme par exemple `filter()`, `concat()` et `slice()`, qui ne changent pas le tableau original mais **retourne toujours un nouveau tableau**. Quand on travaille avec des méthodes non-mutatives, on peut juste remplacer l'ancien tableau par le nouveau :
 
-```
+```javascript
 example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
@@ -135,7 +135,7 @@ Il y a malheureusement des limitations dans tout ça. Vue ne peut pas détecter 
 
 Par exemple :
 
-```
+```javascript
 var vm = new Vue({
   data: {
     items: ['a', 'b', 'c']
@@ -147,7 +147,7 @@ vm.items.length = 2 // N'est PAS réactive
 
 De nouveau, **Vue ne peut détecter l'ajout ou la suppression d'une propriété**. Par exemple :
 
-```
+```javascript
 var vm = new Vue({
   data: {
     a: 1
@@ -161,7 +161,7 @@ vm.b = 2
 
 Vue ne permet pas d'ajouter dynamiquement de nouvelles propriétés réactives au niveau racine sur des instances déjà créées. On peut malgré tout utiliser la méthode `Vue.set(object, propertyName, value)`. Par exemple :
 
-```
+```javascript
 var vm = new Vue({
   data: {
     userProfile: {
@@ -179,7 +179,7 @@ Cela ajoute un nouvelle propriété `age` à l'objet imbriqué `userProfile`.
 
 Parfois on veut afficher une version filtrée ou triée d'un tableau sans pour autant modifier ou réassigner les données d'origine. Dans ce cas, on peut créer une propriété calculée qui retourne le tableau filtré ou trié.
 
-```
+```javascript
 <li v-for="n in evenNumbers">{{ n }}</li>
 
 data: {
@@ -196,7 +196,7 @@ computed: {
 
 Dabs les situations où les propriétés calculées ne sont pas utilisables, on peut juste utiliser une méthode:
 
-```
+```javascript
 <li v-for="n in even(numbers)">{{ n }}</li>
 
 data: {
@@ -213,7 +213,7 @@ methods: {
 
 `v-for` peut également prendre un nombre entier. Dans ce cas, il répètera le template autant de fois qu'indiqué.
 
-```
+```javascript
 <div>
   <span v-for="n in 10">{{ n }} </span>
 </div>
@@ -221,7 +221,7 @@ methods: {
 
 De la même manière qu'avec `v-if`, on peut également utiliser la balise `<template>` avec `v-for` pour faire le rendu d'une structure contenant de multiples éléments. Par exemple :
 
-```
+```javascript
 <ul>
   <template v-for="item in items">
     <li>{{ item.msg }}</li>
@@ -236,7 +236,7 @@ Quand ils existent sur le même nœud, `v-for` a une priorité plus élevée que
 
 On peut directement utiliser `v-for` sur un composant personnalisé, comme sur n'importe quel autre élément standard :
 
-```
+```javascript
 <my-component v-for="item in items" :key="item.id"></my-component>
 ```
 
