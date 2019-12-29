@@ -4,7 +4,7 @@
 
 La forme la plus élémentaire de la liaison de données est l'**interpolation** de texte en utilisant la syntaxe *Moustache* (les doubles accolades).
 
-```
+```javascript
 <span>Message: {{ msg }}</span>
 ```
 
@@ -16,13 +16,13 @@ L'interpolations interprètent la **donnée en tant que texte brut, pas en HTML*
 
 Les moustache ne peuvent pas être utilisées à l'intérieur des attributs HTML, à la place on utilise la **directive `v-bind`**.
 
-```
+```javascript
 <div v-bind:id="dynamicId"></div>
 ```
 
 Dans le cas des attributs booléens qui impliquent la présence d'une valeur évaluée à `true`, `v-bind` fonctionne différemment.
 
-```
+```javascript
 <button v-bind:disabled="isButtonDisabled">Button</button>
 ```
 
@@ -42,7 +42,7 @@ Un autre exemple est la directive `v-on`, qui écoute les événements du DOM.
 
 Il est aussi possible d'utiliser des expressions JS dans un argument de directive inclus entre crochets :
 
-```
+```javascript
 <a v-bind:[attributeName]="url"> ... </a>
 ```
 
@@ -50,7 +50,7 @@ Il est aussi possible d'utiliser des expressions JS dans un argument de directiv
 
 Pareil pour lier un gestionnaire d'évènement à un nom d'évènement dynamique :
 
-```
+```javascript
 <a v-on:[eventName]="doSomething"> ... </a>
 ```
 
@@ -70,7 +70,7 @@ Le préfixe `v-` sert d'indicateur visuel pour identifier les attriuts spécifiq
 
 *   **Abréviation pour `v-bind`** :
 
-```
+```javascript
 <!-- syntaxe complète -->
 <a v-bind:href="url"> ... </a>
 
@@ -83,7 +83,7 @@ Le préfixe `v-` sert d'indicateur visuel pour identifier les attriuts spécifiq
 
 *   **Abréviation pour `v-on`**
 
-```
+```javascript
 <!-- syntaxe complète -->
 <a v-on:click="doSomething"> ... </a>
 
