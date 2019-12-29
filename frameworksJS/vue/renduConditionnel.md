@@ -1,6 +1,6 @@
-# Rendu conditionnel :
+# Rendu conditionnel
 
-## `v-if` :
+## `v-if`
 
 La directive `v-if` est utilisée pour conditionnellement faire le rendu d'un bloc. Le rendu du bloc sera effectué uniquement si l'expression de la directive retourne une valeur évaluée en vrai.
 
@@ -18,7 +18,7 @@ Possible d'ajouter une structure "sinon" avec `v-else` :
 
 Comme `v-if` est une directive, elle doit être attachée à un seul élément. Mais comment faire si on veut permuter plusieurs éléments ? Dans ce cas, on peut utiliser `v-if` sur un élément `<template>`, qui sert d'enveloppe invisible. Le résultat final rendu n'inclura pas l'élément `<template>`.
 
-## `v-else` :
+## `v-else`
 
 On peut utiliser la directive `v-else` pour indiquer une "structure sinon" pour `v-if` :
 
@@ -33,7 +33,7 @@ On peut utiliser la directive `v-else` pour indiquer une "structure sinon" pour 
 
 Un élément `v-else` doit immédiatement suivre un élément `v-if` ou un élément `v-else-if` (sinon il ne sera pas reconnu).
 
-## `v-else-if` :
+## `v-else-if`
 
 Le `v-else-if`, comme le nom le suggère, sert comme une "structure sinon si" pour `v-if`.
 
@@ -67,7 +67,7 @@ C'est pourquoi Vue offre un moyen de les rendre complètement distincts. Il faut
 </template>
 ```
 
-## `v-show` :
+## `v-show`
 
 Une autre option pour afficher conditionnellement un élément est la directive `v-show`.
 
@@ -79,7 +79,7 @@ La différence est qu’un élément avec `v-show` sera toujours restitué et re
 
 *Note: `v-show` ne prend pas en charge la syntaxe de l'élément `<template>` et ne fonctionne pas avec `v-else`*.
 
-## `v-if` vs `v-show` :
+## `v-if` vs `v-show`
 
 `v-if` est un "vrai" rendu conditionnel car il garantit que les écouteurs d'évènements et les composants enfants à l'intérieur de la structure conditionnelle sont correctement détruits et recréés lors des permutations.
 
