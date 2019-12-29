@@ -130,8 +130,8 @@ Remplacer un tableau par un autre contenant des objets différents à certains i
 
 Il y a malheureusement des limitations dans tout ça. Vue ne peut pas détecter les changements suivants dans un tableau :
 
-1. Quand on affecte directement un élément à un index.
-2. Quand on modifie la longueur du tableau.
+1.  Quand on affecte directement un élément à un index.
+2.  Quand on modifie la longueur du tableau.
 
 Par exemple :
 
