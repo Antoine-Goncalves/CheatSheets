@@ -1,4 +1,4 @@
-# Comparaison en JS :
+# Comparaison en JS
 
 **Le résulat d'une comparaison est un booléeen**. (True ou False)
 
@@ -14,13 +14,13 @@ L'algoritme pour comparé 2 string est simple :
 
 _Note: L'ordre Unicode fait que les minuscules sont supérieur au majuscule._
 
-## Comparaison de différents types :
+## Comparaison de différents types
 
 Quand on compare différents types, JS les convertie en nombre.
 
 Pour booléen, True devient et False devient.
 
-## Égalité stricte :
+## Égalité stricte
 
 l'égalité (`==`) as un problème. Il ne différencie pas 0 de false.
 
@@ -36,7 +36,7 @@ Si a et b sont de types différents, alors `a===b` retourne false.
 
 Il existe aussi l'opérateur "non-égal strict" `!==`. L'opérateur égalité stricte est plus long à écrire, mais rend évident le résultat et laisse moins d'erreur.
 
-## Comparaison entre `null` et `undefined` :
+## Comparaison entre `null` et `undefined`
 
 Avec l'égalité strict `===` : False.
 
