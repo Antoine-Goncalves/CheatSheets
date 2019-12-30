@@ -1,4 +1,4 @@
-# Boucle : `while` et `for` :
+# Boucle : `while` et `for`
 
 On doit souvent répéter des actions, les boucles sont un moyen de répeter plusieurs code multpiles.
 
@@ -15,7 +15,7 @@ Tant que la condition est vrai, le code du bosy est exécuté.
 
 Une simple exécution de la boucle body est appelée une itération.
 
-## La boucle `do..while`:
+## La boucle `do..while`
 
 Syntaxe =>
 
@@ -29,7 +29,7 @@ La boucle vas exécuter le body en prémier, ensuite check la condition, et, si 
 
 Forme de syntaxe utilisé si la boucle body s'exécute au moins une fois.
 
-## La boucle `for` :
+## La boucle `for`
 
 La boucle `for` est plus complexe, mais c'est aussi le plus courramment utilisé.
 
