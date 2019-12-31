@@ -4,8 +4,8 @@
 
 Principales différences entre déclaration et expression :
 
-- La syntaxe.
-- `Function Declaration` : une fonction, déclarée comme une instruction séparée, dans le flux de code principal.
+-   La syntaxe.
+-   `Function Declaration` : une fonction, déclarée comme une instruction séparée, dans le flux de code principal.
 
 Syntaxe :
 
@@ -15,7 +15,7 @@ function sum(a, b) {
 }
 ```
 
-- `Function Expression` : une fonction, créer dans une expression ou dans une autre construction de syntaxe. Ici, la fonction est créer à droite de l'expression "assignement =".
+-   `Function Expression` : une fonction, créer dans une expression ou dans une autre construction de syntaxe. Ici, la fonction est créer à droite de l'expression "assignement =".
 
 Syntaxe :
 
