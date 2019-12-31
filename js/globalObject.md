@@ -1,4 +1,4 @@
-# Objet Global :
+# Objet Global
 
 L’objet global fournit des variables et des fonctions qui sont disponibles partout. Par défaut, celles qui sont intégrées au langage ou à l’environnement.
 
