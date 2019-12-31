@@ -1,1 +1,1 @@
-# Gestion des erreurs avec les promesses :
+# Gestion des erreurs avec les promesses
