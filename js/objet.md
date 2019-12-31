@@ -14,9 +14,10 @@ Un objet peut être **créer avec les acolades {...}** avec une liste optionnel 
 Litéral et propriétés : On peut **immédiatemment ajouter plusieurs propriétés dans {..} comme "clé:valeur"**.
 
 ```javascript
-let user = {                // un objet.
-    name: "Antoine",        // clé name avec "Antoine".
-    age: 23,                // clé age avec 23.
+let user = {
+  // un objet.
+  name: "Antoine", // clé name avec "Antoine".
+  age: 23 // clé age avec 23.
 };
 ```
 
@@ -34,8 +35,8 @@ Les propriétés de valeurs sont accessible en utilisant la notation `.`.
 ```javascript
 // obtenir les valeurs d'un objet
 
-alert(user.name);   // Antoine
-alert(user.age);    // 23
+alert(user.name); // Antoine
+alert(user.age); // 23
 ```
 
 La valeur peut-être de n'importe quel type. On peut ajouter un booléen.
@@ -50,9 +51,9 @@ Exemple:
 
 ```javascript
 let user = {
-    name: "Antoine",
-    age: 23,
-    "aime le foot": true    // MOTS MULTIPLES ENTRE "", ❗️ ❗️
+  name: "Antoine",
+  age: 23,
+  "aime le foot": true // MOTS MULTIPLES ENTRE "", ❗️ ❗️
 };
 ```
 
@@ -79,7 +80,7 @@ user["aime le foot"] = true;
 
 // récupère
 
-alert(user["aime le foot"]);    // true
+alert(user["aime le foot"]); // true
 
 // supprime
 
@@ -92,7 +93,7 @@ Les crochets permet d'obtenir le nom de propriété à la suite de toute express
 let key = "aime le foot";
 
 // pareil que user["aime le foot"] = true;
-user [key] = true;
+user[key] = true;
 ```
 
 Ici, la variable `key` peut être calculé en exécution ou dépendre de ce que l'utilisateur écrit. Grâce à ça, il permet d'accéder à la propriété. Cela donne beaucoup de flexibilité.
@@ -135,7 +136,7 @@ Exemple :
 let fruit = "pomme";
 
 let sac = {
-    [fruit + 'Computers']: 5    // sac.pommeComputers = 5.
+  [fruit + "Computers"]: 5 // sac.pommeComputers = 5.
 };
 ```
 
