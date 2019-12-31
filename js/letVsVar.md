@@ -68,12 +68,12 @@ function sayHi() {
   var phrase = "Hello";
 }
 
-sayHi();    // undefined
+sayHi(); // undefined
 ```
 
 La ligne `var phrase = "Hello"` contient deux actions :
 
-1. Déclaration de variable `var`.
-2. Affectation de variable `=`.
+1.  Déclaration de variable `var`.
+2.  Affectation de variable `=`.
 
 C'est pourquoi l'affectation doit **TOUJOURS** être mis en premier.
