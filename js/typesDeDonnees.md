@@ -10,9 +10,9 @@ Les nombres représentent les entiers et les flottants. Il y a plusieurs opérat
 
 3 types de quotes:
 
-* **Double ("")**.
-* **Simple('')**.
-* **Backticks(``)**.
+*   **Double ("")**.
+*   **Simple('')**.
+*   **Backticks(``)**.
 
 Double et simple sont pareil, 0 différences en js. Backticks est une quote "fonctionnalité étendu". Il permet d'insérer des variables et expressions dans la chaîne en écrivant ${..}.
 
@@ -20,8 +20,8 @@ Double et simple sont pareil, 0 différences en js. Backticks est une quote "fon
 
 2 valeurs:
 
-* **`True`**.
-* **`False`**.
+*   **`True`**.
+*   **`False`**.
 
 Ce type est utilisé pour stocker das valeurs yes/no , où `true` veut dire "oui, correct" et `false` veut dire "non, incorrect".
 
@@ -42,5 +42,6 @@ Le type `symbol` est utilisé pour créer des identifiants unique pour `object`.
 ## L'opérateur `typeof`
 
 Il retourne un type d'argument. Utile si l'on veut savoir le type de quelque chose. Il supporte 2 formes de syntaxe:
-* **comme opérateur => typeof x**
-* **comme fonction => typeof (x)**
+
+*   **comme opérateur => typeof x**
+*   **comme fonction => typeof (x)**
