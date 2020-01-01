@@ -1,8 +1,8 @@
 # Promise
 
-1. _Un `"code producteur"` qui fait quelque chose et prend du temps. Par exemple, un code qui charge les données sur un réseau._
-2. _Un `"code consommateur"` qui veut le résultat du `"code producteur"` une fois prêt. Beaucoup de fonctions peuvent avoir besoin de ce résultat._
-3. **Une `promise` est un objet JavaScript spécial qui lie le `"code producteur"` et le `"code consommateur"`**. _Le `"code producteur"` prend tout le temps nécessaire pour produire le résultat promis, et la `"promesse"` rend ce résultat disponible pour tout le code souscrit lorsqu'il est prêt._
+1.  _Un `"code producteur"` qui fait quelque chose et prend du temps. Par exemple, un code qui charge les données sur un réseau._
+2.  _Un `"code consommateur"` qui veut le résultat du `"code producteur"` une fois prêt. Beaucoup de fonctions peuvent avoir besoin de ce résultat._
+3.  **Une `promise` est un objet JavaScript spécial qui lie le `"code producteur"` et le `"code consommateur"`**. _Le `"code producteur"` prend tout le temps nécessaire pour produire le résultat promis, et la `"promesse"` rend ce résultat disponible pour tout le code souscrit lorsqu'il est prêt._
 
 La syntaxe du constructeur pour un objet `promise` est :
 
@@ -43,8 +43,8 @@ let promise = new Promise(function(resolve, reject) {
 
 On peut voir deux choses en exécutant le code ci-dessus:
 
-1. **L'** _exécuteur_ **est appelé automatiquement et immédiatement (par `new Promise`)**.
-2. **L'** _exécuteur_ **reçoit deux arguments : `resolve` et `reject` => Ces fonctions sont prédéfinies par le moteur JavaScript. Donc pas besoin de les créer. On as seulement besoin d'appeler l'une d'entre elle lorsqu'on est prêt.**
+1.  **L'** _exécuteur_ **est appelé automatiquement et immédiatement (par `new Promise`)**.
+2.  **L'** _exécuteur_ **reçoit deux arguments : `resolve` et `reject` => Ces fonctions sont prédéfinies par le moteur JavaScript. Donc pas besoin de les créer. On as seulement besoin d'appeler l'une d'entre elle lorsqu'on est prêt.**
 
 Après une seconde de "traitement" l'_exécuteur_ appelle `resolve("done")` pour produire le résultat. Cela change `state` de l'objet `promise`.
 
@@ -162,9 +162,9 @@ new Promise((resolve, reject) => {
 
 Il y a plusieurs différences avec `then(f,f)` :
 
-1. Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".
-2. Un gesstionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.
-3. Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.
+1.  Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".
+2.  Un gesstionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.
+3.  Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.
 
 On peut voir des exemples où les promesses peuvent aider à écrire du code asynchrone.
 
