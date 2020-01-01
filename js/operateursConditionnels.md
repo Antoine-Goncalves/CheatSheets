@@ -6,7 +6,7 @@ Le if(..) évalue une condition entre parenthèse et, si le résultat est `true`
 
 Exemple :
 
-```
+```javascript
 let year = prompt('Quelle année somme-nous?','');
 if (year==2019) alert('Exact!');
 ```
@@ -28,7 +28,7 @@ L'opérateur `if` peut contenir des blocks `else` optionnel. Il s'éxecute si la
 
 Exemple :
 
-```
+```javascript
 let year = prompt('Quelle année somme-nous ?', '');
 
 if (year == 2019) {
@@ -44,7 +44,7 @@ Des fois, on veut utiliser plusieurs variante de condition. La clause `else if` 
 
 Exemple :
 
-```
+```javascript
 let age = prompt('Âge de majorité ?', '');
 
 if (age < 18) {
@@ -62,7 +62,7 @@ Parfois, on doit assigner une variable en fonction d'une condition. Avec l'opér
 
 La syntaxe est :
 
-```
+```javascript
 let result = condition ? resp1 : resp2;
 ```
 
@@ -74,7 +74,7 @@ Une séquence de `?` peut retourner une valeur qui dépend de plusieurs conditio
 
 Exemple :
 
-```
+```javascript
 let age = prompt('age?', 18);
 
 let message = (age < 3) ? 'Coucou, bébé!' :
