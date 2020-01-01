@@ -11,7 +11,8 @@ Quand une fonction résoud une tâche, dans un processus il peut appeler plusieu
 1.  Pensée itérative : la boucle `for`.
 
 Exemple:
-```
+
+```javascript
 function pow(x, n) {
   let result = 1;
 
@@ -27,7 +28,8 @@ function pow(x, n) {
 2.  Pensée récursive : simplifie la tâche et rappelle la fonction dans le code.
 
 Exemple:
-```
+
+```javascript
 function pow(x, n) {
   if (n == 1) {
     return x;
