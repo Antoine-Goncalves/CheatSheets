@@ -1,4 +1,4 @@
-# Promesses Chaining :
+# Promesses Chaining
 
 L'enchaînement des promesses ressemble à ça :
 
@@ -71,7 +71,7 @@ Tous les `.then` sur la même promesse obtiennet le même résultat (ici `1`).
 
 En pratique, on as rarement besoin de plusieurs gestionnaires pour une même promesse. Le chaînage est utilisé beaucoup plus souvent.
 
-## Renvoie de promesses :
+## Renvoie de promesses
 
 Un gestionnaire, utilisé dans `.then(handler)` peut créer et renvoyer une promesse.
 
@@ -111,7 +111,7 @@ Ce qui change avec le code ci-dessus , il y a maintenant un délair d'une second
 
 Le renvoie des promesses permet de contruire des chaînes d'actions asynchrones.
 
-## Exemple : `fetch` :
+## Exemple  `fetch`
 
 La syntaxe est :
 
