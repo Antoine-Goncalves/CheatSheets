@@ -19,8 +19,8 @@ Il est recommandé, pour la visibilité, d'écrire entre {..} si on utilise l'op
 
 L'opérateur `if {..}` évalue l'expression entre parenthèses et convertie le résultat en booléen.
 
-- _Le nombre 0, chaîne vide "", `null`, `undefined` and `NaN` deviennent `false`. Car ils sont appellées les valeurs fausses._
-- _Toutes les autres valeurs deviennent `true`, et sont appelées les vrais_
+-   _Le nombre 0, chaîne vide "", `null`, `undefined` and `NaN` deviennent `false`. Car ils sont appellées les valeurs fausses._
+-   _Toutes les autres valeurs deviennent `true`, et sont appelées les vrais_
 
 ## La clause `else`
 
