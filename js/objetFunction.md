@@ -1,10 +1,10 @@
-# L'objet Function, EFN :
+# L'objet Function, EFN
 
 Pour JS , les fonctions sont des objets.
 
 Un bon moyen d’imaginer des fonctions est en tant que des “objets d’action” qu’on peut appeler. On peut non seulement les appeler, mais aussi les traiter comme des objets: ajouter/supprimer des propriétés, passer par référence, etc.
 
-## La propriété `name` :
+## La propriété `name`
 
 Les objets fonction contiennent quelques propriétés utilisables.
 
@@ -17,7 +17,7 @@ function sayHi () {
 alert(sayHi.name);  // sayHi
 ```
 
-## La propriété `length` :
+## La propriété `length`
 
 Il existe une autre propriété native, `length`, qui renvoie le nombre de paramètres de la fonction.
 
@@ -40,7 +40,7 @@ Une fois qu'un utilisateur a fourni sa réponse, la fonction appelle les gestion
 - **Une fonction sans argument, qui n'est appelée que lorsque l'utilisateur donne une réponse positive.**
 - **Une fonction avec des arguments, appelée dans les deux cas et renvoyant une réponse.**
 
-## Propriété personnalisées :
+## Propriété personnalisées
 
 On peut ajouter nos propres propriétés.
 
@@ -61,7 +61,7 @@ sayHi(); // Hi
 alert( `Called ${sayHi.counter} times` ); // Appelée 2 fois
 ```
 
-## Expression de fonction nommée :
+## Expression de fonction nommée
 
 Expression de fonction nommée, ou EFN, est un terme pour les expressions de fonction qui ont un nom.
 
