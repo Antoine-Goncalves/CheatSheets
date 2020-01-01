@@ -13,7 +13,7 @@ Ces méthodes ne font pas partie de la spécification JS. Mais la plupart des en
 
 La syntaxe =>
 
-```
+```javascript
 let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)
 ```
 
@@ -25,7 +25,7 @@ Les paramètres :
 
 Exemple :
 
-```
+```javascript
 function sayHi() {
   alert('Hello');
 }
@@ -37,7 +37,7 @@ Si le premier argument est une chaîne de caractères, JS crée alors une foncti
 
 Exemple :
 
-```
+```javascript
 setTimeout("alert('Bonjour')", 1000);
 ```
 
@@ -49,7 +49,7 @@ Un appel à `setTimeout` renvoie un "identifiant de timer" `timerId` que l'on pe
 
 La syntaxe pour annuler une tâche planifiée est la suivante :
 
-```
+```javascript
 let timerId = setTimeout(...);
 clearTimeout(timerId);
 ```
@@ -58,7 +58,7 @@ clearTimeout(timerId);
 
 La méthode `setInterval` a la même syntaxe que `setTimeout` :
 
-```
+```javascript
 let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)
 ```
 
@@ -74,7 +74,7 @@ L'un est `setInterval`. L'autre est un `setTimeout` imbriqué.
 
 Exemple :
 
-```
+```javascript
 /** Au lieu de :
 let timerId = setInterval(() => alert('tick'), 2000);
 */
