@@ -1,4 +1,4 @@
-# Promise :
+# Promise
 
 1. _Un `"code producteur"` qui fait quelque chose et prend du temps. Par exemple, un code qui charge les données sur un réseau._
 2. _Un `"code consommateur"` qui veut le résultat du `"code producteur"` une fois prêt. Beaucoup de fonctions peuvent avoir besoin de ce résultat._
@@ -69,11 +69,11 @@ _Note: Il ne peut y avoir qu'un seul résultat ou une erreur, l'exécuteur doit 
 
 _Note: Les propriétés de l'objet promise `state` et `result` sont internes. On ne peut pas y accéder directement. On peut utiliser les méthodes `.then`, `.catch` ou `.finally` pour ça._
 
-## Consommateurs => `then`, `catch` et `finally` :
+## Consommateurs => `then`, `catch` et `finally`
 
 L'objet promise sert de lien entre l'_exécuteur_ (le `"code producteur"`) et les fonctions consommatrices, qui recevront le résultat ou l'erreur. Les fonctions consommatrices peuvent être enregistrées (souscrites) en utilisant les méthodes `.then`, `.catch` et `.finally`.
 
-### `then` :
+### `then`
 
 Le plus important, fondamental est `.then`.
 
@@ -128,7 +128,7 @@ let promise = new Promise(resolve => {
 promise.then(alert); // affiche "done!" après 1 seconde.
 ```
 
-### `catch` :
+### `catch`
 
 Si on s'intéresse seulement aux erreurs, alors on peut utiliser `null` comme premier argument : `.then(null, errorHandlingFunction)`. Ou on peut utiliser `.cath(errorHandlingFunction)`, qui est exactement pareil :
 
@@ -143,7 +143,7 @@ promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
 
 L'appel `.catch(f)` est juste un raccourci de `.then(null, f)`.
 
-### `finally` :
+### `finally`
 
 L'appel `.finally(f)` est similaire à `.then(f, f)` en ce sens que `f` toujours exécuté lorsque la promesse est réglée: résolue ou rejetée.
 
