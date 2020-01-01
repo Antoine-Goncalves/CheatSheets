@@ -18,15 +18,15 @@ Les arguments `resolve` et `reject` sont des `callback` fournis par JavaScript l
 
 Quand l'_exécuteur_ obtient un résultat, que ce soit tôt ou tard, cela n'a pas d'importance, il devrait appeller l'un de ces `callback` :
 
-- **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
-- **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
+-   **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
+-   **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
 
 Pour résumer : L'_exécuteur_ s'exécute automatiquement, il devrait faire un travail et ensuite appeler soit `resolve` ou `reject`.
 
 L'objet `promise` retourné par le `new Promise` constructeur as des propriétés internes :
 
-- **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
-- **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
+-   **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
+-   **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
 
 Ainsi , l'_exécuteur_ déplace finalement `promise` dans l'un de ces états.
 
