@@ -1,4 +1,4 @@
-# Polyfills et leur utilité :
+# Polyfills et leur utilité
 
 Le langage JavaScript évolue constamment, de nouvelles propositions aux langages apparaissent régulièrement, ils sont analyser et, si elles sont considèrer louable, elles sont ajoutés à la liste ECMA262 et proposé dans la spécification.
 
@@ -6,7 +6,7 @@ L'équipe dèrierre JavaScript imagine leurs propres idées pour implémenté en
 
 Donc c'est assez commun par un moteur d'implémenter seulement la partie du standard. (la norme).
 
-# Unité de Babel :
+# Unité de Babel
 
 Quand on utilise les caractéristiques moderne d'un langage, certain moteur ne supporte pas le code. Toutes les caractéristiques ne sont pas implémenter partout. C'est la que Babel vient à la rescousse.
 
