@@ -6,7 +6,7 @@
 
 La syntaxe du constructeur pour un objet `promise` est :
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // exécuteur (le "code producteur")
 });
@@ -32,7 +32,7 @@ Ainsi , l'_exécuteur_ déplace finalement `promise` dans l'un de ces états.
 
 Voici un exemple de constructeur de promesse et de fonction _exécuteur_ simple avec `"production de code"` prenant du temps (via `setTimeout` ):
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // la fonction est exécuter automatiquement quand une promesse est construite
 
@@ -52,7 +52,7 @@ C’était un exemple de réussite du travail, une "promesse remplie".
 
 Et maintenant un exemple de l'exécuteur rejettant une promesse avec une erreur :
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // après 1 seconde signalant que le travail est terminé avec une erreur
   setTimeout(() => reject(new Error("Whoops!")), 1000);
@@ -79,7 +79,7 @@ Le plus important, fondamental est `.then`.
 
 La syntaxe est :
 
-```
+```javascript
 promise.then(
   function(result) { /* gestion d'un résultat réussi */ },
   function(error) { /* gestion d'une erreur */ }
@@ -92,7 +92,7 @@ Le deuxième argument de `.then` est une fonction qui s'exécute lorsque la prom
 
 Par exemple, voici une réaction à une promesse résolue avec succès:
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   setTimeout(() => resolve("done!"), 1000);
 });
@@ -106,7 +106,7 @@ promise.then(
 
 Et le cas du refus :
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   setTimeout(() => reject(new Error("Whoops!")), 1000);
 });
@@ -120,7 +120,7 @@ promise.then(
 
 Si on s'intéresse seulement par les complétions réussies, on ne peut fournir qu'un seul argument de fonction à `.then` :
 
-```
+```javascript
 let promise = new Promise(resolve => {
   setTimeout(() => resolve("done!"), 1000);
 });
@@ -132,7 +132,7 @@ promise.then(alert); // affiche "done!" après 1 seconde.
 
 Si on s'intéresse seulement aux erreurs, alors on peut utiliser `null` comme premier argument : `.then(null, errorHandlingFunction)`. Ou on peut utiliser `.cath(errorHandlingFunction)`, qui est exactement pareil :
 
-```
+```javascript
 let promise = new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error("Whoops!")), 1000);
 });
@@ -151,7 +151,7 @@ L'appel `.finally(f)` est similaire à `.then(f, f)` en ce sens que `f` toujours
 
 Comme ceci :
 
-```
+```javascript
 new Promise((resolve, reject) => {
   /* faire quelque chose qui prend du temps, puis appeler resolve/reject */
 })
@@ -172,7 +172,7 @@ On réécrit la fonction `loadScript` mais en utilisant les `promises`.
 
 Elle ne requiert pas de `callback`. Au lieu de cela, il créera et retournera un objet `promise` qui sera résolu une fois le chargement terminé. Le code externe peut lui ajouter des gestionnaires en utilisant `.then` :
 
-```
+```javascript
 function loadScript(src) {
   return new Promise(function(resolve, reject) {
     let script = document.createElement('script');
@@ -188,7 +188,7 @@ function loadScript(src) {
 
 Usage :
 
-```
+```javascript
 let promise = loadScript("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js");
 
 promise.then(
