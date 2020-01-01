@@ -12,7 +12,7 @@ En Javascript, l'opérateur est un petit peu délicat et plus puissant. On vas v
 
 4 combinaisons logiques :
 
-```
+```javascript
 true || true => true
 false || true => true
 true || false => true
@@ -41,7 +41,7 @@ Dans le programming classique, AND retourne `true` si tout les opérands sont vr
 
 4 combinaisons logiques :
 
-```
+```javascript
 true && true => true
 false && true => false
 true && false => false
