@@ -81,8 +81,8 @@ let sayHi = function func(who) {
 
 La fonction est toujours disponible sous la forme `sayHi()`. Il y a deux particularités à propos du nom de la fonctione (ici `func`) :
 
-1. **Il permet à la fonction de se référencer en interne.**
-2. **Il n'est pas visible en dehors de la fonction**
+1.  **Il permet à la fonction de se référencer en interne.**
+2.  **Il n'est pas visible en dehors de la fonction**
 
 Nommer une fonction est hyper important car son nom (ici `func`) est local à la fonction. Il n'est pas pris de l'extérieur (et non visible là-bas). La spécification garantit qu'elle fera toujours référence à la fonction actuelle.
 
