@@ -6,7 +6,7 @@ Le `switch` a une ou plusieurs `case` (blocs) et un défaut opptionnel.
 
 Syntaxe =>
 
-```
+```javascript
 switch(x) {
     case 'valeur1': // if (x === 'valeur1)
         ...
@@ -32,7 +32,7 @@ Plusieurs variante de `case` peuvent partager le même code.
 
 Syntaxe =>
 
-```
+```javascript
 switch (a) {
     case 4:
         alert('Vrai');
