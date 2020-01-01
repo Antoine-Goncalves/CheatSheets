@@ -36,13 +36,9 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 [:question: :question:](operateurs.md)
 
 -   **Un operand est ce à quoi les opérateurs sont appliqués.**
-
 -   **Un opérateur est unaire si il a un operand seule**.
-
 -   **Un opérateur est binaire si il a 2 operand**.
-
 -   **binary+ => concatener 2 chaînes**.
-
 -   **unary+ => convertit les chaînes en nombres**.
 
 ## Comparaisons
@@ -99,9 +95,9 @@ Les trois conversions de types les plus utilisées sont chaîne, nombre et bool�
 [:question: :question:](switch.md)
 
 -   **`switch` peut remplacer plusieurs `if`.**
-- **Syntaxe =>**
+-   **Syntaxe =>**
 
-```
+```javascript
 switch(x) {
     case 'valeur1': // if (x === 'valeur1)
         ...
@@ -121,7 +117,7 @@ switch(x) {
 
 -   **Une déclaration de fonction ressemble à ceci:**
 
-```
+```javascript
 function nom(paramètres, séparés, par des, virgules) {
   /* code */
 }
@@ -288,8 +284,8 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 -   **Style de programmation asynchrone "callback-based" (basé sur le rappel). Une fonction qui fait quelque chose de manière asynchrone devrait fournir un argument de callback lequel on met à s'exécuter une fois terminée.**
 -   **Pour régler les erreurs, on utilise le style "error-first callback" (erreur-premier rappel).**
 - **La convention est :**
-  1. **Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé**.
-  2. **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
+  1.  **Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé**.
+  2.  **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
 -   **Si on as des imbrications de `callback`, cela se nomme "callback hell" (rappel de l'enfer) ou "pyramid of doom" (pyramide du malheur), il faut éviter cela en utilisant les "promises" (promesses)**.
 
 ## Promesse
