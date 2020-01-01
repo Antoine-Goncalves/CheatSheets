@@ -2,7 +2,7 @@
 
 L'enchaînement des promesses ressemble à ça :
 
-```
+```javascript
 new Promise(function(resolve, reject) {
 
   setTimeout(() => resolve(1), 1000); // (*)
@@ -44,7 +44,7 @@ Lorsqu'un gestionnaire renvoie une valeur, cela devient le résultat de cette pr
 
 Par exemple :
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   setTimeout(() => resolve(1), 1000);
 });
@@ -79,7 +79,7 @@ Dans ce cas, d'autres gestionnaires jusqu'a ce qu'elle soit tenue, puis obtienne
 
 Par exemple :
 
-```
+```javascript
 new Promise(function(resolve, reject) {
 
   setTimeout(() => resolve(1), 1000);
@@ -115,7 +115,7 @@ Le renvoie des promesses permet de contruire des chaînes d'actions asynchrones.
 
 La syntaxe est :
 
-```
+```javascript
 let promise = fetch (url);
 ```
 
@@ -125,7 +125,7 @@ Pour lire la réponse complète, appelez la méthode `response.text()` : elle re
 
 Le code ci-dessous envoie une requête à `user.json` et charge son texte depuis le serveur :
 
-```
+```javascript
 fetch('/article/promise-chaining/user.json')
   // .then ci-dessous s'exécute lorsque le serveur distant répond
   .then(function(response) {
@@ -141,7 +141,7 @@ fetch('/article/promise-chaining/user.json')
 
 Il existe également une méthode `response.json()` qui lit les données distantes et les analyse au format JSON. Dans notre cas, c’est encore plus pratique, alors on passe à cela.
 
-```
+```javascript
 // comme ci-dessus, mais response.json() analyse le contenu distant en tant que JSON
 fetch('/article/promise-chaining/user.json')
   .then(response => response.json())
@@ -152,7 +152,7 @@ Maintenant on peut faire quelque chose avec l'utilisateur chargé.
 
 Par exemple, on peut faire une demande pour charger le profil de l'utilisateur et afficher l'avatar :
 
-```
+```javascript
 // Faire une demande pour user.json
 fetch('/article/promise-chaining/user.json')
   // Charger en tant que json
@@ -180,7 +180,7 @@ POur rendre la chaîne extensible, on doit retourner une promesse qui sera réso
 
 Comme ceci :
 
-```
+```javascript
 fetch('/article/promise-chaining/user.json')
   .then(response => response.json())
   .then(user => fetch(`https://api.github.com/users/${user.name}`))
@@ -210,7 +210,7 @@ Cela permet de planifier des actions après. Même si on as pas l’intention d�
 
 Enfin, on peut découper le code en fonctions réutilisables:
 
-```
+```javascript
 function loadJson(url) {
   return fetch(url)
     .then(response => response.json());
