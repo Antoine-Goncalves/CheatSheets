@@ -4,8 +4,8 @@ Imaginons que l'on veut exécuter une fonction mais pas à l'instant T, mais à 
 
 Deux méthodes existe pour cela :
 
-- **`setTimeout` permet d'exécuter une fonction une fois uniquement après un certain laps de temps.**
-- **`setInterval` permet d'exécuter une fonction de manière répétée, en commençant après l'intervalle de temps, puis en répétant continuellement à cette intervalle.**
+-   **`setTimeout` permet d'exécuter une fonction une fois uniquement après un certain laps de temps.**
+-   **`setInterval` permet d'exécuter une fonction de manière répétée, en commençant après l'intervalle de temps, puis en répétant continuellement à cette intervalle.**
 
 Ces méthodes ne font pas partie de la spécification JS. Mais la plupart des environnements ont un planificateur interne et fournissent ces méthodes. En particulier, elles sont supportées par tous les navigateurs et Node.js.
 
@@ -19,9 +19,9 @@ let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...)
 
 Les paramètres :
 
-- **`func|code` => Fonction ou chaîne de caractères représentant du code à exécuter. En général, c'est une fonction.**
-- **`delay` => La durée d'attente avant l'exécution, en millisecondes, par défaut 0.**
-- **`arg1, arg2 ...` => Arguments à passer à la fonction.**
+-   **`func|code` => Fonction ou chaîne de caractères représentant du code à exécuter. En général, c'est une fonction.**
+-   **`delay` => La durée d'attente avant l'exécution, en millisecondes, par défaut 0.**
+-   **`arg1, arg2 ...` => Arguments à passer à la fonction.**
 
 Exemple :
 
