@@ -29,10 +29,10 @@ L'idée est que le résultat est transmis à travers la chaîne de gestionnaires
 
 Ici le flux est :
 
-1. La promesse initiale est résolue en 1 seconde `(*)`
-2. Puis, le gestionnaire `.then` est appelé `(**)`.
-3. La valeur qu'il renvoie est transmise au prochain gestionnaire `.then` `(***)`
-4. ...etc.
+1.  La promesse initiale est résolue en 1 seconde `(*)`
+2.  Puis, le gestionnaire `.then` est appelé `(**)`.
+3.  La valeur qu'il renvoie est transmise au prochain gestionnaire `.then` `(***)`
+4.  ...etc.
 
 Lorsque le résultat est transmis le long de la chaîne de gestionnaires, on peut voir une séquence d'appels `alert` : `1` -> `2` -> `4`.
 
