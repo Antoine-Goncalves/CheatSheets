@@ -16,24 +16,24 @@ _Node Package Manager_
 
 **Gestion des versions de façon ordonnée =>**
 
-- **`~` mettre à jour les patchs.**
-- **`^` mettre à jour les mineurs et les patchs.**
+-   **`~` mettre à jour les patchs.**
+-   **`^` mettre à jour les mineurs et les patchs.**
 
-- 0.1.0 (version départ) // taper à la main //
-- 1.0.0 (première version stable).
-- 1.0.1 (correction de bug)
-- 1.1.0 (ajouts de features compatibles)
-- 2.0.0 (changements non compatibles).
+-   0.1.0 (version départ) // taper à la main //
+-   1.0.0 (première version stable).
+-   1.0.1 (correction de bug)
+-   1.1.0 (ajouts de features compatibles)
+-   2.0.0 (changements non compatibles).
 
 ## Installation
 
-- **global :**
+-   **global :**
 
-  - `npm install -g <nom_paquet>`
+-   `npm install -g <nom_paquet>`
 
-- **local :**
+-   **local :**
 
-  - `npm install <nom_paquet>`
+-   `npm install <nom_paquet>`
 
 ## Dépendances
 
@@ -41,15 +41,15 @@ _Node Package Manager_
 
 **Npm distingue principalement 2 types de dépendances :**
 
-- **production**.
-- **développement**.
+-   **production**.
+-   **développement**.
 
 ## Commande utiles
 
-- `npm outdated` (_affiché les packages a mettre à jour_).
+-   `npm outdated` (_affiché les packages a mettre à jour_).
 
-- `npm ls` (_liste de tout les packages_).
+-   `npm ls` (_liste de tout les packages_).
 
-- `npm prune` (_supprime tout les package inutilisés_).
+-   `npm prune` (_supprime tout les package inutilisés_).
 
-- `npm view <nom_paquet>` (_avoir des informations sur un paquet_).
+-   `npm view <nom_paquet>` (_avoir des informations sur un paquet_).
