@@ -16,7 +16,7 @@ Les types énumérés sont des types de données qui comprennent un ensemble sta
 
 Pour créer des types `ENUM` , on utilise la commande :
 
-```
+```javascript
 CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
 ```
 
