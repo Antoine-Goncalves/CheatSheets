@@ -4,9 +4,9 @@
 
 3 valeurs possibles :
 
-- `true`. (vrai)
-- `false`. (faux)
-- `null`. (inconnu)
+-   `true`. (vrai)
+-   `false`. (faux)
+-   `null`. (inconnu)
 
 On utilise le mot-clé `boolean` ou `bool` pour déclarer une colonne avec le type de données booléen.
 
