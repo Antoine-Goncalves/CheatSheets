@@ -1,4 +1,4 @@
-# Restaurer une base de données / schéma d'une base de donnée uniquement / une ou plusieurs tables d'une base de données :
+# Restaurer une base de données / schéma d'une base de donnée uniquement / une ou plusieurs tables d'une base de données
 
 Avec `Mockaroo`, on peut générer une base de données.
 
