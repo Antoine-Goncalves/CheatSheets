@@ -2,9 +2,9 @@
 
 Une base de données est un endroit où l'on peut :
 
-- Stocker de la données.
-- Manipuler de la données.
-- Récupèrer de la données.
+-   Stocker de la données.
+-   Manipuler de la données.
+-   Récupèrer de la données.
 
 Ceci est dans le `Computer Server`.
 
