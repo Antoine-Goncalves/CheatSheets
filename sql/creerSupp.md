@@ -1,4 +1,4 @@
-# Création et Suppression de comptes utilisateurs :
+# Création et Suppression de comptes utilisateurs
 
 Pour créer un utilisateur, on utilise la commande :
 
