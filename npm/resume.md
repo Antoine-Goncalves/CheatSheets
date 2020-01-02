@@ -1,4 +1,4 @@
-# NPM :
+# NPM
 
 _Node Package Manager_
 
@@ -8,7 +8,7 @@ _Node Package Manager_
 
 **package.json = registre de tout les paquets, en format objets (définit le nom, version etc..)**
 
-## maj :
+## maj
 
 `npm update <nom_paquet>` (`npm up <nom_paquet>`)
 
@@ -25,7 +25,7 @@ _Node Package Manager_
 - 1.1.0 (ajouts de features compatibles)
 - 2.0.0 (changements non compatibles).
 
-## Installation :
+## Installation
 
 - **global :**
 
@@ -35,7 +35,7 @@ _Node Package Manager_
 
   - `npm install <nom_paquet>`
 
-## Dépendances :
+## Dépendances
 
 **Exactement le même principe que les autres langages qui utilisent des gestionnaires de paquet.**
 
@@ -44,7 +44,7 @@ _Node Package Manager_
 - **production**.
 - **développement**.
 
-## Commande utiles :
+## Commande utiles
 
 - `npm outdated` (_affiché les packages a mettre à jour_).
 
