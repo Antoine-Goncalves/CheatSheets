@@ -1,4 +1,4 @@
-# Création/Suppression de bases de données :
+# Création/Suppression de bases de données
 
 pour voir la liste des bases de données, on tape la commande :
 
