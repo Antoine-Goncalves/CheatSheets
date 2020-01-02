@@ -1,4 +1,4 @@
-# Agir sur une base de données :
+# Agir sur une base de données
 
 Pour retrouver une information d'une base de données, il faut :
 
