@@ -1,4 +1,4 @@
-# PosgreSQL :
+# PosgreSQL
 
 C'est un système de gestion de base de données relationnelle-objet. Il est également Moderne et Open Source.
 
