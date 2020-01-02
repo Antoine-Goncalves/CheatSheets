@@ -11,6 +11,6 @@ d'autre moteurs de DB :
 
 -   **Pour ouvrir postgreSQL :**
 
-```
+``javascript`
 sudo -u postgres psql
 ```
