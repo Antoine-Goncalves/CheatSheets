@@ -1,4 +1,4 @@
-# Base de données :
+# Base de données
 
 Une base de données est un endroit où l'on peut :
 
