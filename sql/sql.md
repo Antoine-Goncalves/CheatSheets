@@ -19,10 +19,10 @@ Il est très puissant et utiliser partout sur internet.
 
 Où la donnée est stocké ?
 
-- La donnée est stocké dans des tableaux.
-- Ce même tableau est composé de :
-  - Colonne
-  - Ligne
+-   La donnée est stocké dans des tableaux.
+-   Ce même tableau est composé de :
+  -   Colonne
+  -   Ligne
 
 Exemple :
 
