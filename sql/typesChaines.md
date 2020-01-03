@@ -1,4 +1,4 @@
-# Les types chaînes de caractères :
+# Les types chaînes de caractères
 
 **`PostgreSQL` fournit trois types de données de caractères :**
 
