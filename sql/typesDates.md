@@ -1,4 +1,4 @@
-# Les types dates :
+# Les types dates
 
 Les types de données temporelles vous permettent de stocker des données de date et/ou d'heure. `PostgreSQL` a cinq principaux types de données temporelles:
 
