@@ -1,6 +1,6 @@
-# SQL :
+# SQL
 
-## Base de données :
+## Base de données
 
 [:question: :question:](baseDonnee.md)
 
@@ -10,7 +10,7 @@
 - **Manipuler de la données**.
 - **Récupèrer de la données**.
 
-## `SQL` :
+## `SQL`
 
 [:question: :question:](sql.md)
 
@@ -29,7 +29,7 @@ SELECT prénom FROM personne
   - **Colonne**
   - **Ligne**
 
-## `PostgreSQL` :
+## `PostgreSQL`
 
 [:question: :question:](postgresql.md)
 
@@ -41,7 +41,7 @@ SELECT prénom FROM personne
 sudo -u postgres psql
 ```
 
-## Création/Suppression de comptes utilisateurs :
+## Création/Suppression de comptes utilisateurs
 
 [:question: :question:](creerSupp.md)
 
@@ -53,7 +53,7 @@ CREATE USER nom_utilisateur;
 DROP USER nom_utilisateur;
 ```
 
-## Création/Suppression de bases de données :
+## Création/Suppression de bases de données
 
 [:question: :question:](creerSuppDd.md)
 
@@ -65,7 +65,7 @@ CREATE DATABASE nom_db;
 DROP DATABASE nom_db;
 ```
 
-## Rôles dans `PostgreSQL` :
+## Rôles dans `PostgreSQL`
 
 [:question: :question:](roles.md)
 
@@ -117,7 +117,7 @@ GRANT role_groupe TO role1,...;
 REVOKE role_groupe FROM role1,...;
 ```
 
-## Différence entre le `SQL` et le `NoSQL` :
+## Différence entre le `SQL` et le `NoSQL`
 
 [:question: :question:](sqlVsNosql.md)
 
@@ -204,7 +204,7 @@ SELECT * FROM nom_du_fichier
 SELECT nom_colonne FROM nom_du_fichier
 ```
 
-## Agir sur une base de données :
+## Agir sur une base de données
 
 [:question: :question:](agirSurBaseDeDonnes.md)
 
