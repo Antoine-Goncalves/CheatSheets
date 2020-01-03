@@ -6,7 +6,7 @@ C'est un langage de programmation.
 
 Syntaxe =>
 
-```
+```javascript
 SELECT prénom FROM personne
        Nom COLONNE Nom TABLEAU
 ```
