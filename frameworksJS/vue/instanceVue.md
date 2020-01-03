@@ -38,7 +38,7 @@ var vm = new Vue({
 
 *   **Chaque instance de vue traverse une série d'étapes d'initialisation au moment de sa création. Elle invoque des *hooks* de cycle de vie, qui permet de donner l'opportunité d'éxecuter une logique personnalisée à chaque niveau. Types de *hooks* :**
 
-	+   **`created`, `mounted`, `updated` et `destroyed` => Tous ces hooks de cycle de vie sont appelés avec leur `this` pointant sur l'instance de la vue qui les appelle.**
++      **`created`, `mounted`, `updated` et `destroyed` => Tous ces hooks de cycle de vie sont appelés avec leur `this` pointant sur l'instance de la vue qui les appelle.**
 
 *   **Résumé en photo :**
 
