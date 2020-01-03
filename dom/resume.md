@@ -79,7 +79,7 @@ Pour `<select>` on peut également obtenir la valeur par l'index `select.selecte
 
 [:question: :question:](focusBlur.md)
 
-**Les événements `focus` et `blur` déclenchent la concentration / la perte de concentration sur l'élément.**
+-   **Les événements `focus` et `blur` déclenchent la concentration / la perte de concentration sur l'élément.**
 
 Leurs spécialités sont:
 
