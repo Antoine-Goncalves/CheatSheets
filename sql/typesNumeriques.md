@@ -1,4 +1,4 @@
-# Les types numériques :
+# Les types numériques
 
 **Il existe trois types d'entiers dans `postgreSQL :**
 
