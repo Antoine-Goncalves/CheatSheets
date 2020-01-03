@@ -4,38 +4,36 @@
 
 [:question: :question:](baseDonnee.md)
 
-- **Une base de données est un endroit où l'on peut :**
+**Une base de données est un endroit où l'on peut :**
 
-- **Stocker de la données**.
-- **Manipuler de la données**.
-- **Récupèrer de la données**.
+-   **Stocker de la données**.
+-   **Manipuler de la données**.
+-   **Récupèrer de la données**.
 
 ## `SQL`
 
 [:question: :question:](sql.md)
 
-- **Structured Query Language.**
-- **Syntaxe :**
+-   **Structured Query Language.**
+-   **Syntaxe :**
 
 ```
 SELECT prénom FROM personne
        Nom COLONNE Nom TABLEAU
 ```
 
-- **Il gére les données contenues dans une base de données relationnelle.**
-
-- **La donnée est stocké dans des tableaux.**
-- **Ce même tableau est composé de :**
-  - **Colonne**
-  - **Ligne**
+-   **Il gére les données contenues dans une base de données relationnelle.**
+-   **La donnée est stocké dans des tableaux.**
+-   **Ce même tableau est composé de :**
+-   **Colonne**
+-   **Ligne**
 
 ## `PostgreSQL`
 
 [:question: :question:](postgresql.md)
 
-- **C'est un système de gestion de base de données relationnelle-objet.**
-
-- **Pour ouvrir `postgreSQL` :**
+-   **C'est un système de gestion de base de données relationnelle-objet.**
+-   **Pour ouvrir `postgreSQL` :**
 
 ```
 sudo -u postgres psql
@@ -77,40 +75,39 @@ CREATE ROLE nom_utilisateur;
 DROP ROLE nom_utilisateur;
 ```
 
-- **Il y a plusieurs attributs pour les rôles :**
+-   **Il y a plusieurs attributs pour les rôles :**
+-   **droit de connexion =>**
 
-  - **droit de connexion =>**
+```
+CREATE ROLE nom LOGIN;
+CREATE USER nom;
+```
 
-  ```
-  CREATE ROLE nom LOGIN;
-  CREATE USER nom;
-  ```
+-   **status de superutilisateur=>**
 
-  - **status de superutilisateur=>**
+```
+CREATE ROLE nom SUPERUSER;
+```
 
-  ```
-  CREATE ROLE nom SUPERUSER;
-  ```
+-   **création de bases de données =>**
 
-  - **création de bases de données =>**
+```
+CREATE ROLE nom_utilisateur CREATEDB;
+```
 
-  ```
-  CREATE ROLE nom_utilisateur CREATEDB;
-  ```
+-   **création de rôle =>**
 
-  - **création de rôle =>**
+```
+CREATE ROLE nom CREATEROLE;
+```
 
-  ```
-  CREATE ROLE nom CREATEROLE;
-  ```
+-   **mot de passe =>**
 
-  - **mot de passe =>**
+```
+CREATE ROLE nom_utilisateur PASSWORD 'mot_de_passe'
+```
 
-  ```
-  CREATE ROLE nom_utilisateur PASSWORD 'mot_de_passe'
-  ```
-
-- **On peut lui ajouter et lui supprimer des membres en utilisant les commandes :**
+-   **On peut lui ajouter et lui supprimer des membres en utilisant les commandes :**
 
 ```
 GRANT role_groupe TO role1,...;
@@ -121,82 +118,75 @@ REVOKE role_groupe FROM role1,...;
 
 [:question: :question:](sqlVsNosql.md)
 
-- **`SQL` =>**
-
-  - **Bases de données relationnelle.**
-  - **Basées sur les tables.**
-  - **Schéma prédéfini.**
-  - **Évolutives verticalement.**
-
-- **`NoSQL` =>**
-  - **Bases de données non relationnelle.**
-  - **Basées sur des paires clés-valeurs.**
-  - **Schéma dynamique pour les données non structurées.**
-  - **Évolutives horizontalement.**
+-   **`SQL` =>**
+-   **Bases de données relationnelle.**
+-   **Basées sur les tables.**
+-   **Schéma prédéfini.**
+-   **Évolutives verticalement.**
+-   **`NoSQL` =>**
+-   **Bases de données non relationnelle.**
+-   **Basées sur des paires clés-valeurs.**
+-   **Schéma dynamique pour les données non structurées.**
+-   **Évolutives horizontalement.**
 
 ## Les types numériques :
 
 [:question: :question:](typesNumeriques.md)
 
-- **3 principaux =>**
-
-  - **`INT` => Entier signé sur 4 octets.**
-  - **`NUMERIC` => Nombre exact dont la précision peut être spécifiée.**
-  - **`SERIAL` => Entier sur 4 octets à incrémentation automatique.**
+-   **3 principaux =>**
+-   **`INT` => Entier signé sur 4 octets.**
+-   **`NUMERIC` => Nombre exact dont la précision peut être spécifiée.**
+-   **`SERIAL` => Entier sur 4 octets à incrémentation automatique.**
 
 ## Les types chaînes de caractères :
 
 [:question: :question:](typesChaines.md)
 
-- **3 types =>**
-
-  - **`CHAR` => Longueur fixe, complété par des espaces.**
-  - **`VARCHAR` => Longueur variable avec limite.**
-  - **`TEXT` => Longueur variable illimitée.**
+-   **3 types =>**
+-   **`CHAR` => Longueur fixe, complété par des espaces.**
+-   **`VARCHAR` => Longueur variable avec limite.**
+-   **`TEXT` => Longueur variable illimitée.**
 
 ## Les types dates :
 
 [:question: :question:](typesDates.md)
 
-- **3 types =>**
-
-  - **`TIME` => Stocke les dates uniquement au format AAAA-MM-JJ.**
-  - **`DATE` => Stocke les valeurs de l'heure du jour au format HH:MM:SS.**
-  - **`TIMESTAMP` => Stocke les valeurs de date et d'heure.**
+-   **3 types =>**
+-   **`TIME` => Stocke les dates uniquement au format AAAA-MM-JJ.**
+-   **`DATE` => Stocke les valeurs de l'heure du jour au format HH:MM:SS.**
+-   **`TIMESTAMP` => Stocke les valeurs de date et d'heure.**
 
 ## Autres :
 
 [:question: :question:](autres.md)
 
-- **3 valeurs =>**
+-   **3 valeurs =>**
+-   `true`. (vrai)
+-   `false`. (faux)
+-   `null`. (inconnu)
+-   **Créer des types `ENUM` :**
 
-  - `true`. (vrai)
-  - `false`. (faux)
-  - `null`. (inconnu)
-
-- **Créer des types `ENUM` :**
-
-  ```
-  CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
-  ```
+```
+CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
+```
 
 ## Restaurer une base de données :
 
 [:question: :question:](restaurerBaseDeDonnees.md)
 
-- **Restaurer une base de données =>**
+-   **Restaurer une base de données =>**
 
 ```
 \i chemin_du_fichier (aller dans le fichier puis faire pwd pour avoir le chemin)
 ```
 
-- **Restaurer le schéma d'une base de donnée uniquement =>**
+-   **Restaurer le schéma d'une base de donnée uniquement =>**
 
 ```
 \d nom_du_fichier
 ```
 
-- **Retrouver une ou plusieurs tables d'une base de données =>**
+-   **Retrouver une ou plusieurs tables d'une base de données =>**
 
 ```
 SELECT * FROM nom_du_fichier
@@ -208,26 +198,26 @@ SELECT nom_colonne FROM nom_du_fichier
 
 [:question: :question:](agirSurBaseDeDonnes.md)
 
-- **Retrouver une information d'une base de données =>**
+-   **Retrouver une information d'une base de données =>**
 
 ```
 SELECT nom_colonne FROM nom_table WHERE nom_colonne='valeur que l'on veut'
 ```
 
-- **Trier les résultats d'une base de données =>**
+-   **Trier les résultats d'une base de données =>**
 
 ```
 SELECT DISTINCT nom_colonne FROM nom_table ORDER BY nom_colonne (ASC ou DESC pour croissant ou décroissant)
 ```
 
-- **Extraire les données distinctes =>**
+-   **Extraire les données distinctes =>**
 
 ```
 SELECT DISTINCT nom_colonne
 FROM nom_table
 ```
 
-- **Retrouver une information selon des conditions précises =>**
+-   **Retrouver une information selon des conditions précises =>**
 
 ```
 SELECT * FROM nom_table WHERE nom_colonne='valeur que l'on veut' (possibilité de rajouter AND et/ou OR suivi nom_colonne='valeur que l'on veut')
