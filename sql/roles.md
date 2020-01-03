@@ -2,13 +2,13 @@
 
 Pour créer un rôle, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom_utilisateur;
 ```
 
 Pour supprimer un rôle existant, on utilise la commande :
 
-```
+```javascript
 DROP ROLE nom_utilisateur;
 ```
 
@@ -18,7 +18,7 @@ DROP ROLE nom_utilisateur;
 
 Pour créer un rôle disposant du droit de connexion, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom LOGIN;
 CREATE USER nom;
 ```
@@ -29,7 +29,7 @@ _Note: `CREATE USER` est équivalent à `CREATE ROLE` sauf que `CREATE USER` uti
 
 Pour créer un nouveau superutilisateur, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom SUPERUSER;
 ```
 
@@ -37,7 +37,7 @@ CREATE ROLE nom SUPERUSER;
 
 Pour créer un tel rôle, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom_utilisateur CREATEDB;
 ```
 
@@ -45,7 +45,7 @@ CREATE ROLE nom_utilisateur CREATEDB;
 
 Pour créer un tel rôle, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom CREATEROLE;
 ```
 
@@ -57,7 +57,7 @@ Un rôle utilisé pour la réplication en flux doit avoir le droit LOGIN.
 
 Pour créer un tel rôle, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom REPLICATION LOGIN;
 ```
 
@@ -65,7 +65,7 @@ CREATE ROLE nom REPLICATION LOGIN;
 
 Pour créer cela, on utilise la commande :
 
-```
+```javascript
 CREATE ROLE nom_utilisateur PASSWORD 'mot_de_passe'
 ```
 
@@ -73,19 +73,19 @@ CREATE ROLE nom_utilisateur PASSWORD 'mot_de_passe'
 
 Il faut d'abord créer le rôle :
 
-```
+```javascript
 CREATE ROLE nom;
 ```
 
 Pour détruire un rôle groupe, on utilise la commande :
 
-```
+```javascript
 DROP ROLE nom;
 ```
 
 Une fois que ce rôle existe, on peut lui ajouter et lui supprimer des membres en utilisant les commandes :
 
-```
+```javascript
 GRANT role_groupe TO role1,...;
 REVOKE role_groupe FROM role1,...;
 ```
