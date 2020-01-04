@@ -49,9 +49,9 @@ axios
 
 Parfois, on ne peut recevoir de données de l'API. Il peut y avoir plusieurs raisons :
 
-- L'API est hors-service.
-- La requête a mal été réalisée.
-- L'API ne nous donne pas les informations dans le format attendu.
+-   L'API est hors-service.
+-   La requête a mal été réalisée.
+-   L'API ne nous donne pas les informations dans le format attendu.
 
 Quand on créer une requête, on peut vérifier si il y a un bug et pouvoir être informer pour traiter le bug. Avec axios, on peut le faire en utilisant `catch`.
 
