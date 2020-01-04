@@ -329,13 +329,13 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
-  ```javascript
-  let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error("Whoops!")), 1000);
-  });
-  // .catch(f) est pareil que promise.then(null, f)
-  promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
-  ```
+     ```javascript
+     let promise = new Promise((resolve, reject) => {
+     setTimeout(() => reject(new Error("Whoops!")), 1000);
+     });
+     // .catch(f) est pareil que promise.then(null, f)
+     promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
+     ```
 
 -   **`.finally` => 3 grandes différences avec `then(f, f)` :**
 
