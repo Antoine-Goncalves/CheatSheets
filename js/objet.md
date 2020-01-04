@@ -23,8 +23,8 @@ let user = {
 
 Une propriété a une clé (connu comme "name" ou "identifier") après les ":" et une valeur à droite. Dans l'objet user, il y a 2 propriétés :
 
-- La 1ère propriété est le nom "name" et la valeur "Antoine".
-- Le second est le nom "age" et la valeur 23.
+-   La 1ère propriété est le nom "name" et la valeur "Antoine".
+-   Le second est le nom "age" et la valeur 23.
 
 Le résultat de l'objet user peut-être imager par deux fichiers nommées "name" et "age".
 
