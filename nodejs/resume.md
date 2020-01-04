@@ -23,7 +23,7 @@
 
 [:question: :question:](routageExpress.md)
 
--  **Le routage consiste à déterminer comment une application répond à une demande client adressée à un point de terminaison particulier et une méthode de requête HTTP spécifique.**
+-   **Le routage consiste à déterminer comment une application répond à une demande client adressée à un point de terminaison particulier et une méthode de requête HTTP spécifique.**
 
 ```javascript
 app.METHOD(PATH, HANDLER)
