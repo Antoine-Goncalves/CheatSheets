@@ -6,7 +6,7 @@
 
 *   **Syntaxe :**
 
-```
+```javascript
 var vm = new Vue({
   // options
 })
@@ -26,7 +26,7 @@ var vm = new Vue({
 
 *   **Syntaxe Interpolations (dit "Moustache") =>**
 
-```
+```javascript
 <span>Message: {{ msg }}</span>
 ```
 
