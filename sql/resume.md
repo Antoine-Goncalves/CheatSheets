@@ -129,7 +129,7 @@ REVOKE role_groupe FROM role1,...;
 -   **Schéma dynamique pour les données non structurées.**
 -   **Évolutives horizontalement.**
 
-## Les types numériques :
+## Les types numériques
 
 [:question: :question:](typesNumeriques.md)
 
@@ -138,7 +138,7 @@ REVOKE role_groupe FROM role1,...;
 -   **`NUMERIC` => Nombre exact dont la précision peut être spécifiée.**
 -   **`SERIAL` => Entier sur 4 octets à incrémentation automatique.**
 
-## Les types chaînes de caractères :
+## Les types chaînes de caractères
 
 [:question: :question:](typesChaines.md)
 
@@ -147,7 +147,7 @@ REVOKE role_groupe FROM role1,...;
 -   **`VARCHAR` => Longueur variable avec limite.**
 -   **`TEXT` => Longueur variable illimitée.**
 
-## Les types dates :
+## Les types dates
 
 [:question: :question:](typesDates.md)
 
@@ -156,7 +156,7 @@ REVOKE role_groupe FROM role1,...;
 -   **`DATE` => Stocke les valeurs de l'heure du jour au format HH:MM:SS.**
 -   **`TIMESTAMP` => Stocke les valeurs de date et d'heure.**
 
-## Autres :
+## Autres
 
 [:question: :question:](autres.md)
 
@@ -170,7 +170,7 @@ REVOKE role_groupe FROM role1,...;
 CREATE TYPE humeur AS ENUM ('triste', 'ok', 'heureux');
 ```
 
-## Restaurer une base de données :
+## Restaurer une base de données
 
 [:question: :question:](restaurerBaseDeDonnees.md)
 
