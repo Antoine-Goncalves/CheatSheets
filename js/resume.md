@@ -298,7 +298,7 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 
 -   **Syntaxe =>**
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // exécuteur (le "code producteur")
 });
@@ -320,7 +320,7 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **`.then` =>**
 
-  ```
+  ```javascript
   promise.then(
   function(result) { /* gestion d'un résultat réussi */ },
   function(error) { /* gestion d'une erreur */ }
@@ -329,7 +329,7 @@ let promise = new Promise(function(resolve, reject) {
 
 -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
-  ```
+  ```javascript
   let promise = new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error("Whoops!")), 1000);
   });
