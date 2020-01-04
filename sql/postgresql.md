@@ -8,7 +8,6 @@ d'autre moteurs de DB :
 -   MySQL.
 -   SQL Server.
 -   etc..
-
 -   **Pour ouvrir postgreSQL :**
 
 ```javascript
