@@ -221,7 +221,7 @@ Deux types de variables :
 Environnement lexical :
 
 -   **Environnement Record (Enregistrement d'Environnement).**
-- **Une référence à l'environnement lexical externe, celui associé au code externe.**
+-   **Une référence à l'environnement lexical externe, celui associé au code externe.**
 
 Quand on créer une fonction , deux environnement lexicaux se crée :
 
