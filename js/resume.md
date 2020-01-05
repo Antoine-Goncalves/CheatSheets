@@ -311,12 +311,12 @@ let promise = new Promise(function(resolve, reject) {
 -   **3 méthodes sont utilisées :**
 -   **`.then` =>**
 
-  ```javascript
-  promise.then(
-  function(result) { /* gestion d'un résultat réussi */ },
-  function(error) { /* gestion d'une erreur */ }
-  );
-  ```
+    ```javascript
+    promise.then(
+    function(result) { /* gestion d'un résultat réussi */ },
+    function(error) { /* gestion d'une erreur */ }
+    );
+    ```
 
 -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
