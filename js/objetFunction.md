@@ -37,8 +37,8 @@ La propriété `length` est parfois utilisée pour la réfléxion dans des fonct
 
 Une fois qu'un utilisateur a fourni sa réponse, la fonction appelle les gestionnaires. On peut transmettre deux types de gestionnaires:
 
-- **Une fonction sans argument, qui n'est appelée que lorsque l'utilisateur donne une réponse positive.**
-- **Une fonction avec des arguments, appelée dans les deux cas et renvoyant une réponse.**
+-   **Une fonction sans argument, qui n'est appelée que lorsque l'utilisateur donne une réponse positive.**
+-   **Une fonction avec des arguments, appelée dans les deux cas et renvoyant une réponse.**
 
 ## Propriété personnalisées
 
