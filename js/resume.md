@@ -329,9 +329,9 @@ let promise = new Promise(function(resolve, reject) {
      ```
 
 -   **`.finally` => 3 grandes différences avec `then(f, f)` :**
-    1.   **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
-    2.   **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
-    3.   **Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.**
+    1.    **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
+    2.    **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
+    3.    **Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.**
 -   **Avantages par rapport au modèle basé sur le `callback` :**
   | `Promesse`                                                                                                                                                             | `Callback`                                                                                                                                                                                             |
   | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
