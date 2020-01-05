@@ -301,8 +301,8 @@ let promise = new Promise(function(resolve, reject) {
 ```
 
 -   **2 arguments :**
-    1.   **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
-    2.   **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
+    1.    **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
+    2.    **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
 
 -   **2 propriétés internes :**
     1.   **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
