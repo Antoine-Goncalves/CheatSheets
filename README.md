@@ -6,7 +6,7 @@
 -   css
 -   [js](js/resume.md)
 -   [dom](dom/resume.md)
--   algo
+-   [algo](algo/resume.md)
 -   [frameworks JS](frameworksJS/resume.md)
 -   [api](api/resume.md)
 -   [nodejs](nodejs/resume.md)
