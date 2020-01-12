@@ -3,7 +3,7 @@
 ## **Composé en 10 parties**
 
 -   html
--   css
+-   [css](css/resume.md)
 -   [js](js/resume.md)
 -   [dom](dom/resume.md)
 -   [algo](algo/resume.md)
