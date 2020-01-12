@@ -2,7 +2,7 @@
 
 ## **Composé en 10 parties**
 
--   html
+-   [html](html/resume.md)
 -   [css](css/resume.md)
 -   [js](js/resume.md)
 -   [dom](dom/resume.md)
