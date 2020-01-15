@@ -21,8 +21,8 @@ Où la donnée est stocké ?
 
 -   La donnée est stocké dans des tableaux.
 -   Ce même tableau est composé de :
-  -   Colonne
-  -   Ligne
+    -   Colonne
+    -   Ligne
 
 Exemple :
 

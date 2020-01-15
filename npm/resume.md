@@ -47,9 +47,6 @@ _Node Package Manager_
 ## Commande utiles
 
 -   `npm outdated` (_affiché les packages a mettre à jour_).
-
 -   `npm ls` (_liste de tout les packages_).
-
 -   `npm prune` (_supprime tout les package inutilisés_).
-
 -   `npm view <nom_paquet>` (_avoir des informations sur un paquet_).

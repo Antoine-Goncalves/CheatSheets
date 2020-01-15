@@ -31,7 +31,6 @@ D'une autre part, les éléments qui existe pour formater quelque chose, comme `
 Il y a 2 valeurs spéciales :
 
 *   **`tabindex = "0"` met un élément parmi ceux sans `tabindex`. C'est à dire que si on change d'éléments, les éléements avec tabindex = "0" vont au numéro suivant (tabindex >=1)**.
-
 *   **`tabindex = "-1"` permet uniquement de se concentré programmatique sur un élément. La touche `Tab` ignore ces éléments, mais la méthode `elem.focus()` fonctionne**.
 
 ## Délégation: `focusin` et `focusout`
@@ -40,7 +39,7 @@ Les événements `focus` et `blur` ne font pas `bubble`.
 
 Deux moyens pour y remédier :
 
-1.  **`focus` et `blur` ne font pas `bubble`, mais se propage à la phase de capture.**
-2.  **Il y a des événements de `focusin` et de `focusout` => exactement les mêmes que ceux de `focus` et `blur` , mais ils font `bubble`**.
+1.   **`focus` et `blur` ne font pas `bubble`, mais se propage à la phase de capture.**
+2.   **Il y a des événements de `focusin` et de `focusout` => exactement les mêmes que ceux de `focus` et `blur` , mais ils font `bubble`**.
 
 *Note: Ils doit être assignés en utilisant `elem.addEventListener` , pas `on<event>`*.

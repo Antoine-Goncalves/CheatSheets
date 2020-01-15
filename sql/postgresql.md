@@ -8,9 +8,8 @@ d'autre moteurs de DB :
 -   MySQL.
 -   SQL Server.
 -   etc..
-
 -   **Pour ouvrir postgreSQL :**
 
-``javascript`
+```javascript
 sudo -u postgres psql
 ```

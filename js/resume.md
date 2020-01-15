@@ -145,9 +145,8 @@ _Note: Pour rendre le code propre => utiliser principalement des variables et de
 -   **Dans la plupart des cas, lorsque nous devons déclarer une fonction, une fonction déclaration est préférable parce qu’elle est visible avant la déclaration elle-même. Cela nous donne plus de flexibilité dans l’organisation du code et il est généralement plus lisible.**
 -   **Nous devrions donc utiliser une expression de fonction uniquement lorsqu’une déclaration de fonction n’est pas adaptée à la tâche.**
 -   **Les fonctions fléchées sont pratiques pour les one-liners (action sur une ligne). Ils viennent sous deux formes :**
-
-1. **Sans accolades: (...args) => expression.**
-2. **Avec accolades: (...args) => { body } => les accolades permet d'écrire plusieurs instructions dans la fonction, mais on as besoin d'un `¶eturn` explicite pour retourner quelque chose.**
+    1.  **Sans accolades: (...args) => expression.**
+    2.  **Avec accolades: (...args) => { body } => les accolades permet d'écrire plusieurs instructions dans la fonction, mais on as besoin d'un `return` explicite pour retourner quelque chose.**
 
 ## `Polyfills` et `Babel`
 
@@ -221,7 +220,7 @@ Deux types de variables :
 Environnement lexical :
 
 -   **Environnement Record (Enregistrement d'Environnement).**
-- **Une référence à l'environnement lexical externe, celui associé au code externe.**
+-   **Une référence à l'environnement lexical externe, celui associé au code externe.**
 
 Quand on créer une fonction , deux environnement lexicaux se crée :
 
@@ -283,9 +282,9 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 
 -   **Style de programmation asynchrone "callback-based" (basé sur le rappel). Une fonction qui fait quelque chose de manière asynchrone devrait fournir un argument de callback lequel on met à s'exécuter une fois terminée.**
 -   **Pour régler les erreurs, on utilise le style "error-first callback" (erreur-premier rappel).**
-- **La convention est :**
-  1.  **Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé**.
-  2.  **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
+-   **La convention est :**
+    1.  **Le premier argument du `callback` est réserver à une erreur si elle se produit. Puis `callback(err)` est appelé**.
+    2.  **Le deuxième argument (et les suivants si nécessaire) sont pour le résultat réussi. Ensuite, le `callback(null, result1, result2…)` est appelé**.
 -   **Si on as des imbrications de `callback`, cela se nomme "callback hell" (rappel de l'enfer) ou "pyramid of doom" (pyramide du malheur), il faut éviter cela en utilisant les "promises" (promesses)**.
 
 ## Promesse
@@ -293,60 +292,51 @@ Quand on créer une fonction , deux environnement lexicaux se crée :
 [:question: :question:](promesses.md)
 
 -   **Une `promise` est un objet JavaScript spécial qui lie le `"code producteur"` et le `"code consommateur"`**.
-
 -   **Syntaxe =>**
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // exécuteur (le "code producteur")
 });
 ```
 
 -   **2 arguments :**
-
-1.  **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
-2.  **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
+    1.  **`resolve(value)` => Si le travail s'est terminé avec succès, avec comme résultat `value`.**
+    2.  **`reject(error)` => Si une erreur survient, `error` est l'objet d'erreur.**
 
 -   **2 propriétés internes :**
-
-1.  **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
-2.  **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
-
+    1.  **`state` => initialement `"en attente"` , puis `"rempli"` lorsque `resolve` est appelée ou `"rejeté"` lorsque `reject` est appelé**.
+    2.  **`result` => initialement `"undefined"`, puis passe à `value` quand `resolve(value)` est appelée ou `error` quand `reject(error)` est appelé**.
 -   **Une promesse qui est soit résolue soit rejetée est appelée `"réglée"`, par opposition à une promesse initialement `"en attente"`.**
-
 -   **3 méthodes sont utilisées :**
-
 -   **`.then` =>**
 
-  ```
-  promise.then(
-  function(result) { /* gestion d'un résultat réussi */ },
-  function(error) { /* gestion d'une erreur */ }
-  );
-  ```
+    ```javascript
+    promise.then(
+    function(result) { /* gestion d'un résultat réussi */ },
+    function(error) { /* gestion d'une erreur */ }
+    );
+    ```
 
 -   **`.catch` => On s'intéresse seulement aux erreurs. `.catch(f)` est juste un raccourci de `.then(null, f)`.**
 
-  ```
-  let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error("Whoops!")), 1000);
-  });
-  // .catch(f) est pareil que promise.then(null, f)
-  promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
-  ```
+     ```javascript
+     let promise = new Promise((resolve, reject) => {
+     setTimeout(() => reject(new Error("Whoops!")), 1000);
+     });
+     // .catch(f) est pareil que promise.then(null, f)
+     promise.catch(alert); // affiche "Error: Whoops!" après 1 seconde
+     ```
 
 -   **`.finally` => 3 grandes différences avec `then(f, f)` :**
-
-    1. **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
-    2. **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
-    3. **Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.**
-
+    1.  **Le gestionnaire `finally` n'as pas d'argument. Dans `finally` on ne sait pas si la promesse est réussie ou non. Ce n'est pas grave, car notre tâche consiste généralement à effectuer des procédures de finalisation "générales".**
+    2.  **Un gestionnaire `finally` transmet les résultats et les erreurs au gestionnaire suivant. C'est très pratique, parce que `finally` n'est pas destiné à traiter un résultat de promesse. Alors ça passe à travers.**
+    3.  **Dernier point, mais non des moindres, `.finally(f)` est une syntaxe plus pratique que `.then(f, f)` : inutile de dupliquer la fonction `f`.**
 -   **Avantages par rapport au modèle basé sur le `callback` :**
-
-  | `Promesse`                                                                                                                                                             | `Callback`                                                                                                                                                                                             |
-  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | **Les promesses permettent de faire les choses dans l'ordre naturel. Tout d'abord, on exécute `loadScript(script)` , puis `.then` écrit quoi faire avec le résultat.** | **On doit avoir une fonction `callback` à disposition lorsqu'on appelle `loadScript(script, callback)`. En d'autres termes, on doit savoir quoi faire avec le résultat avant d'appeler `loadScript`.** |
-  | **On peut faire appel à une promesse `.then` autant de fois qu'on souhaite. À chaque fois, on ajoute un "code consommateur", une nouvelle fonction, à la "promesse".** | **Il ne peut y avoir qu'un seul `callback`**.                                                                                                                                                          |
+    | `Promesse`                                                                                                                                                             | `Callback`                                                                                                                                                                                             |
+    | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | **Les promesses permettent de faire les choses dans l'ordre naturel. Tout d'abord, on exécute `loadScript(script)` , puis `.then` écrit quoi faire avec le résultat.** | **On doit avoir une fonction `callback` à disposition lorsqu'on appelle `loadScript(script, callback)`. En d'autres termes, on doit savoir quoi faire avec le résultat avant d'appeler `loadScript`.** |
+    | **On peut faire appel à une promesse `.then` autant de fois qu'on souhaite. À chaque fois, on ajoute un "code consommateur", une nouvelle fonction, à la "promesse".** | **Il ne peut y avoir qu'un seul `callback`**.                                                                                                                                                          |
 
 ## Promesses chaining
 
