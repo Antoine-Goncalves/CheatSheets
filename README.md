@@ -13,4 +13,4 @@
 -   [npm](npm/resume.md)
 -   [sql](sql/resume.md)
 
-En cours d'évolution... :bowtie: :bowtie: :bowtie: :bowtie:
+En cours d'évolution... :bowtie: :bowtie: :bowtie:
