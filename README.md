@@ -12,5 +12,6 @@
 -   [nodejs](nodejs/resume.md)
 -   [npm](npm/resume.md)
 -   [sql](sql/resume.md)
+-   [typescript](typescript/resume.md)
 
 En cours d'évolution... :bowtie: :bowtie:
