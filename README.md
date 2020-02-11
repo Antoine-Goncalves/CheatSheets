@@ -14,4 +14,4 @@
 -   [sql](sql/resume.md)
 -   [typescript](typescript/resume.md)
 
-En cours d'évolution... :bowtie: :bowtie: :bowtie:
+En cours d'évolution... :bowtie: :bowtie:
