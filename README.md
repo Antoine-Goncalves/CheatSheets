@@ -1,4 +1,4 @@
-# Bienvenue sur mon CheatSheets Personnel, ici nous verrons toutes les technologies, informations utiles, pour un Développeur Web junior
+# Bienvenue sur mon CheatSheets personnel
 
 ## **Composé en 10 parties**
 
