@@ -12,6 +12,7 @@
 -   [nodejs](nodejs/resume.md)
 -   [npm](npm/resume.md)
 -   [sql](sql/resume.md)
+-   [mongo](mongo/resume.md)
 -   [typescript](typescript/resume.md)
 
 En cours d'évolution... :bowtie: :bowtie: :bowtie:
