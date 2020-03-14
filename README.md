@@ -14,5 +14,5 @@
 -   [sql](sql/resume.md)
 -   [mongo](mongo/resume.md)
 -   [typescript](typescript/resume.md)
-
-En cours d'évolution... :bowtie: :bowtie: :bowtie:
+CNN
+En cours d'évolution... :bowtie: :bowtie:
