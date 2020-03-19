@@ -12,7 +12,7 @@
 -   [nodejs](nodejs/resume.md)
 -   [npm](npm/resume.md)
 -   [sql](sql/resume.md)
--   [mongo](mongo/resume.md)
+-   [mongodb](mongodb/resume.md)
 -   [typescript](typescript/resume.md)
 CNN
 En cours d'évolution... :bowtie: :bowtie:
