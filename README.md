@@ -1,4 +1,4 @@
-# Bienvenue sur mon CheatSheet
+# Bienvenue sur mon CheatSheet perso
 
 ## **Composé en 10 parties**
 
